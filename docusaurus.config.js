@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CubeCrafter Plugins',
   tagline: 'Dinosaurs are cool',
-  url: 'https://cubecrafter.github.io',
+  url: 'https://cubecrafter.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cubecrafter', // Usually your GitHub org/user name.
+  organizationName: 'CubeCrafter', // Usually your GitHub org/user name.
   projectName: 'cubecrafter.github.io', // Usually your repo name.
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
