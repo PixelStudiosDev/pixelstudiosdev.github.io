@@ -37,7 +37,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -51,29 +50,24 @@ const config = {
           {
             href: 'https://discord.gg/ehjkwp5Fn4',
             label: 'Discord',
-            position: 'left',
+            position: 'right',
           },
           {
             href: 'https://polymart.org/u/8600',
             label: 'Polymart',
-            position: 'left',
-          },
-          {
-            href: 'https://github.com/CubeCrafter',
-            label: 'GitHub',
-            position: 'left',
-          },
-          {
-            href: 'https://www.paypal.com/donate/?hosted_button_id=VTKRK6DZJZAQ6',
-            label: 'Donations',
-            position: 'left',
-          },
+            position: 'right',
+          }
         ],
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      }
     }),
 };
 
