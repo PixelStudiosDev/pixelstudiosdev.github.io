@@ -47,37 +47,10 @@ Remember to add `WoolWars` as depend or softdepend in your `plugin.yml` file.
 
 ## Usage
 
-The plugin provides a bunch of events and static methods to easily interact with the plugin.
-
 ### Events
 
-```
-GameEndEvent
-GameStartEvent
-GameStateChangeEvent
-RoundEndEvent
-RoundStartEvent
-PlayerCollectPowerUpEvent
-PlayerJoinArenaEvent
-PlayerLeaveArenaEvent
-PlayerKillEvent
-PlayerSelectKitEvent
-PlayerUseAbilityEvent
-```
+Here you can find all the events provided by the plugin: [Link](https://github.com/CubeCrafter/WoolWars/tree/master/src/main/java/me/cubecrafter/woolwars/api/events)
 
 ### Methods
 
-```
-WoolWarsAPI#getLobbyLocation()
-WoolWarsAPI#getArenas()
-WoolWarsAPI#getArenaByPlayer(Player)
-WoolWarsAPI#getArenaById(String)
-WoolWarsAPI#getArenasByGroup(String)
-WoolWarsAPI#getGroups()
-WoolWarsAPI#getKitById(String)
-WoolWarsAPI#getKits()
-WoolWarsAPI#getPlayerData(Player)
-WoolWarsAPI#isPlaying(Player)
-WoolWarsAPI#joinRandomArena(Player)
-WoolWarsAPI#joinRandomArena(Player, String)
-```
+All the API methods are accessible through the [WoolWarsAPI](https://github.com/CubeCrafter/WoolWars/blob/master/src/main/java/me/cubecrafter/woolwars/api/WoolWarsAPI.java) class.
