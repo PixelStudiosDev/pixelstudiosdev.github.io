@@ -56,6 +56,11 @@ const config = {
             href: 'https://polymart.org/u/8600',
             label: 'Polymart',
             position: 'right',
+          },
+          {
+            href: 'https://www.spigotmc.org/resources/authors/cubecrafter72.1173446/',
+            label: 'SpigotMC',
+            position: 'right',
           }
         ],
       },
