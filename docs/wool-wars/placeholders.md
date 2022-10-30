@@ -17,6 +17,7 @@ The plugin provides a [PlaceholderAPI](https://www.spigotmc.org/resources/placeh
 | `%woolwars_blocks_broken%`      | Get the amount of blocks broken                          |
 | `%woolwars_powerups_collected%` | Get the amount of powerups collected                     |
 | `%woolwars_selected_kit%`       | Get the name of the selected kit                         |
+| `%woolwars_win_streak%`         | Get the player winStreak                                 |
 | `%woolwars_kdr%`                | Get the player KDR                                       |
 | `%woolwars_count_total%`        | Get the total amount of players playing                  |
 | `%woolwars_count_<group>%`      | Get the amount of players playing in the specified group |
