@@ -1,10 +1,19 @@
 ---
-title: "Home"
 sidebar_position: 1
 slug: /
 ---
 
-Welcome to our wiki, here you can find the documentation for some of our plugins.
+# Home
 
-### Do you need support?
-If you have read the documentation but still cannot solve your issue, you can join our [Discord Server](https://discord.gg/ehjkwp5Fn4) and ask for help.
+Welcome to our wiki, here you can find the documentation for our plugins.
+
+## Getting Started
+
+Click one of the links below to get started:
+
+- [Wool Wars](/wool-wars)
+
+
+
+## Discord Server
+Join our [Discord Server](https://discord.gg/ehjkwp5Fn4) to get the latest news and updates about our plugins, ask questions and suggest new features!

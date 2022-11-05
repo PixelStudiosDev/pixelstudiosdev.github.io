@@ -1,20 +1,43 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Commands and Permissions
 
-Here you can find all the commands and permissions that are available in the plugin.
+## Player Commands
 
-| Command | Permission | Description |
-|---------|------------|-------------|
-| | `woolwars.player` | Gives access to all player commands |
-| `/woolwars join <arena>/<group>/random` | `woolwars.join` | Join an arena or group |
-| `/woolwars leave` `/leave` | `woolwars.leave` | Leave the current arena | 
-| `/woolwars arenas` | `woolwars.arenas` | Open the arenas menu |
-| `/woolwars stats` | `woolwars.stats` | Open the statistics menu |
-| | |
-| `/woolwars forcestart` | `woolwars.forcestart` | Force start the game |
-| `/woolwars setup <arena>` | `woolwars.admin` | Setup an arena |
-| `/woolwars setlobby` | `woolwars.admin` | Set the lobby location |
-| `/woolwars reload` | `woolwars.admin` | Reload the plugin |
+> You can grant access to the following commands with the `woolwars.player` permission.
+
+- `/woolwars join <arena>/<group>/random` <br/>
+Join an arena or group of arenas. <br/>
+Permission: `woolwars.join`
+
+- `/woolwars leave` `/leave` <br/>
+Leave the current arena. <br/>
+Permission: `woolwars.leave`
+
+- `/woolwars arenas` <br/>
+Open the arenas menu. <br/>
+Permission: `woolwars.arenas`
+
+- `/woolwars stats` <br/>
+Open the statistics menu. <br/>
+Permission: `woolwars.stats`
+
+## Admin Commands
+
+- `/woolwars forcestart` <br/>
+Force start the game. <br/>
+Permission: `woolwars.forcestart`
+
+- `/woolwars setup <arena>` <br/>
+Setup a new arena. <br/>
+Permission: `woolwars.admin`
+
+- `/woolwars setlobby` <br/>
+Set the lobby location. <br/>
+Permission: `woolwars.admin`
+
+- `/woolwars reload` <br/>
+Reload the plugin. <br/>
+Permission: `woolwars.admin`

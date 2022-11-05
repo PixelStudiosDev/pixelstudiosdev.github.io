@@ -38,7 +38,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/logo.png',
       navbar: {
         title: 'CubeCrafter Plugins',
         hideOnScroll: true,
@@ -46,6 +45,14 @@ const config = {
           alt: 'logo',
           src: 'img/logo.png',
         },
+        items: [
+          {
+            type: 'doc',
+            docId: 'wool-wars/index',
+            position: 'left',
+            label: 'Wool Wars',
+          },
+        ],
       },
       prism: {
         theme: lightCodeTheme,
@@ -62,7 +69,7 @@ const config = {
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} CubeCrafter Development`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/cubecrafter">CubeCrafter Development</a>`,
         links: [
           {
             label: 'Discord',
