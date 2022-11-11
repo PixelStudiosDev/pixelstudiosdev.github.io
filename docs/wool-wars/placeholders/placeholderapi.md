@@ -1,10 +1,10 @@
----
-sidebar_position: 2
----
+# PlaceholderAPI
 
-# Placeholders
+:::info
+You need to have [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) installed.
+:::
 
-The plugin provides a [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) expansion with the following placeholders:
+### General Placeholders
 
 | Placeholder                     | Description                                              |
 | ------------------------------- | -------------------------------------------------------- |
@@ -17,10 +17,15 @@ The plugin provides a [PlaceholderAPI](https://www.spigotmc.org/resources/placeh
 | `%woolwars_blocks_broken%`      | Get the amount of blocks broken                          |
 | `%woolwars_powerups_collected%` | Get the amount of powerups collected                     |
 | `%woolwars_selected_kit%`       | Get the name of the selected kit                         |
-| `%woolwars_win_streak%`         | Get the player winStreak                                 |
+| `%woolwars_win_streak%`         | Get the player win streak                                |
 | `%woolwars_kdr%`                | Get the player KDR                                       |
 | `%woolwars_count_total%`        | Get the total amount of players playing                  |
 | `%woolwars_count_<group>%`      | Get the amount of players playing in the specified group |
+
+### In-Game Placeholders
+
+| Placeholder                     | Description                                              |
+| ------------------------------- | -------------------------------------------------------- |
 | `%woolwars_arena_id%`           | Get the current arena ID                                 |
 | `%woolwars_arena_displayname%`  | Get the current arena display name                       |
 | `%woolwars_arena_group%`        | Get the current arena group                              |
@@ -35,5 +40,5 @@ The plugin provides a [PlaceholderAPI](https://www.spigotmc.org/resources/placeh
 | `%woolwars_arena_wool_placed%`  | Get the current amount of wool placed                    |
 | `%woolwars_arena_blocks_broken%` | Get the current amount of blocks broken                 |
 | `%woolwars_arena_round_kills%`  | Get the current round kills                              |
-| `%woolwars_arena_round_wool_placed%` | Get the current round wool placed                    |
-| `%woolwars_arena_round_blocks_broken%` | Get the current round blocks broken                  |
+| `%woolwars_arena_round_wool_placed%` | Get the current round wool placed                   |
+| `%woolwars_arena_round_blocks_broken%` | Get the current round blocks broken               |

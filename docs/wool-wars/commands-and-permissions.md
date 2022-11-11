@@ -1,12 +1,6 @@
----
-sidebar_position: 1
----
-
 # Commands and Permissions
 
 ## Player Commands
-
-> You can grant access to the following commands with the `woolwars.player` permission.
 
 - `/woolwars join <arena>/<group>/random` <br/>
 Join an arena or group of arenas. <br/>
@@ -41,3 +35,14 @@ Permission: `woolwars.admin`
 - `/woolwars reload` <br/>
 Reload the plugin. <br/>
 Permission: `woolwars.admin`
+
+## Other Permissions
+
+- `woolwars.bypass` <br/>
+Bypass the command blocker.
+
+- `woolwars.playagain` <br/>
+Allow the player to play again after a game.
+
+- `woolwars.forcestart` <br/>
+Allow the player to force start the game.

@@ -1,25 +1,13 @@
----
-sidebar_position: 3
----
+# Getting Started
 
-# Developer API
-
-## Getting started
-
-Add WoolWars as dependency in your project:
-
-:::info
-Replace `Tag` with the version number. You can find the available versions in the [Releases](https://github.com/CubeCrafter/WoolWars/releases/) page.
-:::
+- Add the WoolWars dependency in your project:
 
 ### Maven
 ```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
 ```
 ```xml
 <dependency>
@@ -29,6 +17,7 @@ Replace `Tag` with the version number. You can find the available versions in th
     <scope>provided</scope>
 </dependency>
 ```
+
 ### Gradle
 ```groovy
 repositories {
@@ -41,16 +30,28 @@ dependencies {
 }
 ```
 
-:::tip
-Remember to add `WoolWars` as depend or softdepend in your `plugin.yml` file.
+:::note
+Replace `Tag` with the version number. You can find the available versions in the [Releases](https://github.com/CubeCrafter/WoolWars/releases/) page.
 :::
 
-## Usage
+- Add `WoolWars` as soft/hard dependency in your `plugin.yml`:
 
-### Events
+```yaml title="plugin.yml"
+softdepend: [WoolWars]
+# or
+depend: [WoolWars]
+```
 
-Here you can find all the events provided by the plugin: [Link](https://github.com/CubeCrafter/WoolWars/tree/master/src/main/java/me/cubecrafter/woolwars/api/events)
+- Check if the plugin is enabled on the server: <br/>
+(You don't need to do this if you added `WoolWars` as hard dependency)
 
-### Methods
-
-All the API methods are accessible through the [WoolWarsAPI](https://github.com/CubeCrafter/WoolWars/blob/master/src/main/java/me/cubecrafter/woolwars/api/WoolWarsAPI.java) class.
+```java title="ExamplePlugin.java"
+@Override
+public void onEnable() {
+    if (!getServer().getPluginManager().isPluginEnabled("WoolWars")) {
+        getLogger().severe("WoolWars not found! Disabling...");
+        getServers().getPluginManager().disablePlugin(this);
+        return;
+    }
+}
+```
