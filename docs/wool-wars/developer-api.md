@@ -50,7 +50,7 @@ depend: [WoolWars]
 public void onEnable() {
     if (!getServer().getPluginManager().isPluginEnabled("WoolWars")) {
         getLogger().severe("WoolWars not found! Disabling...");
-        getServers().getPluginManager().disablePlugin(this);
+        getServer().getPluginManager().disablePlugin(this);
         return;
     }
 }
