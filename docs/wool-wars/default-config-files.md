@@ -18,12 +18,6 @@ You can customize here all the GUIs.
 
 - [menus.yml](https://raw.githubusercontent.com/CubeCrafter/WoolWars/master/src/main/resources/menus.yml)
 
-### abilities.yml
-
-You can configure here the abilities of the kits.
-
-- [abilities.yml](https://raw.githubusercontent.com/CubeCrafter/WoolWars/master/src/main/resources/abilities.yml)
-
 ### powerups.yml
 
 You can configure here the powerups that spawn in the arenas.
