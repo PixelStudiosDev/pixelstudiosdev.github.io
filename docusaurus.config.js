@@ -3,15 +3,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CubeCrafter Plugins',
+  title: 'Pixel Studios',
   tagline: 'Documentation for our plugins.',
-  url: 'https://cubecrafter.github.io/',
+  url: 'https://pixelstudiosdev.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'CubeCrafter', 
-  projectName: 'cubecrafter.github.io', 
+  organizationName: 'PixelStudiosDev', 
+  projectName: 'pixelstudiosdev.github.io', 
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
   i18n: {
@@ -26,7 +26,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/cubecrafter/cubecrafter.github.io/edit/master/',
+          editUrl: 'https://github.com/PixelStudiosDev/pixelstudiosdev.github.io/edit/master/',
           showLastUpdateTime: true,
         },
         theme: {
@@ -39,7 +39,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'CubeCrafter Plugins',
+        title: 'Pixel Studios',
         hideOnScroll: true,
         logo: {
           alt: 'logo',
@@ -70,7 +70,7 @@ const config = {
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/cubecrafter">CubeCrafter Development</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/PixelStudiosDev">Pixel Studios</a>`,
         links: [
           {
             label: 'Discord',
@@ -86,7 +86,7 @@ const config = {
           },
           {
             label: 'GitHub',
-            href: 'https://github.com/cubecrafter',
+            href: 'https://github.com/PixelStudiosDev',
           },
           {
             label: 'Donate',
