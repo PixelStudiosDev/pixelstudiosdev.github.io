@@ -1,2 +1,2 @@
 # Plugin Docs
-Source code for https://pixelstudiosdev.github.io
+Source code for https://wiki.pixelstudios.dev
