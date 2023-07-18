@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Pixel Studios',
   tagline: 'Documentation for our plugins.',
-  url: 'https://pixelstudiosdev.github.io/',
+  url: 'https://wiki.pixelstudios.dev/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -74,7 +74,7 @@ const config = {
         links: [
           {
             label: 'Discord',
-            href: 'https://discord.gg/ehjkwp5Fn4',
+            href: 'https://pixelstudios.dev/discord',
           },
           {
             label: 'SpigotMC',
@@ -90,7 +90,7 @@ const config = {
           },
           {
             label: 'Donate',
-            href: 'https://bit.ly/3NkPD7k',
+            href: 'https://pixelstudios.dev/donate',
           },
         ],
       },
