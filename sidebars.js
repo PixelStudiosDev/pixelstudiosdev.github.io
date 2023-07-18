@@ -1,9 +1,59 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  tutorialSidebar: [
+  sidebar: [
     {
       type: 'doc',
       id: 'home',
+    },
+    {
+      type: 'category',
+      label: 'Guilds',
+      link: {
+        type: 'doc',
+        id: 'guilds/index',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'guilds/installation',
+        },
+        {
+          type: 'category',
+          label: 'Configuration',
+          items: [
+            {
+              type: 'doc',
+              id: 'guilds/configuration/creating-an-arena',
+            },
+          ],
+        },
+        {
+          type: 'doc',
+          id: 'guilds/commands-and-permissions',
+        },
+        {
+          type: 'doc',
+          id: 'guilds/frequently-asked-questions',
+        },
+        {
+          type: 'doc',
+          id: 'guilds/default-config-files',
+        },
+        {
+          type: 'category',
+          label: 'Placeholders',
+          items: [
+            {
+              type: 'doc',
+              id: 'guilds/placeholders/internal-placeholders',
+            },
+            {
+              type: 'doc',
+              id: 'guilds/placeholders/placeholderapi',
+            },
+          ],
+        }
+      ],
     },
     {
       type: 'category',
@@ -24,7 +74,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'wool-wars/configuration/creating-an-arena',
-            },  
+            },
           ],
         },
         {
