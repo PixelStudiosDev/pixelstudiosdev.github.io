@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Commands and Permissions
 
 ## Player Commands

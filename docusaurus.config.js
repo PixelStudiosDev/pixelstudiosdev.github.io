@@ -47,16 +47,31 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'wool-wars/index',
+            type: 'dropdown',
+            label: 'Select a plugin',
             position: 'left',
-            label: 'Wool Wars',
+            items: [
+              {
+                type: 'doc',
+                docId: 'wool-wars/index',
+                label: 'Wool Wars',
+              },
+              {
+                type: 'doc',
+                docId: 'guilds/index',
+                label: 'Guilds',
+              },
+            ],
           },
           {
-            type: 'doc',
-            docId: 'guilds/index',
-            position: 'left',
-            label: 'Guilds',
+            href: 'https://pixelstudios.dev/github',
+            position: 'right',
+            label: 'GitHub',
+          },
+          {
+            href: 'https://pixelstudios.dev/discord',
+            position: 'right',
+            label: 'Discord',
           },
         ],
       },

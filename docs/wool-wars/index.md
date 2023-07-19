@@ -1,3 +1,8 @@
+---
+title: Home
+sidebar_position: 1
+---
+
 # Wool Wars
 
 ## What is Wool Wars?
