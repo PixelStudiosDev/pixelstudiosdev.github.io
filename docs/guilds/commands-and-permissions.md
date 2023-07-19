@@ -10,7 +10,7 @@ sidebar_position: 4
 Send a guid message <br/>
 Aliases: `gchat`
 
-### Sub Commands
+## Sub Commands
 
 Usage: `/guild <subCommandName>` <br/> <br/>
 
