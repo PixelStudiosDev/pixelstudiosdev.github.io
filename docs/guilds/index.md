@@ -19,10 +19,10 @@ You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/)
 ## Quick Links
 - [Installation](/guilds/installation)
 - Configuration
-	- [Creating an Arena](/guilds/configuration/creating-an-arena)
+	- [Main Config](/guilds/configuration/main-config)
+	- [Menu Config](/guilds/configuration/menu-config)
+	- [Language Config](/guilds/configuration/language-config)
+	- [Ranks Config](/guilds/configuration/rank-config)
 - [Commands and Permissions](/guilds/commands-and-permissions)
+- [PlaceholderAPI](/guilds/placeholderapi)
 - [Frequently Asked Questions](/guilds/frequently-asked-questions)
-- Placeholders
-	- [Internal Placeholders](/guilds/placeholders/internal-placeholders)
-	- [PlaceholderAPI](/guilds/placeholders/placeholderapi)
-- [Developer API](/guilds/developer-api)
