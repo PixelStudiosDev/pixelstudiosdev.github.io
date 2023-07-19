@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## Requirements
 - Java 8 or higher
-- A 1.8.8 - 1.19.2 Spigot server
+- A 1.8.8 - 1.20.1 Spigot server
 - **(Optional)** A MySQL server
 
 :::caution
