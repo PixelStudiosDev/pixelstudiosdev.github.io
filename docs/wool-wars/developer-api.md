@@ -1,3 +1,8 @@
+---
+title: Developer API
+sidebar_position: 13
+---
+
 # Getting Started
 
 - Add the WoolWars dependency in your project:

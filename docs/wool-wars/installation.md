@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Installation
 
 1. Download the latest version of the plugin from [SpigotMC](https://www.spigotmc.org/resources/105548/) or [Polymart](https://polymart.org/r/2551).
@@ -7,7 +11,7 @@
 
 ## Requirements
 - Java 8 or higher
-- A 1.8.8 - 1.19.2 Spigot server
+- A 1.8.8 - 1.20.1 Spigot server
 - **(Optional)** A MySQL server
 
 :::caution
@@ -20,4 +24,5 @@ Wool Wars doesn't require any other plugins to work, but it can hook into some e
 
 - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) - Required for placeholders
 - [Spigot-Party-API-PAF](https://www.spigotmc.org/resources/spigot-party-api-for-party-and-friends.39751/) - Required for bungeecord party support
+- [Party and Friends Spigot](https://www.spigotmc.org/resources/party-and-friends-extended-for-spigot-supports-1-7-1-20-x.11633/) - Required for spigot party support
 

@@ -47,10 +47,31 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'wool-wars/index',
+            type: 'dropdown',
+            label: 'Select a plugin',
             position: 'left',
-            label: 'Wool Wars',
+            items: [
+              {
+                type: 'doc',
+                docId: 'wool-wars/index',
+                label: 'Wool Wars',
+              },
+              {
+                type: 'doc',
+                docId: 'guilds/index',
+                label: 'Guilds',
+              },
+            ],
+          },
+          {
+            href: 'https://pixelstudios.dev/github',
+            position: 'right',
+            label: 'GitHub',
+          },
+          {
+            href: 'https://pixelstudios.dev/discord',
+            position: 'right',
+            label: 'Discord',
           },
         ],
       },
@@ -70,7 +91,7 @@ const config = {
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/PixelStudiosDev">Pixel Studios</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://pixelstudios.dev/github">Pixel Studios</a>`,
         links: [
           {
             label: 'Discord',
@@ -86,7 +107,7 @@ const config = {
           },
           {
             label: 'GitHub',
-            href: 'https://github.com/PixelStudiosDev',
+            href: 'https://pixelstudios.dev/github',
           },
           {
             label: 'Donate',
@@ -94,7 +115,36 @@ const config = {
           },
         ],
       },
-    }),
+  
+    
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'RU37CM01FF',
+
+        // Public API key: it is safe to commit it
+        apiKey: '71e83a511877b09393799a193d8fbcbc',
+
+        indexName: 'pixelstudios',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search'
+    }})
+    
 };
 
 module.exports = config;
