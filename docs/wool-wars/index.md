@@ -20,8 +20,6 @@ You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/105548/)
 	- [Creating an Arena](/wool-wars/configuration/creating-an-arena)
 - [Commands and Permissions](/wool-wars/commands-and-permissions)
 - [Frequently Asked Questions](/wool-wars/frequently-asked-questions)
-- [Default Config Files](/wool-wars/default-config-files)
 - Placeholders
 	- [Internal Placeholders](/wool-wars/placeholders/internal-placeholders)
 	- [PlaceholderAPI](/wool-wars/placeholders/placeholderapi)
-- [Developer API](/wool-wars/developer-api)
