@@ -22,7 +22,6 @@ You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/)
 	- [Creating an Arena](/guilds/configuration/creating-an-arena)
 - [Commands and Permissions](/guilds/commands-and-permissions)
 - [Frequently Asked Questions](/guilds/frequently-asked-questions)
-- [Default Config Files](/guilds/default-config-files)
 - Placeholders
 	- [Internal Placeholders](/guilds/placeholders/internal-placeholders)
 	- [PlaceholderAPI](/guilds/placeholders/placeholderapi)

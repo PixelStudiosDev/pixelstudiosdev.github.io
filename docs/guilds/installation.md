@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Installation
 
 1. Download the latest version of the plugin from [SpigotMC](https://www.spigotmc.org/resources/110931/)
