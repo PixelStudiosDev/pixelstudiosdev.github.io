@@ -35,6 +35,8 @@ guilds:
       enabled: false
       #Refresh rate in seconds of data between servers
       refresh: 10
+      #Delay in milli seconds from the player's join in the server and the sending of the join message
+      join-delay: 50
 
     #True for printing in console of the plugin database actions and other things    
     debug: false
@@ -56,6 +58,14 @@ guilds:
       chars: ^[a-zA-Z0-9✧✪✖✓✿✌❤]*$
 
     guild-tag:
+      #Tag Placeholder format
+      #{tag_color} is replaced with the tag color
+      #{tag} is replaced with the tag
+      format: '{tag_color}[{tag}]'
+      
+      #True to make uppercase all Guilds Tag
+      uppercase: false
+      
       #Tag colors of guild tag based on level
       #Colors: GRAY, DARK_AQUA, DARK_GREEN, YELLOW, ORANGE, DARK_RED, RED, GREEN, AQUA, DARK_BLUE, BLUE, LIGHT_PURPLE, DARK_PURPLE, WHITE, DARK_GRAY, BLACK
       #Format: minLevel-maxLevel:&colorNumber-colorValue:&colorNumber-colorDisplayName
