@@ -16,8 +16,8 @@ items:
   test-item:
 
     #Item Material
-    #Formats: MATERIAL  /  MATERIAL:DATA
-    #Examples: WOOL (white)  /  WOOL:14 (red)
+    #Formats: MATERIAL  /  MATERIAL:DATA  /  texure:skin-texture
+    #Examples: WOOL (white)  /  WOOL:14 (red)  /  texture:4d1ebd794085e0648159e8f8fd504bdb5ccd26fd32a6a5ab2d669031931064b5
     material: WOOL:14
 
     #Item Amount
