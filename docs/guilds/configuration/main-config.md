@@ -9,10 +9,11 @@ The main configuration file is located in `plugins/Guilds/config.yml`.
 Here you can find all the information regarding the configuration of the file:
 
 ```yaml title="config.yml"
-# Guilds v1.1.3 made by [itz_leoo].
+# Guilds v1.2.0-BETA-4 made by [itz_leoo].
 # Dependencies: [].
 # SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
-# Join my discord for support: https://discord.gg/dtwanz4GQg
+# Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
+# Join my discord for support: https://pixelstudios.dev/discord
 
 #database settings
 mysql:
@@ -64,54 +65,29 @@ guilds:
       format: '{tag_color}[{tag}]'
       
       #True to make uppercase all Guilds Tag
+      #Example: [tag] -> [TAG]
       uppercase: false
       
+      #Default max Guild Tag Length
+      default-max-length: 6
+
       #Tag colors of guild tag based on level
       #Colors: GRAY, DARK_AQUA, DARK_GREEN, YELLOW, ORANGE, DARK_RED, RED, GREEN, AQUA, DARK_BLUE, BLUE, LIGHT_PURPLE, DARK_PURPLE, WHITE, DARK_GRAY, BLACK
-      #Format: minLevel-maxLevel:&colorNumber-colorValue:&colorNumber-colorDisplayName
+      #Format: colorValue:&colorNumber:colorDisplayName
       tag:
-        - 0-14:&7-GRAY:&7-Gray
-        - 15-24:&3-DARK_AQUA:&3-Dark Acqua
-        - 25-44:&2-DARK_GREEN:&2-Dark Green
+        - GRAY:&7:Gray
+        - DARK_AQUA:&3:Dark Acqua
+        - DARK_GREEN:&2:Dark Green
+        - YELLOW:&e:Yellow
         - 45-other:&e-YELLOW:&e-Yellow
 
     guild-level:
-      #Xp requirements based on level
-      #Format: minLevel-maxLevel:xpAmount
-      xp-requirements:
-        - 0-0:10000
-        - 1-1:11000
-        - 2-2:12000
-        - 3-3:13000
-        - 4-4:14000
-        - 5-49:15000
-        - 50-other:20000
-
       #Command executed on these events
       #The events are based on the hook plugins
       kill-reward: guild addxp {guild} 10
       final-kill-reward: guild addxp {guild} 20
       bed-destroy-reward: guild addxp {guild} 15
       win-reward: guild addxp {guild} 200
-
-    boosters:
-      #Probability of playing a game with double xp
-      #Format: minLevel-maxLevel:probability
-      double-xp-start-probability:
-        - 0-1:1
-        - 2-3:2
-        - 4-4:3
-        - 5-6:4
-        - 7-7:5
-        - 8-9:6
-        - 10-10:7
-        - 11-12:8
-        - 13-13:9
-        - 14-15:10
-        - 16-16:12
-        - 17-18:12
-        - 19-19:13
-        - 20-other:14
         
     progress-bar:
       #Bar character
@@ -149,4 +125,7 @@ guilds:
 
     #Permission for getting access to admin features
     admin: guilds.admin
+
+    #Permission to receive the orange guild tag
+    orange-tag: guilds.mvp++
 ```

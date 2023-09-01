@@ -4,19 +4,76 @@
 
 The menu configuration file is located in `plugins/Guilds/menu.yml`.
 
+## Gui Item Configuration
+
+Here you can find all the information regarding a gui item configuration:
+
+```yaml title="example.yml"
+
+items:
+
+  #A custom gui item
+  test-item:
+
+    #Item Material
+    #Formats: MATERIAL  /  MATERIAL:DATA
+    #Examples: WOOL (white)  /  WOOL:14 (red)
+    material: WOOL:14
+
+    #Item Amount
+    amount: 1
+
+    #True to make enchanted the item
+    enchanted: false
+
+    #Gui Slot
+    #From 0 to Gui Slots - 1
+    #Example: Gui Slots 27 --> min: 0  -  max: 26
+    slot: 0
+
+    #Item Name
+    name: '&aInvite Player'
+
+    #Item Lore
+    lore:
+      - '&7Click here to invite a player to'
+      - '&7your Guild.'
+
+    #Command on click
+    #Action types:
+
+    #Remove the string to execute the plugin's default action
+
+    #Chat Message -> [chat] value
+    #Player Command -> [player] command without slash
+    #Console Message -> [console] command without slash
+    #Server Connection -> [server] bungee/velocity server name
+    #No action -> [no-action]
+
+    #Examples:
+    #[chat] hello world
+    #[player] gamemode creative
+    #[console] give {player} diamond
+    #[server] lobby-2
+    #[no-action]
+    
+    command: '[player] gamemode creative'
+```
+
 ## Editing the file
 
 Here you can find all the information regarding the configuration of the file:
 
 ```yaml title="menu.yml"
-# Guilds v1.1.3 made by [itz_leoo].
+# Guilds v1.2.0-BETA-4 made by [itz_leoo].
 # Dependencies: [].
 # SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
-# Join my discord for support: https://discord.gg/dtwanz4GQg
+# Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
+# Join my discord for support: https://pixelstudios.dev/discord
 
 guilds:
   
-  #Settings of each menu
+  #Settings of each gui
   #name -> Gui name
   #slot -> Gui slots
   #(optional) ...-slots -> slot used for variable gui items
@@ -60,34 +117,4 @@ guilds:
     rank-delete:
       name: '&8Delete Rank Menu'
       slot: 27
-      
-  menu:
-    #Item menu name
-    home:
-      #Example of gui item
-      invite-player:
-        #Gui Slot
-        slot: 0
-        
-        #Item material
-        material: BOOK
-        
-        #Item name
-        name: '&aInvite Player'
-        
-        #Item lore
-        lore:
-          - '&7Click here to invite a player to'
-          - '&7your Guild.'
-            
-        #Item data
-        data: 0
-        
-        #Enchanted: false or true
-        enchanted: false
-        
-        #Command on click:
-        #if "default-action" -> default plugin action
-        #else command set
-        command: default-action
 ```
