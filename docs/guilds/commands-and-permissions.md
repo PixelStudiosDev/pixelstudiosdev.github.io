@@ -89,12 +89,27 @@ Sets the guild tag color <br/>
 - `toggle` <br/>
 Toggle guild chat for yourself <br/>
 
-- `transfer <plaeyer>` <br/>
+- `transfer <player>` <br/>
 Transfers ownership of the guild to another player <br/>
 
 - `unmute <player>/everyone` <br/>
 Unmute a player or the whole guild <br/>
-## Other Permissions
+
+## Administration Commands
+
+- `setlevel <guildName>/<playerName> <amount>` <br/>
+Set guild's level by giving its name or the name of player<br/>
+
+- `setxp <guildName>/<playerName> <amount>` <br/>
+Set guild's xp by giving its name or the name of player<br/>
+
+- `addlevel <guildName>/<playerName> <amount>` <br/>
+Give a certain levels amount to a guild by giving its name or the name of player<br/>
+
+- `addxp <guildName>/<playerName> <amount>` <br/>
+Give a certain xp amount to a guild by giving its name or the name of player<br/>
+
+## Permissions
 
 - `string in config: guilds.permissions.create` <br/>
 Create a Guild.
