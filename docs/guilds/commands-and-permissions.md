@@ -96,6 +96,7 @@ Transfers ownership of the guild to another player <br/>
 Unmute a player or the whole guild <br/>
 
 ## Administration Commands
+### These commands can be performed only by operators
 
 - `setlevel <guildName>/<playerName> <amount>` <br/>
 Set guild's level by giving its name or the name of player<br/>
