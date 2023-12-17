@@ -15,10 +15,11 @@ sidebar_position: 2
 ## Proxy Mode
 
 1. Download the latest version of the plugin from [SpigotMC](https://www.spigotmc.org/resources/110931/)
-or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.com/resources/27980/).
+   or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.com/resources/27980/).
 2. Place the downloaded jar file in your Proxy's and in your Spigot servers `plugins` folder.
 3. Restart your proxy and your servers.
-4. In each server set in the Guilds config file (`plugins/Guilds/config.yml`) `guilds.settings.bungeecord.enabled` to `true`
+4. In each server set in the Guilds config file (`plugins/Guilds/config.yml`) `guilds.settings.bungeecord.enabled`
+   to `true`
 5. Restart your servers.
 6. Enjoy!
 

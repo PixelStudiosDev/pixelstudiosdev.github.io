@@ -8,7 +8,8 @@ Here you can find some frequently asked questions about the plugin.
 
 ### I can't create a guild, how can i solve?
 
-You need to have a permission to create a guild. Check the [Commands and Permissions](/guilds/commands-and-permissions) page in the wiki.
+You need to have a permission to create a guild. Check the [Commands and Permissions](/guilds/commands-and-permissions)
+page in the wiki.
 
 ### Does the plugin works using BungeeCord/Velocity?
 

@@ -14,16 +14,18 @@ Within your guild, members are assigned ranks with selectable permissions determ
 
 ## Where can I buy the plugin?
 
-You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/) or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.com/resources/27980/).
+You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/)
+or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.com/resources/27980/).
 
 ## Quick Links
+
 - [Installation](/guilds/installation)
 - Configuration
-	- [Main Config](/guilds/configuration/main-config)
-	- [Menu Config](/guilds/configuration/menu-config)
-	- [Language Config](/guilds/configuration/language-config)
-	- [Ranks Config](/guilds/configuration/rank-config)
-	- [Levels Config](/guilds/configuration/levels-config)
+    - [Main Config](/guilds/configuration/main-config)
+    - [Menu Config](/guilds/configuration/menu-config)
+    - [Language Config](/guilds/configuration/language-config)
+    - [Ranks Config](/guilds/configuration/rank-config)
+    - [Levels Config](/guilds/configuration/levels-config)
 - [Commands and Permissions](/guilds/commands-and-permissions)
 - [PlaceholderAPI](/guilds/placeholderapi)
 - [Frequently Asked Questions](/guilds/frequently-asked-questions)

@@ -13,16 +13,16 @@ Example of a guild command messages in the language file:
 accept:
   #Message in /guild help
   help: '&e/guild accept - &bAccepts a guild invitation'
-  
+
   #Command set in chat on click in /guild help
   hover-command: /guild accept
 
   #Message shown in chat on hover in /guild help
   hover-text: '&bAccepts a guild invitation'
-  
+
   #Message sent when command usage is not correct
   use: '&cUse: /guild accept'
-  
+
   #Other messages of the command (depends on the command)
   click-hover-message: '&eClick to accept!'
   joined-broadcast:
