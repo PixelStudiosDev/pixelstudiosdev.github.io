@@ -13,8 +13,7 @@ page in the wiki.
 
 ### Does the plugin works using BungeeCord/Velocity?
 
-Currently you can use the plugin in multiple servers settings the same database in each server.
-I'm working to make everything more compatible to works on multiple server at the same time.
+The plugins can be used in proxy mode, check the [Installation Page](/guilds/installation#proxy-mode)
 
 ### Can i customize the TAG Colors / Xp Requirements?
 
