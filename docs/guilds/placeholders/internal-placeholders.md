@@ -3,8 +3,7 @@
 The following placeholders work in commands and menu.
 
 :::caution
-These placeholders may not be available in all messages and menus.
-<br/>
+These placeholders may not be available in all messages and menus. <br/>
 Please report any problems in my [Discord Server](https://pixelstudios.dev/discord).
 :::
 
