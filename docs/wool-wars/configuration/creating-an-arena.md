@@ -52,15 +52,15 @@ teams:
     # The team name.
     name: Red
 
-	# The spawn location of the team. (Format: world:x:y:z:yaw:pitch)
+    # The spawn location of the team. (Format: world:x:y:z:yaw:pitch)
     spawn-location: urban:19.726533254889375:35.0:7.535394896518646:90.1001:-0.19494508
 
-	# The two opposite corners of the team's barrier. (Format: world:x:y:z:yaw:pitch)
+    # The two opposite corners of the team's barrier. (Format: world:x:y:z:yaw:pitch)
     barrier:
       pos1: urban:15.0:35.0:0.0
       pos2: urban:15.0:50.0:14.0
 
-	# The two opposite corners of the team's base. (Format: world:x:y:z:yaw:pitch)
+    # The two opposite corners of the team's base. (Format: world:x:y:z:yaw:pitch)
     base:
       pos1: urban:15.699999988079082:33.0:-1.537473589165458:270.99573:49.02512
       pos2: urban:36.78390094835717:63.64437466524372:20.455237034269178:120.58618:26.289003
@@ -79,10 +79,10 @@ teams:
 
 # The locations of the powerups. (Format: world:x:y:z:yaw:pitch)	  
 powerups:
-- urban:-14.69482314273969:32.0:-2.676415134016782:187.81433:90.0
-- urban:-14.591850157292582:32.0:17.59402242090085:6.083618:86.37721
-- urban:-41.425202197928876:33.0:25.26048742644185:276.04462:90.0
-- urban:-41.620314881907355:33.0:-10.559345699435298:187.34906:90.0
-- urban:12.426240282389438:33.0:-10.539807015025715:277.92224:90.0
-- urban:12.565456659400164:33.0:25.477387273628626:2.7470703:90.0
+  - urban:-14.69482314273969:32.0:-2.676415134016782:187.81433:90.0
+  - urban:-14.591850157292582:32.0:17.59402242090085:6.083618:86.37721
+  - urban:-41.425202197928876:33.0:25.26048742644185:276.04462:90.0
+  - urban:-41.620314881907355:33.0:-10.559345699435298:187.34906:90.0
+  - urban:12.426240282389438:33.0:-10.539807015025715:277.92224:90.0
+  - urban:12.565456659400164:33.0:25.477387273628626:2.7470703:90.0
 ```
