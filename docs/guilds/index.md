@@ -27,5 +27,7 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
     - [Ranks Config](/guilds/configuration/rank-config)
     - [Levels Config](/guilds/configuration/levels-config)
 - [Commands and Permissions](/guilds/commands-and-permissions)
-- [PlaceholderAPI](/guilds/placeholderapi)
+- Placeholders
+  - [Internal Placeholders](/guilds/placeholders/internal-placeholders)
+  - [PlaceholderAPI](/guilds/placeholders/placeholderapi)
 - [Frequently Asked Questions](/guilds/frequently-asked-questions)
