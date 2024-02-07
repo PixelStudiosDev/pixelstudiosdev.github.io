@@ -31,3 +31,8 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
   - [Internal Placeholders](/guilds/placeholders/internal-placeholders)
   - [PlaceholderAPI](/guilds/placeholders/placeholderapi)
 - [Frequently Asked Questions](/guilds/frequently-asked-questions)
+- Developer API
+  - [Dependency](/guilds/developer-api/dependency)
+  - [Enable](/guilds/developer-api/enable)
+  - [Guilds API](/guilds/developer-api/guilds-api)
+  - [Guilds Events](/guilds/developer-api/guilds-api-events)
