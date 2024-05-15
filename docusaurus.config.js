@@ -54,7 +54,7 @@ const config = {
               {
                 type: 'doc',
                 docId: 'achievements/index',
-                label: 'Achievements',
+                label: 'EpicAchievements',
               },
               {
                 type: 'doc',

@@ -14,7 +14,7 @@ global:
   servers:
   - ALL
     
-    # The item in the category menu
+  # The item in the category menu
   item:
     material: COMPASS
     slot: 12

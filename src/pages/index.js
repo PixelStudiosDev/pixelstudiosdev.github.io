@@ -19,7 +19,7 @@ function HomepageHeader() {
                     <Link
                         className="button button--secondary button--lg"
                         to="/achievements">
-                        Achievements
+                        EpicAchievements
                     </Link>
                     <Link
                         className="button button--secondary button--lg"
