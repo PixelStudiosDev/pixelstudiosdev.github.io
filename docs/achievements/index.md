@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## What is Achievements?
 
-Achievements is a plugin that allows you to create custom achievements for your server. <br>
+Achievements is a plugin that allows you to create custom achievements for your server. <br/>
 You can use the default tasks, conditions and rewards or create your own to make your achievements even more unique.
 
 ## Where can I buy the plugin?
