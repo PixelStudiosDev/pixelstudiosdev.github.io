@@ -53,6 +53,11 @@ const config = {
             items: [
               {
                 type: 'doc',
+                docId: 'achievements/index',
+                label: 'Achievements',
+              },
+              {
+                type: 'doc',
                 docId: 'wool-wars/index',
                 label: 'Wool Wars',
               },
