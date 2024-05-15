@@ -13,11 +13,11 @@ Yes, Achievements supports PlaceholderAPI. You can use the placeholders in the c
 ### Can I create custom tasks, conditions and rewards?
 
 Yes, you can create custom tasks, conditions and rewards. 
-You can find more information about this in the [Main Page](/achievements/index) of the documentation.
+You can find more information about this in the [Main Page](/achievements) of the documentation.
 
 ### Can I create custom achievements?
 
-Yes, you can create custom achievements. You can find more information about this in the [Configuration section](/achievements/configuration/create-achievement).
+Yes, you can create custom achievements. You can find more information about this in the [Configuration section](/achievements/configuration/achievements).
 
 ### Are there default achievements?
 

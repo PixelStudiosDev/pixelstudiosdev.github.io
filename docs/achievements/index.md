@@ -20,7 +20,7 @@ or [Polymart](https://polymart.org/r/5931).
 - [Installation](/achievements/installation)
 - Configuration
     - [Categories](/achievements/configuration/categories)
-    - [Creating an Achievement](/achievements/configuration/create-achievement)
+    - [Creating an Achievement](/achievements/configuration/achievements)
     - [Tasks](/achievements/configuration/tasks)
     - [Conditions](/achievements/configuration/conditions)
     - [Rewards](/achievements/configuration/rewards)
