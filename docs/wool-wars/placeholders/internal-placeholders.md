@@ -14,7 +14,7 @@ The following placeholders only work in the scoreboard and in some GUIs and mess
 | `{losses}`             | Get the player losses                                    |
 | `{games_played}`       | Get the number of games played                           |
 | `{kills}`              | Get the player kills                                     |
-| `{deaths}              | Get the player deaths                                    |
+| `{deaths}`             | Get the player deaths                                    |
 | `{wool_placed}`        | Get the amount of wool placed                            |
 | `{blocks_broken}`      | Get the amount of blocks broken                          |
 | `{powerups_collected}` | Get the amount of powerups collected                     |
