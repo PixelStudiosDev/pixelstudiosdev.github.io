@@ -18,7 +18,7 @@ You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/116800/)
 - [Installation](/epicachievements/installation)
 - Configuration
     - [Categories](/epicachievements/configuration/categories)
-    - [Creating an Achievement](/epicachievements/configuration/epicachievements)
+    - [Creating an Achievement](/epicachievements/configuration/achievements)
     - [Tasks](/epicachievements/configuration/tasks)
     - [Conditions](/epicachievements/configuration/conditions)
     - [Rewards](/epicachievements/configuration/rewards)
