@@ -1,7 +1,7 @@
 # Rewards Configuration
 
 :::note
-You can use some placeholders in certain rewards values. Check the [Placeholders](/achievements/placeholders/placeholderapi) page for more information.
+You can use some placeholders in certain rewards values. Check the [Placeholders](/epicachievements/placeholders/placeholderapi) page for more information.
 :::
 
 ## Default Rewards

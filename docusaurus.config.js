@@ -1,5 +1,5 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -53,7 +53,7 @@ const config = {
             items: [
               {
                 type: 'doc',
-                docId: 'achievements/index',
+                docId: 'epicachievements/index',
                 label: 'EpicAchievements',
               },
               {
@@ -109,6 +109,10 @@ const config = {
           {
             label: 'Polymart',
             href: 'https://polymart.org/u/8600',
+          },
+          {
+            label: 'BuiltByBit',
+            href: 'https://builtbybit.com/creators/314827',
           },
           {
             label: 'GitHub',

@@ -2,7 +2,7 @@
 
 :::note
 Here are only shown the tasks specific conditions, for the general conditions check
-the [Conditions Configuration](/achievements/configuration/conditions).
+the [Conditions Configuration](/epicachievements/configuration/conditions).
 :::
 
 ## Default Conditions

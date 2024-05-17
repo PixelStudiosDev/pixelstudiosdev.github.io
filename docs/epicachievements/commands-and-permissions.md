@@ -29,7 +29,7 @@ sidebar_position: 3
 ## Other Permissions
 
 - `achievements.admin` <br/>
-  Permission to use the admin commands.
+  Permission to use admin commands.
 
 - `achievements.track` <br/>
   Permission to track achievements.
