@@ -5,23 +5,23 @@ Here are only shown the tasks specific conditions, for the general conditions ch
 the [Conditions Configuration](/epicachievements/configuration/conditions).
 :::
 
-| Task              | Description                          | Supported Conditions           | Minimum Minecraft Version |
-|-------------------|--------------------------------------|--------------------------------|---------------------------|
-| `BREAK_BLOCK`     | Break a block                        | `materials`                    | 1.8.x                     |
-| `PLACE_BLOCK`     | Place a block                        | `materials`                    | 1.8.x                     |
-| `CONSUME_ITEM`    | Consume an item                      | `materials`                    | 1.8.x                     |
-| `CRAFT_ITEM`      | Craft an item                        | `materials`                    | 1.8.x                     |
-| `DROP_ITEM`       | Drop an item                         | `materials`                    | 1.8.x                     |
-| `PICKUP_ITEM`     | Pickup an item                       | `materials`                    | 1.8.x                     |
-| `BREW_ITEM`       | Brew an item                         | `ingredients` `potion-effects` | 1.18.x                    |
-| `DAMAGE_ENTITY`   | Damage an entity                     | `entities`                     | 1.8.x                     |
-| `KILL_ENTITY`     | Kill an entity                       | `entities`                     | 1.8.x                     |
-| `BREED_ENTITY`    | Breed an entity                      | `entities`                     | 1.10.x                    |
-| `TAMING`          | Tame an entity                       | `entities`                     | 1.8.x                     |
-| `SHEARING`        | Shear an entity                      | `entities`                     | 1.8.x                     |
-| `MILKING`         | Milk an entity                       |                                | 1.8.x                     |
-| `CATCH_FISH`      | Catch a fish                         | `materials`                    | 1.8.x                     |
-| `DEATH`           | Die                                  |                                | 1.8.x                     |
-| `TRAVEL_DISTANCE` | Travel for specific amount of blocks |                                | 1.8.x                     |
-| `FARMING`         | Harvest a block                      | `materials`                    | 1.16.x                    |
-| `SMELTING`        | Smelt an item                        | `materials`                    | 1.8.x
+| Task      | Description                          | Supported Conditions           | Minimum Minecraft Version |
+|-----------|--------------------------------------|--------------------------------|---------------------------|
+| `BREAK`   | Break a block                        | `materials`                    | 1.8.x                     |
+| `PLACE`   | Place a block                        | `materials`                    | 1.8.x                     |
+| `CONSUME` | Consume an item                      | `materials`                    | 1.8.x                     |
+| `CRAFT`   | Craft an item                        | `materials`                    | 1.8.x                     |
+| `DROP`    | Drop an item                         | `materials`                    | 1.8.x                     |
+| `PICKUP`  | Pickup an item                       | `materials`                    | 1.8.x                     |
+| `BREW`    | Brew an item                         | `ingredients` `potion-effects` | 1.18.x                    |
+| `DAMAGE`  | Damage an entity                     | `entities`                     | 1.8.x                     |
+| `KILL`    | Kill an entity                       | `entities`                     | 1.8.x                     |
+| `BREED`   | Breed an entity                      | `entities`                     | 1.10.x                    |
+| `TAME`    | Tame an entity                       | `entities`                     | 1.8.x                     |
+| `SHEAR`   | Shear an entity                      | `entities`                     | 1.8.x                     |
+| `MILK`    | Milk an entity                       |                                | 1.8.x                     |
+| `FISH`    | Catch a fish                         | `materials`                    | 1.8.x                     |
+| `DEATH`   | Die                                  |                                | 1.8.x                     |
+| `WALK`    | Travel for specific amount of blocks |                                | 1.8.x                     |
+| `FARM`    | Harvest a block                      | `materials`                    | 1.16.x                    |
+| `SMELT`   | Smelt an item                        | `materials`                    | 1.8.x
