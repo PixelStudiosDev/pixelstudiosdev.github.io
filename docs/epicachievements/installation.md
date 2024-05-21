@@ -24,3 +24,4 @@ EpicAchievements doesn't require any other plugins to work, but it can hook into
 
 - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) - Required for PAPI placeholders
 - [Vault](https://www.spigotmc.org/resources/vault.34315/) - Required for economy rewards
+- [MythicMobs](https://www.spigotmc.org/resources/mythicmobs.5702/) - Required for MythicMobs-related conditions
