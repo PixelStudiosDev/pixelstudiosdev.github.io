@@ -23,14 +23,14 @@ Please report any problems in my [Discord Server](https://pixelstudios.dev/disco
 
 ### Guild Level
 
-| Placeholder                         | Description                             |
-|-------------------------------------|-----------------------------------------|
-| `{level}` and `{currentLevel}`      | Get the guild's current level           |
-| `{progressBar}`                     | Get the level progress bar              |
-| `{nextLevel}` and `{nextGuildLevel` | Get the guild's next level              |
-| `{xp}`                              | Get the guild's xp                      |
-| `{requiredXp}`                      | Get the required xp to the next level   |
-| `{percentage}`                      | Get the xp percentage to the next level |
+| Placeholder                          | Description                             |
+|--------------------------------------|-----------------------------------------|
+| `{level}` and `{currentLevel}`       | Get the guild's current level           |
+| `{progressBar}`                      | Get the level progress bar              |
+| `{nextLevel}` and `{nextGuildLevel}` | Get the guild's next level              |
+| `{xp}`                               | Get the guild's xp                      |
+| `{requiredXp}`                       | Get the required xp to the next level   |
+| `{percentage}`                       | Get the xp percentage to the next level |
 
 ### Guild Rank
 
