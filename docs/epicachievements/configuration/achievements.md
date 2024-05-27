@@ -3,7 +3,7 @@
 ## Interactive Setup
 
 1. Run the command `/achievement editor` to open the editor.
-2. Select the a category or create a new one.
+2. Select a category or create a new one.
 3. Click on the `Edit Achievements` button.
 4. Click on the `Create Achievement` button.
 5. Enter the achievement's name in the chat.

@@ -17,9 +17,9 @@ the [Conditions Configuration](/epicachievements/configuration/conditions).
 
 ## Task-specific Conditions
 
-| Condition | Description                                                                                                                                                         |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `entities` | A list of [Entity Types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/package-summary.html) or MythicMobs Mob Ids (`mythicmobs:<mobId>` `mm:<mobId>`) |
-| `materials` | A list of [Materials](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/material/package-summary.html)                                                            |
-| `potion-effects` | A list of [Potion Effects](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html)                                                              |
+| Condition | Description                                                                                                                                                           |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `entities` | A list of [Entity Types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/package-summary.html) or MythicMobs Mob Ids (`mythicmobs:<mob-id>` `mm:<mob-id>`) |
+| `materials` | A list of [Materials](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/material/package-summary.html)                                                              |
+| `potion-effects` | A list of [Potion Effects](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html)                                                                |
 

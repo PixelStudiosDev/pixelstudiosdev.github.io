@@ -69,6 +69,18 @@ const config = {
             ],
           },
           {
+            type: 'dropdown',
+            label: 'Useful stuff',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 'useful-stuff/item-format',
+                label: 'Item Format',
+              },
+            ],
+          },
+          {
             href: 'https://pixelstudios.dev/github',
             position: 'right',
             label: 'GitHub',
