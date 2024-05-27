@@ -34,13 +34,15 @@ Please report any problems in my [Discord Server](https://pixelstudios.dev/disco
 
 ### Guild Rank
 
-| Placeholder         | Description                           |
-|---------------------|---------------------------------------|
-| `{rankName}`        | Get the rank's name                   |
-| `{rankDisplayName}` | Get the rank's display name           |
-| `{rankTag}`         | Get the rank's tag                    |
-| `{rankPriority}`    | Get the rank's priority               |
-| `{rankMembers}`     | Get the formatted rank's members name |
+| Placeholder          | Description                                         |
+|----------------------|-----------------------------------------------------|
+| `{rankName}`         | Get the rank's name                                 |
+| `{rankDisplayName}`  | Get the rank's display name                         |
+| `{rankTag}`          | Get the rank's tag                                  |
+| `{rankTagFormatted}` | Get the formatted rank's tag from the config format |
+| `{rankTagColor}`     | Get the rank's tag color                            |
+| `{rankPriority}`     | Get the rank's priority                             |
+| `{rankMembers}`      | Get the formatted rank's members name               |
 
 ### Guild Player
 
