@@ -7,10 +7,13 @@ sidebar_position: 3
 ## Player Commands
 
 - `/achievements menu` <br/>
-  Open the achievements GUI.
+  Open the main achievements GUI.
 
 - `/achievements rewards` <br/>
   Open the rewards GUI.
+
+- `/achievements tracker` <br/>
+  Open the tracker GUI.
 
 ## Admin Commands
 
@@ -20,16 +23,16 @@ sidebar_position: 3
 - `/achievements unlock <player> <achievement>` <br/>
   Unlock an achievement for a player.
 
-- `/achievements reset <player> <achievement>` <br/>
+- `/achievements reset <player> [achievement/category/rewards] [id]` <br/>
   Reset the progress of an achievement for a player.
 
 - `/achievements reload` <br/>
-- Reload the plugin.
+  Reload the plugin.
 
 ## Other Permissions
 
 - `achievements.admin` <br/>
-  Permission to use admin commands.
+  Permission required to use admin commands.
 
 - `achievements.track` <br/>
-  Permission to track achievements.
+  Permission required to track achievements.

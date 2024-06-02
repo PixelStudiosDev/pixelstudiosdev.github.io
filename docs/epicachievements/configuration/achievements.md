@@ -66,7 +66,7 @@ eater:
         - VAULT:100
         - EXPERIENCE:50
           
-    # Other tiers of the achievement can be added below     
+    # Other tiers can be added below     
     '2':
       required-amount: 15
       points: 15

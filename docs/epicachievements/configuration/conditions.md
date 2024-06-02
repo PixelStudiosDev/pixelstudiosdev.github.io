@@ -1,25 +1,28 @@
-# Conditions Configuration
+# Conditions
 
-:::note
-Here are only shown the tasks specific conditions, for the general conditions check
-the [Conditions Configuration](/epicachievements/configuration/conditions).
+:::tip
+Custom items and blocks from ItemsAdder, Oraxen and MMOItems are supported! <br/>
+Discover more about it [here](../../useful-stuff/item-format.md).
 :::
 
-## Default Conditions
+## Global Conditions
+Supported by all types of achievements.
 
-| Condition       | Description                                                               |
-|-----------------|---------------------------------------------------------------------------|
-| `game-modes`    | The game modes where the achievement can be completed                     |
-| `worlds`        | The worlds where the achievement can be completed                         |
-| `item-in-hand`  | The item the player needs to have in hand to progress in the achievement  |
-| `item-equipped` | The item the player needs to have equipped to progress in the achievement |
-| `riding-entity` | The entity the player needs to be riding to progress in the achievement   |
+| Condition       | Description                                       | Examples               |
+|-----------------|---------------------------------------------------|------------------------|
+| `game-modes`    | A list of game modes                              | `- SURVIVAL`           |
+| `worlds`        | A list of worlds                                  | `- "world"`            |
+| `item-in-hand`  | A list of items needed to be in the player's hand | `- <material>`         |
+| `item-equipped` | A list of items needed to be equipped             | `- <material>`         |
+| `riding-entity` | A list of entities needed to be riding            | `- HORSE`<br/>`- BOAT` |
 
 ## Task-specific Conditions
+Supported only by some types of achievements.
 
-| Condition | Description                                                                                                                                                           |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `entities` | A list of [Entity Types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/package-summary.html) or MythicMobs Mob Ids (`mythicmobs:<mob-id>` `mm:<mob-id>`) |
-| `materials` | A list of [Materials](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/material/package-summary.html)                                                              |
-| `potion-effects` | A list of [Potion Effects](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html)                                                                |
+| Condition        | Description                                                                                          | Examples                                                    |
+|------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| `entities`       | A list of entities                                                                                   | `- CHICKEN`<br/>`- mythicmobs:<mob-id>`<br/>`- mm:<mob-id>` |
+| `items`          | A list of items                                                                                      | `- <material>`                                              |
+| `blocks`         | A list of blocks                                                                                     | `- <material>`                                              |
+| `potion-effects` | A list of [potion types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html) | `- SWIFTNESS`                                               |
 
