@@ -1,73 +1,64 @@
-# Creating an Achievement
+# Achievements
 
-## Interactive Setup
+:::info
+There are two types of achievements:
+- `CHALLENGE` - Single tier
+- `TIERED` - Multiple tiers
 
-1. Run the command `/achievement editor` to open the editor.
-2. Select a category or create a new one.
-3. Click on the `Edit Achievements` button.
-4. Click on the `Create Achievement` button.
-5. Enter the achievement's name in the chat.
-6. Choose the achievement's task from the list in the chat.
-7. The achievement will be created and you can now edit it.
-
-## Manually editing an arena configuration
-
-Here you can find an explained version of an achievement configuration file:
-
-:::note
-You can find the achievement configuration files in the `plugins/EpicAchievements/achievements/<category>` folder.
+The type is automatically determined by the number of tiers.
 :::
 
-```yaml title="example.yml"
-eater:
-  # The displayed name of the achievement
-  name: Eater
-  
+### Interactive setup
+
+The easiest way to create and edit achievements is by using the in-game editor. <br/>
+You can access it by typing `/achievements editor`.
+
+### Manually editing configurations
+
+If you're a more advanced user, you can manually edit the achievements' configurations.
+
+:::note
+Achievements are located in the `plugins/EpicAchievements/achievements/<category>` folder. <br/>
+You can have as many achievement files as you want in a category. <br/>
+By default, the in-game editor will create new achievements in a file named `achievements.yml` if none exists.
+:::
+
+Below is an example of an achievement configuration:
+
+```yaml title="achievements/survival/achievements.yml"
+# Unique identifier. Don't modify it or players will lose their progress!
+builder: 
+  # The type of task: See https://wiki.pixelstudios.dev/epicachievements/configuration/tasks
+  type: PLACE
+  # The name used in messages and menus
+  name: "Builder"
   # The description of the achievement
   description:
-    - '&fEat 5 apples'
-      
-    # The task type
-  type: CONSUME_ITEM
-  
-    # The permission required to view and progress in the achievement
-  permission: achievements.eater
-  
-  # Conditions that need to be met to progress in the achievement
-  
-  # The worlds where the achievement can be completed
+    - "&fPlace blocks."
+  # (Optional) Permission required to progress in the achievement
+  # permission: achievements.builder
+
+  # Conditions: See https://wiki.pixelstudios.dev/epicachievements/configuration/conditions
+  blocks:
+    - STONE_BRICKS
+    - BRICKS
   worlds:
     - world
-  
-  # Game modes where the achievement can be completed 
+    - resource_world
   game-modes:
     - SURVIVAL
-
-  # Task-specific conditions
-  materials:
-    - APPLE
       
-  # The tiers of the achievement
+  # A list of tiers. There must be at least one tier
   tiers:
-    
-    # The first tier of the achievement
-    '1':
-      # The amount of progress required to complete the tier
+    1:
+      # Progress required to complete the tier
       required-amount: 10
-      
-      # The amount of points the player will receive when completing the tier
+      # Points awarded when completing the tier
       points: 25
-      
-      # The rewards the player will receive when completing the tier
+      # A list of rewards. See https://wiki.pixelstudios.dev/epicachievements/configuration/rewards
       # Format: REWARD_TYPE:VALUE
-      # Check the rewards documentation for more information
       rewards:
-        - COMMAND:say {player} has completed the Eater achievement!
-        - VAULT:100
-        - EXPERIENCE:50
-          
-    # Other tiers can be added below     
-    '2':
-      required-amount: 15
-      points: 15
+        - "VAULT:100"
+        - "COMMAND:say {player} has completed the Builder achievement!"
+    # Other tiers can be added below
 ```
