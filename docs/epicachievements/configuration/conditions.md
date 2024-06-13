@@ -1,11 +1,14 @@
 # Conditions
 
+Conditions are used to set requirements to progress in an achievement. <br/>
+Below is a list of all the built-in conditions:
+
 :::tip
 Custom items and blocks from ItemsAdder, Oraxen and MMOItems are supported! <br/>
 Discover more about it [here](../../useful-stuff/item-format.md).
 :::
 
-## Global Conditions
+### Global Conditions
 Supported by all types of achievements.
 
 | Condition       | Description                                       | Examples               |
@@ -16,7 +19,7 @@ Supported by all types of achievements.
 | `item-equipped` | A list of items needed to be equipped             | `- <material>`         |
 | `riding-entity` | A list of entities needed to be riding            | `- HORSE`<br/>`- BOAT` |
 
-## Task-specific Conditions
+### Task-specific Conditions
 Supported only by some types of achievements.
 
 | Condition        | Description                                                                                          | Examples                                                    |

@@ -4,19 +4,10 @@ sidebar_position: 2
 
 # Installation
 
-1. Download the latest version of the plugin from [SpigotMC](https://www.spigotmc.org/resources/116800/), [Polymart](https://polymart.org/r/5931) or [BuiltByBit](https://builtbybit.com/resources/44823).
-2. Place the downloaded jar file in your server's `plugins` folder.
-3. Restart your server.
-4. Enjoy!
-
 ## Requirements
 - Java 8 or higher
 - Minecraft 1.8.8 - 1.20.6
 - **(Optional)** A MySQL or MongoDB database
-
-:::caution
-The plugin officially supports `Spigot` and `Paper` servers. Other forks may work, but are not officially supported.
-:::
 
 ## Optional Dependencies
 

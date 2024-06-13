@@ -1,20 +1,30 @@
-# Categories Configuration
+# Categories
+
+Achievements are organized into categories. For each category, you can specify the servers where the achievements can be completed.
+Categories can be created and edited using the in-game editor, by typing `/achievements editor`.
+
+:::info
+The server id is defined in the `config.yml` file:
+```yaml title="config.yml"
+# The id of the server
+server: survival
+:::
+  
+Below is an example configuration:
 
 ```yaml title="categories.yml"
+# Unique identifier of the category
 global:
-  # The displayed name of the category
+  # The name used in messages and menus
   name: Global
-  
   # The description of the category
   description:
-  - '&7Achievements that can be completed'
-  - '&7across all servers.'
-    
-  # The servers where the category's achievements can be completed
+    - '&7Achievements that can be completed'
+    - '&7across all servers.'
+  # A list of servers where the achievements can be completed
   servers:
-  - ALL
-    
-  # The item in the category menu
+    - ALL
+  # Item displayed in the main menu
   item:
     material: COMPASS
     slot: 12
