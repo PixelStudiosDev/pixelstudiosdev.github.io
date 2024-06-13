@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Rewards
 
 EpicAchievements offers a bunch of built-in rewards. <br/>

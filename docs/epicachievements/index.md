@@ -20,10 +20,11 @@ EpicAchievements is available on [SpigotMC](https://www.spigotmc.org/resources/1
 - [Installation](/epicachievements/installation)
 - [Commands and Permissions](/epicachievements/commands-and-permissions)
 - Configuration
-    - [Categories](/epicachievements/configuration/categories)
-    - [Creating an Achievement](/epicachievements/configuration/achievements)
+    - [Achievements](/epicachievements/configuration/achievements)
     - [Tasks](/epicachievements/configuration/tasks)
+    - [Categories](/epicachievements/configuration/categories)
     - [Conditions](/epicachievements/configuration/conditions)
     - [Rewards](/epicachievements/configuration/rewards)
 - Placeholders
     - [PlaceholderAPI](/epicachievements/placeholders/placeholderapi)
+- [Developer API](/epicachievements/developer-api)

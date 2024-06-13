@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Categories
 
 Achievements are organized into categories. For each category, you can specify the servers where the achievements can be completed.

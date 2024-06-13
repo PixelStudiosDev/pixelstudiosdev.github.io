@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Conditions
 
 Conditions are used to set requirements to progress in an achievement. <br/>
