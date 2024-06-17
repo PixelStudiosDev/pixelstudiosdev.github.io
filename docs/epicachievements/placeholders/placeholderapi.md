@@ -1,19 +1,16 @@
 # PlaceholderAPI
 
-:::info
-You need to have [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) installed.
+:::note
+- `<required>` - Required argument<br/>
+- `[optional]` - Optional argument
 :::
 
-### General Placeholders
-
-You can specify the category and/or an achievement for the placeholders.
-Example: `%achievements_points_<category>_<achievement>%`
-
-| Placeholder                          | Description                                     |
-|--------------------------------------|-------------------------------------------------|
-| `%achievements_points%`              | Get the player points amount                    |
-| `%achievements_points_percentage%`   | Get the player points percentage                |
-| `%achievements_unlocked`             | Get the player unlocked achievements amount     |
-| `%achievements_unlocked_percentage%` | Get the player unlocked achievements percentage |
-| `%achievements_progress%`            | Get the player progress amount                  |
-| `%achievements_tracked%`             | Get the player tracked achievements amount      |
+| Placeholder                                                                     | Description                                                                          |
+|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| `%achievements_points_[category]_[challenge/tiered]%`                           | Returns the points that a players has                                                |
+| `%achievements_points_percentage_[category]_[challenge/tiered]%`                | Returns the percentage of points that a player has                                   |
+| `%achievements_unlocked_[category]_[challenge/tiered]%`                         | Returns the number of achievements unlocked by a player                              |
+| `%achievements_unlocked_percentage_[category]_[challenge/tiered]%`              | Returns the percentage of achievements unlocked by a player                          |
+| `%achievements_achievement_<id>_<points/requirement/progress/unlocked>_[tier]%` | Returns information about an achievement.<br/>Tier defaults to `1` when unspecified. |
+| `%achievements_tracked%`                                                        | Returns the number of achievements being tracked by a player                         |
+| `%achievements_unclaimed%`                                                      | Returns the number of unclaimed rewards                                              |                                 
