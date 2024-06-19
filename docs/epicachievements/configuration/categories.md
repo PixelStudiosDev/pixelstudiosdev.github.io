@@ -5,7 +5,7 @@ sidebar_position: 3
 # Categories
 
 Achievements are organized into categories. For each category, you can specify the servers where the achievements can be completed.
-Categories can be created and edited using the in-game editor, by typing `/achievements editor`.
+> Categories can be created and edited using the in-game editor, by typing `/achievements editor`.
 
 :::info
 The server id is defined in the `config.yml` file:

@@ -15,7 +15,7 @@ The type is automatically determined by the number of tiers.
 ### Interactive setup
 
 The easiest way to create and edit achievements is by using the in-game editor. <br/>
-You can access it by typing `/achievements editor`.
+> You can access it by typing `/achievements editor`.
 
 ### Manually editing configurations
 
