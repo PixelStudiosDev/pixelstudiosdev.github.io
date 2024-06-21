@@ -26,5 +26,6 @@ EpicAchievements is available on [SpigotMC](https://www.spigotmc.org/resources/1
     - [Conditions](/epicachievements/configuration/conditions)
     - [Rewards](/epicachievements/configuration/rewards)
 - Placeholders
+    - [Internal Placeholders](/epicachievements/placeholders/internal-placeholders)
     - [PlaceholderAPI](/epicachievements/placeholders/placeholderapi)
 - [Developer API](/epicachievements/developer-api)
