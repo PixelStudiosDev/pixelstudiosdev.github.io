@@ -1,0 +1,38 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Developer API
+
+### Dependency
+Put the plugin's jar file in a folder within your project:
+
+:::note
+<Tabs>
+  <TabItem value="maven" label="Maven" default>
+    ```xml
+    <dependency>
+      <groupId>dev.pixelstudios</groupId>
+      <artifactId>EpicAchievements</artifactId>
+      <version>{version}</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/libs/EpicAchievements.jar</systemPath>
+    </dependency>
+    ```
+  </TabItem>
+  <TabItem value="gradle" label="Gradle">
+    ```groovy
+    dependencies {
+      compileOnly files('libs/EpicAchievements.jar')
+    }
+    ```
+  </TabItem>
+</Tabs>
+:::
+
+## Usage
+
+### Events
+You can listen to the events located in the `dev.pixelstudios.achievements.api.events` package.
+
+### Methods
+The `AchievementsAPI` class provides methods for registering custom tasks, rewards and conditions (use the built-in implementations as a reference) and other useful utility methods.
