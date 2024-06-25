@@ -9,14 +9,13 @@ The menu configuration file is located in `plugins/Guilds/menu.yml`.
 Here you can find all the information regarding a gui item configuration:
 
 ```yaml title="example.yml"
-
 items:
 
   #A custom gui item
   test-item:
 
     #Item Material
-    #Formats: MATERIAL  /  MATERIAL:DATA  /  texure:skin-texture
+    #Formats: MATERIAL  /  MATERIAL:DATA  /  texture:skin-texture
     #Examples: WOOL (white)  /  WOOL:14 (red)  /  texture:4d1ebd794085e0648159e8f8fd504bdb5ccd26fd32a6a5ab2d669031931064b5
     material: WOOL:14
 
@@ -28,7 +27,7 @@ items:
 
     #Gui Slot
     #From 0 to Gui Slots - 1
-    #Example: Gui Slots 27 --> min: 0  -  max: 26
+    #Example: Gui Slots 27 --> 0 to 26
     slot: 0
 
     #Item Name
@@ -58,6 +57,16 @@ items:
     #[no-action]
     
     command: '[player] gamemode creative'
+
+    #Item Functions
+    
+    #Available functions:
+    #SELF_SKIN -> Set the item's skin to the own player's skin
+    
+    #Other functions will be added in future updates
+    
+    functions:
+      - SELF_SKIN      
 ```
 
 ## Editing the file
@@ -65,18 +74,12 @@ items:
 Here you can find all the information regarding the configuration of the file:
 
 ```yaml title="menu.yml"
-# Guilds v1.2.0-BETA-4 made by [itz_leoo].
-# Dependencies: [].
-# SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
-# Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
-# Join my discord for support: https://pixelstudios.dev/discord
-
 guilds:
   
-  #Settings of each gui
-  #name -> Gui name
-  #slot -> Gui slots
-  #(optional) ...-slots -> slot used for variable gui items
+  # Menu Gui Configuration
+  # name -> Gui name
+  # slot -> Gui slots
+  # (optional) ...-slots -> slot used for variable gui items
   inventory:
     home:
       name: '&8Guild'

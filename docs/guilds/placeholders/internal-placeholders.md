@@ -9,17 +9,21 @@ Please report any problems in my [Discord Server](https://pixelstudios.dev/disco
 
 ### General Placeholders
 
-| Placeholder                 | Description                             |
-|-----------------------------|-----------------------------------------|
-| `{guildName}`               | Get the guild's name                    |
-| `{players}` and `{members}` | Get the guild's members count           |
-| `{onlinePlayers}`           | Get the guild's online members count    |
-| `{offlinePlayers}`          | Get the guild's offline members count   |
-| `{maxPlayers}`              | Get the guild's maximum members count   |
-| `{description}`             | Get the guild's description             |
-| `{motdEditor}`              | Get the latest guild's motd editor name |
-| `{editTime}`                | Get the latest guild's motd edit time   |
-| `{creationTime}`            | Get the formatted guild's creation time |
+| Placeholder                 | Description                                                |
+|-----------------------------|------------------------------------------------------------|
+| `{guildName}`               | Get the guild's name                                       |
+| `{players}` and `{members}` | Get the guild's members count                              |
+| `{onlinePlayers}`           | Get the guild's online members count                       |
+| `{offlinePlayers}`          | Get the guild's offline members count                      |
+| `{maxPlayers}`              | Get the guild's maximum members count                      |
+| `{description}`             | Get the guild's description                                |
+| `{motdEditor}`              | Get the latest guild's motd editor name                    |
+| `{editTime}`                | Get the latest guild's motd edit time                      |
+| `{creationTime}`            | Get the formatted guild's creation time                    |
+| `{guildTag}`                | Get the guild's tag or none string if null                 |
+| `{guildTagColor}`           | Get the guild's tag color                                  |
+| `{guildTagColorName}`       | Get the guild's tag color name (ex: `DARK_AQUA`)           |
+| `{guildTagFormatted}`       | Get the formatted guild's tag (config: `guild-tag.format`) |
 
 ### Guild Level
 
@@ -34,15 +38,26 @@ Please report any problems in my [Discord Server](https://pixelstudios.dev/disco
 
 ### Guild Rank
 
-| Placeholder          | Description                                         |
-|----------------------|-----------------------------------------------------|
-| `{rankName}`         | Get the rank's name                                 |
-| `{rankDisplayName}`  | Get the rank's display name                         |
-| `{rankTag}`          | Get the rank's tag                                  |
-| `{rankTagFormatted}` | Get the formatted rank's tag from the config format |
-| `{rankTagColor}`     | Get the rank's tag color                            |
-| `{rankPriority}`     | Get the rank's priority                             |
-| `{rankMembers}`      | Get the formatted rank's members name               |
+| Placeholder          | Description                                                    |
+|----------------------|----------------------------------------------------------------|
+| `{rankName}`         | Get the rank's name                                            |
+| `{rankDisplayName}`  | Get the rank's display name                                    |
+| `{rankTag}`          | Get the rank's tag                                             |
+| `{rankTagFormatted}` | Get the formatted rank's tag (config: `guild-rank-tag.format`) |
+| `{rankTagColor}`     | Get the rank's tag color                                       |
+| `{rankPriority}`     | Get the rank's priority                                        |
+| `{rankMembers}`      | Get the formatted rank's members name                          |
+
+### Guild Quest
+
+| Placeholder               | Description                          |
+|---------------------------|--------------------------------------|
+| `{quest_progress}`        | Get the quest's progress             |
+| `{quest_next_reward}`     | Get the quest's next reward          |
+| `{quest_next_reset}`      | Get the quest's next reset           |
+| `{quest_tier}`            | Get the quest's tier id              |
+| `{quest_required_amount}` | Get the quest's tier required amount |
+| `{quest_tiers}`           | Get the quest's tiers message        |
 
 ### Guild Player
 

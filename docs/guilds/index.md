@@ -25,6 +25,7 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
     - [Menu Config](/guilds/configuration/menu-config)
     - [Language Config](/guilds/configuration/language-config)
     - [Ranks Config](/guilds/configuration/rank-config)
+    - [Quests Config](/guilds/configuration/quests-config)
     - [Levels Config](/guilds/configuration/levels-config)
 - [Commands and Permissions](/guilds/commands-and-permissions)
 - Placeholders

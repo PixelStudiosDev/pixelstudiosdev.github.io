@@ -28,7 +28,7 @@ sidebar_position: 2
 - Java 8 or higher
 - A 1.8.8 - 1.20.4 Spigot server
 - **(Optional)** BungeeCord or Velocity for Proxy Mode
-- **(Optional)** A MySQL server
+- **(Optional)** A MySQL or MongoDB server
 
 :::caution
 The plugin officially supports `Spigot` and `Paper` servers. Other forks may work, but are not officially supported.

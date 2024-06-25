@@ -9,11 +9,6 @@ The main configuration file is located in `plugins/Guilds/levels.yml`.
 Here you can find all the information regarding the configuration of the file:
 
 ```yaml title="levels.yml"
-# Guilds v1.1.3 made by [itz_leoo].
-# Dependencies: [].
-# SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
-# Join my discord for support: https://discord.gg/dtwanz4GQg
-
 levels:
 
   #Level Settings
