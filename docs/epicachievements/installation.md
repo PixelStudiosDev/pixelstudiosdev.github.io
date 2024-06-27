@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Requirements
 - Java 8 or higher
-- Minecraft 1.8.8 - 1.20.6
+- Minecraft 1.8.8 - 1.21
 - **(Optional)** A MySQL or MongoDB database
 
 ## Optional Dependencies
