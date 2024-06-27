@@ -15,18 +15,24 @@ Here you can find all the information regarding the configuration of the file:
 # Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
 # Join my discord for support: https://pixelstudios.dev/discord
 
-#database settings
+#Database settings
 mysql:
-  #Set to:
-  #false -> SQLite
-  #true -> MySQL
-  enabled: false
+  # Database type: mysql, sqlite, mongodb
+  type: mongodb
   host: localhost
   port: 3306
   name: guilds
   username: root
   password: ''
   ssl: true
+
+#Redis settings
+#You can leave empty username/password if you don't have it
+redis:
+  host: localhost
+  port: 6379
+  username: ''
+  password: ''
 
 guilds:
   settings:
@@ -54,14 +60,13 @@ guilds:
       max-name-length: 10
 
       #Allow characters in the guild name
+      #It's a regex pattern, don't modify it unless you know how it works
       #By default: alphabet letters, numbers and these chars ✧ ✪ ✖ ✓ ✿ ✌ ❤
-      #Don't modify it unless you know how it works
       chars: ^[a-zA-Z0-9✧✪✖✓✿✌❤]*$
 
     guild-tag:
       #Tag Placeholder format
-      #{tag_color} is replaced with the tag color
-      #{tag} is replaced with the tag
+      #You can use internal placeholders
       format: '{tag_color}[{tag}]'
       
       #True to make uppercase all Guilds Tag
@@ -80,6 +85,11 @@ guilds:
         - DARK_GREEN:&2:Dark Green
         - YELLOW:&e:Yellow
         - 45-other:&e-YELLOW:&e-Yellow
+
+    guild-rank-tag:
+      #Guild's Rank Tag Format
+      #You can use internal placeholders
+      format: '{rankTagColor}[{rankTag}]'
 
     guild-level:
       #Command executed on these events
@@ -118,10 +128,18 @@ guilds:
     guild-chat:
       #Chat cooldown time
       mute-time: 10
+
+      #Player with guilds admin permission can see all guilds chat messages
+      admin-spy:
+        #Enable admin spy
+        enabled: true
       
   permissions:
     #Permission for creating a guild
     create: guilds.create
+
+    #Permission for joining a guild
+    join: ''
 
     #Permission for getting access to admin features
     admin: guilds.admin
