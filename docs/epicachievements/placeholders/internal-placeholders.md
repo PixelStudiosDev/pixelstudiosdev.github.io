@@ -3,15 +3,16 @@
 ### General Placeholders 
 > These placeholders can be used in any menu.
 
-| Placeholder                          | Description                                   |
-|--------------------------------------|-----------------------------------------------|
-| `{player}`                           | The player's name                             |
-| `{points}`                           | The player's points                           |
-| `{total_points}`                     | The total points of all achievements          |
-| `{points_percentage}`                | The percentage of points earned               |
-| `{unlocked_achievements}`            | The number of unlocked achievements           |
-| `{total_achievements}`               | The total number of achievements              |
-| `{unlocked_achievements_percentage}` | The percentage of unlocked achievements       |
+| Placeholder                          | Description                             |
+|--------------------------------------|-----------------------------------------|
+| `{player}`                           | The player's name                       |
+| `{points}`                           | The player's points                     |
+| `{total_points}`                     | The total points of all achievements    |
+| `{points_percentage}`                | The percentage of points earned         |
+| `{unlocked_achievements}`            | The number of unlocked achievements     |
+| `{total_achievements}`               | The total number of achievements        |
+| `{unlocked_achievements_percentage}` | The percentage of unlocked achievements |
+| `{unclaimed_rewards}`                | The number of unclaimed rewards         |
 
 ### Category Placeholders
 
