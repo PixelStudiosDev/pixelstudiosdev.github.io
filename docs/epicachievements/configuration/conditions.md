@@ -15,13 +15,14 @@ Discover more about it [here](../../useful-stuff/item-format.md).
 ### Global Conditions
 Supported by all types of achievements.
 
-| Condition       | Description                                       | Examples               |
-|-----------------|---------------------------------------------------|------------------------|
-| `game-modes`    | A list of game modes                              | `- SURVIVAL`           |
-| `worlds`        | A list of worlds                                  | `- "world"`            |
-| `item-in-hand`  | A list of items needed to be in the player's hand | `- <material>`         |
-| `item-equipped` | A list of items needed to be equipped             | `- <material>`         |
-| `riding-entity` | A list of entities needed to be riding            | `- HORSE`<br/>`- BOAT` |
+| Condition       | Description                                                                | Examples               |
+|-----------------|----------------------------------------------------------------------------|------------------------|
+| `game-modes`    | A list of game modes                                                       | `- SURVIVAL`           |
+| `worlds`        | A list of worlds                                                           | `- "world"`            |
+| `item-in-hand`  | A list of items needed to be in the player's hand                          | `- <material>`         |
+| `item-equipped` | A list of items needed to be equipped                                      | `- <material>`         |
+| `riding-entity` | A list of entities needed to be riding                                     | `- HORSE`<br/>`- BOAT` |
+| `regions`       | A list of [WorldGuard](https://dev.bukkit.org/projects/worldguard) regions | `- "spawn"`            |
 
 ### Task-specific Conditions
 Supported only by some types of achievements.
