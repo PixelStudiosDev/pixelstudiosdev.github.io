@@ -42,3 +42,13 @@ You need to have [PlaceholderAPI](https://www.spigotmc.org/resources/placeholder
 | `%woolwars_arena_round_kills%`         | Get the current round kills                    |
 | `%woolwars_arena_round_wool_placed%`   | Get the current round wool placed              |
 | `%woolwars_arena_round_blocks_broken%` | Get the current round blocks broken            |
+
+<br/>
+
+| Placeholder              | Description                         |
+|--------------------------|-------------------------------------|
+| `%woolwars_team_name%`   | Get the name of the player's team   |
+| `%woolwars_team_color%`  | Get the color of the player's team  |
+| `%woolwars_team_letter%` | Get the letter of the player's team |
+| `%woolwars_team_points%` | Get the current team's points       |
+| `%woolwars_team_alive%`  | Get the amount of alive members     |
