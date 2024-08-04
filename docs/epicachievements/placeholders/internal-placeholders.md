@@ -28,21 +28,25 @@
 
 ### Achievement Placeholders
 
-| Placeholder                 | Description                                            |
-|-----------------------------|--------------------------------------------------------|
-| `{achievement_id}`          | The achievement's unique identifier                    |
-| `{achievement_name}`        | The achievement's name                                 |
-| `{achievement_description}` | The achievement's description                          |
-| `{achievement_type}`        | The achievement's type (challenge / tiered)            |
-| `{achievement_type_name}`   | The name of the achievement's type                     |
-| `{achievement_task}`        | The achievement's task type                            |
-| `{achievement_progress}`    | The player's progress in the achievement               |
-| `{achievement_permission}`  | The permission required to progress in the achievement |
-| `{tier}`                    | The tier number                                        |
-| `{tier_roman}`              | The tier number in roman numerals                      |
-| `{tier_requirement}`        | The requirement to complete the tier                   |
-| `{tier_points}`             | The points awarded when completing the tier            |
-| `{tier_rewards}`            | The list of rewards                                    |
+| Placeholder                         | Description                                            |
+|-------------------------------------|--------------------------------------------------------|
+| `{achievement_id}`                  | The achievement's unique identifier                    |
+| `{achievement_name}`                | The achievement's name                                 |
+| `{achievement_description}`         | The achievement's description                          |
+| `{achievement_type}`                | The achievement's type (challenge / tiered)            |
+| `{achievement_type_name}`           | The name of the achievement's type                     |
+| `{achievement_task}`                | The achievement's task type                            |
+| `{achievement_progress}`            | The player's progress in the achievement               |
+| `{achievement_progress_percentage}` | The percentage of progress in the achievement          |
+| `{achievement_progress_bar}`        | A progress bar that displays the current progress      |
+| `{achievement_permission}`          | The permission required to progress in the achievement |
+| `{tier}`                            | The tier number                                        |
+| `{tier_roman}`                      | The tier number in roman numerals                      |
+| `{tier_requirement}`                | The requirement to complete the tier                   |
+| `{tier_points}`                     | The points awarded when completing the tier            |
+| `{tier_rewards}`                    | The list of rewards                                    |
+| `{tier_progress_percentage}`        | The percentage of progress in the tier                 |
+| `{tier_progress_bar}`               | A progress bar that displays the current tier progress |
 
 ### Reward Level Placeholders
 
