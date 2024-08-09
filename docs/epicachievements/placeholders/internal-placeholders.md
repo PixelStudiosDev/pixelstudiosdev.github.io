@@ -6,6 +6,7 @@
 | Placeholder                          | Description                             |
 |--------------------------------------|-----------------------------------------|
 | `{player}`                           | The player's name                       |
+| `{uuid}`                             | The player's UUID                       |
 | `{points}`                           | The player's points                     |
 | `{total_points}`                     | The total points of all achievements    |
 | `{points_percentage}`                | The percentage of points earned         |
