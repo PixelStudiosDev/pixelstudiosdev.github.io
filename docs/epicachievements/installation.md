@@ -18,3 +18,4 @@ EpicAchievements doesn't require any other plugins to work, but it can hook into
 - [MythicMobs](https://www.spigotmc.org/resources/mythicmobs.5702/) - Required for MythicMobs-related conditions
 - [ItemsAdder](https://www.spigotmc.org/resources/73355/), [Oraxen](https://www.spigotmc.org/resources/72448/), [MMOItems](https://www.spigotmc.org/resources/39267/), [EcoItems](https://www.spigotmc.org/resources/94601/) - [Custom items/blocks](../useful-stuff/item-format.md)
 - [WorldGuard](https://dev.bukkit.org/projects/worldguard) - Required for `regions` conditions
+- [DiscordSRV](https://www.spigotmc.org/resources/discordsrv.18494/) - Required for the Discord integration
