@@ -13,6 +13,7 @@ You can find them in the table below:
 | `BREAK`       | Break a block                                                                         | `blocks`                                                           | 1.8                       |
 | `BREED`       | Breed an entity                                                                       | `entities`                                                         | 1.10                      |
 | `BREW`        | Brew an item                                                                          | `items`<br/>`potion-effects`                                       | 1.18                      |
+| `COMMAND`     | Execute a command<br/>Requires [additional setup](tasks/command)                      |                                                                    | 1.8                       |
 | `CONSUME`     | Consume an item                                                                       | `items`                                                            | 1.8                       |
 | `CRAFT`       | Craft an item                                                                         | `items`                                                            | 1.8                       |
 | `DAMAGE`      | Damage an entity                                                                      | `entities`                                                         | 1.8                       |
