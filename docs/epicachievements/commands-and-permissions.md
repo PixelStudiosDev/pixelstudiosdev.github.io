@@ -15,6 +15,9 @@ sidebar_position: 3
 - `/achievements tracker` <br/>
   Opens the tracker GUI.
 
+- `/achievements search [query]` <br/>
+  Searches for achievements matching the query.
+
 ### Admin Commands
 
 - `/achievements setprogress <player> <achievement> <progress>` <br/>
