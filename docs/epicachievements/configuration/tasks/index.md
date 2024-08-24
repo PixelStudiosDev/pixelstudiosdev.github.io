@@ -20,6 +20,7 @@ You can find them in the table below:
 | `DEATH`       | Die                                                                                   |                                                                    | 1.8                       |
 | `DROP`        | Drop an item                                                                          | `items`                                                            | 1.8                       |
 | `ENCHANT`     | Enchant an item                                                                       | `items`                                                            | 1.8                       |
+| `EXPERIENCE`  | Gain experience points                                                                |                                                                    | 1.8                       |
 | `FARM`        | Harvest a block                                                                       | `blocks`                                                           | 1.16                      |
 | `FISH`        | Catch an item while fishing                                                           | `items`                                                            | 1.8                       |
 | `KILL`        | Kill an entity                                                                        | `entities`                                                         | 1.8                       |
