@@ -15,17 +15,18 @@ Discover more about it [here](../../useful-stuff/item-format.md).
 ### Global Conditions
 Supported by all types of achievements.
 
-| Condition       | Description                                                                | Examples                 |
-|-----------------|----------------------------------------------------------------------------|--------------------------|
-| `game-modes`    | Allowed game modes                                                         | `- SURVIVAL`             |
-| `worlds`        | Allowed worlds                                                             | `- "world"`              |
-| `item-in-hand`  | Requires the player to have an item in hand                                | `- <material>`           |
-| `item-equipped` | Requires the player to have an item equipped                               | `- <material>`           |
-| `riding-entity` | Requires the player to ride an entity                                      | `- ALL`<br/>`- <entity>` |
-| `regions`       | A list of [WorldGuard](https://dev.bukkit.org/projects/worldguard) regions | `- <region-id>`          |
-| `is_sneaking`   | Requires the player to be sneaking                                         | `true`                   |
-| `is_sprinting`  | Requires the player to be sprinting                                        | `true`                   |
-| `is_flying`     | Requires the player to be flying                                           | `true`                   |
+| Condition            | Description                                                                                                       | Examples                 |
+|----------------------|-------------------------------------------------------------------------------------------------------------------|--------------------------|
+| `game-modes`         | Allowed game modes                                                                                                | `- SURVIVAL`             |
+| `worlds`             | Allowed worlds                                                                                                    | `- "world"`              |
+| `item-in-hand`       | Requires the player to have an item in hand                                                                       | `- <material>`           |
+| `item-equipped`      | Requires the player to have an item equipped                                                                      | `- <material>`           |
+| `riding-entity`      | Requires the player to ride an entity                                                                             | `- ALL`<br/>`- <entity>` |
+| `regions`            | A list of [WorldGuard](https://dev.bukkit.org/projects/worldguard) regions                                        | `- <region-id>`          |
+| `is-sneaking`        | Requires the player to be sneaking                                                                                | `true` `false`           |
+| `is-sprinting`       | Requires the player to be sprinting                                                                               | `true` `false`           |
+| `is-flying`          | Requires the player to be flying                                                                                  | `true` `false`           |
+| `has-open-inventory` | Checks if the player has an inventory open.<br/>It isn't possible to check if the player's own inventory is open. | `true` `false`           |
 
 ### Task-specific Conditions
 Supported only by some types of achievements.
