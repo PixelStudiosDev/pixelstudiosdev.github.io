@@ -19,7 +19,10 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
 
 ## Quick Links
 
-- [Installation](/guilds/installation)
+- Installation
+    - [Requirements](/guilds/installation/requirements) 
+    - [Spigot](/guilds/installation/spigot) 
+    - [Proxy Mode](/guilds/installation/proxy-mode) (To use the plugin in multiple servers)
 - Configuration
     - [Main Config](/guilds/configuration/main-config)
     - [Menu Config](/guilds/configuration/menu-config)
