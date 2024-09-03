@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Main Config
 
 ## File location
@@ -9,7 +13,7 @@ The main configuration file is located in `plugins/Guilds/config.yml`.
 Here you can find all the information regarding the configuration of the file:
 
 ```yaml title="config.yml"
-# Guilds v1.2.0-BETA-4 made by [itz_leoo].
+# Guilds v1.5.3 made by [itz_leoo].
 # Dependencies: [].
 # SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
 # Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
@@ -25,6 +29,9 @@ mysql:
   username: root
   password: ''
   ssl: true
+  
+  # SQL driver class (leave empty for default)
+  driver-class: ''
 
 #Redis settings
 #You can leave empty username/password if you don't have it
@@ -35,6 +42,10 @@ redis:
   password: ''
 
 guilds:
+
+  #Plugin update checker
+  update-checker: true
+
   settings:
     #Bungeecord settings
     bungeecord:
@@ -52,8 +63,20 @@ guilds:
       #Max members in a guild
       max-members: 125
 
-      #Symbol shown in members list message
-      online-offline-symbol: ●
+      #Online and offline players settings
+      online:
+        #Symbol of the player status
+        symbol: ●
+        
+        #Color of the player status
+        color: '&a'
+        
+      offline:
+        symbol: ●
+        color: '&c'
+      
+      #Guild player format (used in various places)
+      format: '%vault_prefix%{playerName}'
 
     guild-name:
       #Max characters allowed in a guild name 
@@ -77,14 +100,16 @@ guilds:
       default-max-length: 6
 
       #Tag colors of guild tag based on level
-      #Colors: GRAY, DARK_AQUA, DARK_GREEN, YELLOW, ORANGE, DARK_RED, RED, GREEN, AQUA, DARK_BLUE, BLUE, LIGHT_PURPLE, DARK_PURPLE, WHITE, DARK_GRAY, BLACK
-      #Format: colorValue:&colorNumber:colorDisplayName
+      #Format: color_id:color_display_name
       tag:
-        - GRAY:&7:Gray
-        - DARK_AQUA:&3:Dark Acqua
-        - DARK_GREEN:&2:Dark Green
-        - YELLOW:&e:Yellow
-        - 45-other:&e-YELLOW:&e-Yellow
+        - GRAY:Gray
+        - DARK_AQUA:Dark Acqua
+        - DARK_GREEN:Dark Green
+        - YELLOW:Yellow
+        # other colors...  
+        
+      #Orange tag display name  
+      orange-tag: Orange
 
     guild-rank-tag:
       #Guild's Rank Tag Format
@@ -98,6 +123,23 @@ guilds:
       final-kill-reward: guild addxp {guild} 20
       bed-destroy-reward: guild addxp {guild} 15
       win-reward: guild addxp {guild} 200
+        
+    guild-finder:
+      sorting:
+        
+        #Symbols shown in guild finder menu
+        symbol:
+          selected: '&a➠'
+          not-selected: '&7 '
+          
+        #Size filters in guild finder menu
+        #Format: min-max (min and max are included)
+        #If only one number is provided, it will be considered as the minimum
+        sizes:
+          - 1-20
+          - 21-50
+          - 51-80
+          - '81'    
         
     progress-bar:
       #Bar character
@@ -133,6 +175,11 @@ guilds:
       admin-spy:
         #Enable admin spy
         enabled: true
+      
+    guild-kick:
+      
+      #Set to true to require a reason for kicking a player from the guild
+      require-reason: true  
       
   permissions:
     #Permission for creating a guild

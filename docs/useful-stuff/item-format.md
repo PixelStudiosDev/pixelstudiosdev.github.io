@@ -5,6 +5,10 @@ slug: /item-format
 
 Follow the format below to configure an item in config files.<br/>
 
+:::warning 
+Don't follow this format if you are using **Guilds plugin**, follow instead the [Gui Item Configuration](/guilds/configuration/menu-config) format.
+:::
+
 :::tip
 Display names and lores support legacy (e.g. `&c`) and hex (e.g. `#ff0000`) color formats.
 :::

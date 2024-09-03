@@ -13,7 +13,7 @@ page in the wiki.
 
 ### Does the plugin works using BungeeCord/Velocity?
 
-The plugins can be used in proxy mode, check the [Installation Page](/guilds/installation#proxy-mode)
+The plugins can be used in proxy mode, check the [Installation Page](/guilds/installation/proxy-mode) for more information.
 
 ### Can i customize the TAG Colors / Xp Requirements?
 
