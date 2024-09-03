@@ -37,4 +37,5 @@ Supported only by some types of achievements.
 | `items`          | A list of items                                                                                      | `- <material>`                                              |
 | `blocks`         | A list of blocks                                                                                     | `- <material>`                                              |
 | `potion-effects` | A list of [potion types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html) | `- SWIFTNESS`                                               |
+| `crop-age`       | Specify crop growth stages                                                                           | `MAX` `<age>`                                               |
 
