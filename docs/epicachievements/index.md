@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## What is EpicAchievements?
 
-EpicAchievements boosts gameplay with over 20 types of achievements for tasks like farming, exploring, and battling. 
+EpicAchievements boosts gameplay with over 25 types of achievements for tasks like farming, exploring, and battling. 
 
 It features challenge and tiered achievements, with customizable conditions and rewards. Integrated with popular plugins, players can earn points, unlock rewards, and track their progress easily.
 

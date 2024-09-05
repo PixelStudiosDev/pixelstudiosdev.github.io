@@ -32,4 +32,5 @@ You can find them in the table below:
 | `SHEAR`       | Shear an entity                                                                       | `entities`                                                         | 1.8                       |
 | `SMELT`       | Smelt an item                                                                         | `items`                                                            | 1.8                       |
 | `TAME`        | Tame an entity                                                                        | `entities`                                                         | 1.8                       |
+| `TRADE`       | Trade with a villager                                                                 | `items`                                                            | 1.16 (**Requires Paper**) |
 | `WALK`        | Walk for a certain amount of blocks                                                   |                                                                    | 1.8                       |
