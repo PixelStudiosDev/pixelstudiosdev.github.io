@@ -51,17 +51,30 @@ rewards:
         - "{rewards}"
         - ""
         - "{status}"
-    # Item displayed when the reward is unlocked
-    unlocked-item:
+    # Item displayed when the reward has been claimed
+    claimed-item:
       material: "GOLD_NUGGET"
       name: "&aAchievement Reward"
       lore:
         - "&8Level {level}"
         - "&7Required Points: &e{points}"
         - ""
-        - "&7Reward:"
+        - "&7Rewards:"
         - "{rewards}"
         - ""
-        - "{status}"
+        - "&aYou have already claimed this reward!"
+    # Item displayed when the reward has not been claimed
+    not-claimed-item:
+      material: "GOLD_NUGGET"
+      name: "&eAchievement Reward"
+      lore:
+        - "&8Level {level}"
+        - "&7Required Points: &e{points}"
+        - ""
+        - "&7Rewards:"
+        - "{rewards}"
+        - ""
+        - "&eClick to claim this reward!"
+      glow: true
   # Other levels can be added below
 ```
