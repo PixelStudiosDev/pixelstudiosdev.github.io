@@ -19,6 +19,7 @@ You can use the `{player}` placeholder in all rewards.
 | `EXPERIENCE`        | Give experience points to a player |
 | `MESSAGE`           | Send a message to a player         |
 | `VAULT`             | Give money to a player             |
+| `PLAYER_POINTS`     | Give money to a player             |
 
 ## Reward leveling system
 
