@@ -40,7 +40,11 @@ builder:
   description:
     - "&fPlace blocks."
   # (Optional) Permission required to progress in the achievement
-  # permission: achievements.builder
+  permission: achievements.builder
+  # Required achievements to progress in this achievement
+  required-achievements:
+    - miner
+    - farmer
 
   # Conditions: See https://wiki.pixelstudios.dev/epicachievements/configuration/conditions
   blocks:

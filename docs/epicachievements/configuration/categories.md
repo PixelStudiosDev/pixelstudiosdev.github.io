@@ -25,6 +25,8 @@ global:
   description:
     - '&7Achievements that can be completed'
     - '&7across all servers.'
+  # (Optional) The permission required to access the category
+  permission: achievements.global
   # A list of servers where the achievements can be completed
   servers:
     - ALL

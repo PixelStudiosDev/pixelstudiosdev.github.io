@@ -20,10 +20,10 @@ sidebar_position: 3
 
 ### Admin Commands
 
-- `/achievements setprogress <player> <achievement> <progress>` <br/>
+- `/achievements progress <player> <achievement> <set/add/remove> <amount>` <br/>
   Sets the progress of an achievement for a player.
 
-- `/achievements unlock <player> <achievement>` <br/>
+- `/achievements unlock <player> <achievement> [tier]` <br/>
   Unlocks an achievement for a player.
 
 - `/achievements reset <player> [achievement/category/rewards] [id]` <br/>
