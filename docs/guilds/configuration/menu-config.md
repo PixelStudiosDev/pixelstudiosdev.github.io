@@ -62,6 +62,11 @@ items:
     
     command: '[player] gamemode creative'
 
+    #Sounds
+    #Format: SOUND_NAME,VOLUME,PITCH
+    sound:
+    - ENTITY_PLAYER_LEVELUP,5,0.5
+
     #Item Functions
     
     #Available functions:

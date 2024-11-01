@@ -15,7 +15,6 @@ You need to have [PlaceholderAPI](https://www.spigotmc.org/resources/placeholder
 | `%guilds_tag%`           | Get the player's guild TAG                | LeoTag                               |
 | `%guilds_tag_formatted%` | Tag from config `guild-tag.format` string | [Guild Name]    <br/>                |
 
-
 ### Player Placeholders
 
 | Placeholder                    | Description                                        | Example                   |
@@ -27,4 +26,4 @@ You need to have [PlaceholderAPI](https://www.spigotmc.org/resources/placeholder
 | `%guilds_rank_priority%`       | Get the player's guild rank priority               | 1                         |
 | `%guilds_rank_members%`        | Get the player's guild rank members (configurable) | Player1, Player2, Player3 |
 | `%guilds_rank_members_online%` | Get the player's guild rank members online         | Player1, Player2          |
-| `%guilds_rank_formatted%`      | Tag from config `guild-rank-tag.format` string     | [Guild Master]            |@
+| `%guilds_rank_formatted%`      | Tag from config `guild-rank-tag.format` string     | [Guild Master]            |
