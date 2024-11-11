@@ -30,6 +30,7 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
     - [Ranks Config](/guilds/configuration/rank-config)
     - [Quests Config](/guilds/configuration/quests-config)
     - [Levels Config](/guilds/configuration/levels-config)
+    - [Rewards Config](/guilds/configuration/rewards-config)
 - [Commands and Permissions](/guilds/commands-and-permissions)
 - Placeholders
   - [Internal Placeholders](/guilds/placeholders/internal-placeholders)
