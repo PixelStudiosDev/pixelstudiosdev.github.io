@@ -29,7 +29,7 @@ mysql:
   username: root
   password: ''
   ssl: true
-  
+
   # SQL driver class (leave empty for default)
   driver-class: ''
 
@@ -67,14 +67,14 @@ guilds:
       online:
         #Symbol of the player status
         symbol: ●
-        
+
         #Color of the player status
         color: '&a'
-        
+
       offline:
         symbol: ●
         color: '&c'
-      
+
       #Guild player format (used in various places)
       format: '%vault_prefix%{playerName}'
 
@@ -91,11 +91,11 @@ guilds:
       #Tag Placeholder format
       #You can use internal placeholders
       format: '{tag_color}[{tag}]'
-      
+
       #True to make uppercase all Guilds Tag
       #Example: [tag] -> [TAG]
       uppercase: false
-      
+
       #Default max Guild Tag Length
       default-max-length: 6
 
@@ -107,7 +107,7 @@ guilds:
         - DARK_GREEN:Dark Green
         - YELLOW:Yellow
         # other colors...  
-        
+
       #Orange tag display name  
       orange-tag: Orange
 
@@ -123,15 +123,15 @@ guilds:
       final-kill-reward: guild addxp {guild} 20
       bed-destroy-reward: guild addxp {guild} 15
       win-reward: guild addxp {guild} 200
-        
+
     guild-finder:
       sorting:
-        
+
         #Symbols shown in guild finder menu
         symbol:
           selected: '&a➠'
           not-selected: '&7 '
-          
+
         #Size filters in guild finder menu
         #Format: min-max (min and max are included)
         #If only one number is provided, it will be considered as the minimum
@@ -139,34 +139,34 @@ guilds:
           - 1-20
           - 21-50
           - 51-80
-          - '81'    
-        
+          - '81'
+
     progress-bar:
       #Bar character
       char: '|'
 
       #Bar characters count
       chars-count: 40
-      
+
       #Bar character unlocked color
       locked-color: '&7'
 
       #Bar character locked color
       unlocked-color: '&6'
-      
+
     guild-time:
       #Guild time format
       #Check https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
       format: yyyy-MM-dd HH:mm z
-      
+
     guild-invite:
       #Time of guild invite expire in minutes
       time-in-minutes: 1
-      
+
     guild-party:
       #Command executed on /guild party command
       party-command: party invite {player}
-      
+
     guild-chat:
       #Chat cooldown time
       mute-time: 10
@@ -175,12 +175,41 @@ guilds:
       admin-spy:
         #Enable admin spy
         enabled: true
-      
+
     guild-kick:
-      
+
       #Set to true to require a reason for kicking a player from the guild
-      require-reason: true  
-      
+      require-reason: true
+
+  # Commands settings
+  commands:
+
+    # Command: /guild
+    guild:
+
+      # Aliases for /guild command
+      aliases:
+        - guilds
+        - g
+        - clan
+        - c
+        - clans
+
+      # Sub-command /guild achievements    
+      achievements:
+
+        # Aliases for /guild achievements sub-command
+        aliases:
+          - achievementmenu
+
+
+    # other commands...        
+    
+    guildadmin:
+      aliases:
+        - gadmin
+        - guildsadmin
+
   permissions:
     #Permission for creating a guild
     create: guilds.create
