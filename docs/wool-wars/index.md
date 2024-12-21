@@ -13,8 +13,7 @@ arena. Before the start of each round players can choose a kit, which also has a
 
 ## Where can I buy the plugin?
 
-You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/105548/)
-or [Polymart](https://polymart.org/r/2551).
+You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/105548/), [Polymart](https://polymart.org/r/2551) or [BuiltByBit](https://builtbybit.com/resources/wool-wars.25971/).
 
 ## Quick Links
 
