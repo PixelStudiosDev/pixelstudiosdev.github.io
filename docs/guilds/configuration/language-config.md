@@ -17,6 +17,10 @@ Example of a guild command messages in the language file:
 accept:
   #Message in /guild help
   help: '&e/guild accept - &bAccepts a guild invitation'
+  
+  #Hidden command in /guild help
+  #Set to true to hide the command in /guild help
+  hidden: false
 
   #Command set in chat on click in /guild help
   hover-command: /guild accept
