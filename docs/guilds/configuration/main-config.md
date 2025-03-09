@@ -201,6 +201,9 @@ guilds:
         # Aliases for /guild achievements sub-command
         aliases:
           - achievementmenu
+          
+        # Disable the sub command
+        disabled: true
 
 
     # other commands...        

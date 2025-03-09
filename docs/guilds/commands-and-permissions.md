@@ -4,6 +4,10 @@ sidebar_position: 4
 
 # Commands and Permissions
 
+:::info
+To disable commands or edit their aliases, you can do so in the `plugins/Guilds/config.yml` file.
+:::
+
 ## Player Commands
 
 - `/guildchat <text>` <br/>
