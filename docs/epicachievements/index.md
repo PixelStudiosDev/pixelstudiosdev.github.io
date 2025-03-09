@@ -1,37 +1,25 @@
 ---
-title: Home
+title: EpicAchievements
 sidebar_position: 1
 ---
 
 # EpicAchievements
 
-## What is EpicAchievements?
-
-EpicAchievements boosts gameplay with over 25 types of achievements for tasks like farming, exploring, and battling. 
+EpicAchievements boosts gameplay with over 30 types of achievements for tasks like farming, exploring, building and many more!
 
 It features challenge and tiered achievements, with customizable conditions and rewards. Integrated with popular plugins, players can earn points, unlock rewards, and track their progress easily.
 
-## Where can I buy the plugin?
+Buy the plugin now on [SpigotMC](https://www.spigotmc.org/resources/116800/), [Polymart](https://polymart.org/r/5931) or [BuiltByBit](https://builtbybit.com/resources/44823)!
 
-EpicAchievements is available on [SpigotMC](https://www.spigotmc.org/resources/116800/), [Polymart](https://polymart.org/r/5931) or [BuiltByBit](https://builtbybit.com/resources/44823).
+## Requirements
+- **Java 17** or higher
+- A Minecraft 1.8.8 - 1.21.4 server
+- **(Optional)** A MySQL or MongoDB database
 
-## [UI Addon](https://polymart.org/resource/epicachievements-ui.6523)
+## UI Addon
 
-Enhance EpicAchievements with a sleek interface! **[Requires Oraxen / ItemsAdder]**
+Enhance EpicAchievements with a sleek interface! **(Requires Nexo, Oraxen or ItemsAdder)**
+
+Buy it now on [Polymart](https://polymart.org/resource/epicachievements-ui.6523)!
 
 [![UI Addon](https://i.imgur.com/XhNP40p.png)](https://polymart.org/resource/epicachievements-ui.6523)
-
-## Quick Links
-
-- [Installation](/epicachievements/installation)
-- [Commands and Permissions](/epicachievements/commands-and-permissions)
-- Configuration
-    - [Achievements](/epicachievements/configuration/achievements)
-    - [Tasks](/epicachievements/configuration/tasks)
-    - [Categories](/epicachievements/configuration/categories)
-    - [Conditions](/epicachievements/configuration/conditions)
-    - [Rewards](/epicachievements/configuration/rewards)
-- Placeholders
-    - [Internal Placeholders](/epicachievements/placeholders/internal-placeholders)
-    - [PlaceholderAPI](/epicachievements/placeholders/placeholderapi)
-- [Developer API](/epicachievements/developer-api)

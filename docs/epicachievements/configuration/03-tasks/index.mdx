@@ -1,0 +1,81 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Tasks
+
+EpicAchievements comes with a wide range of built-in tasks. <br/>
+You can find them in the table below:
+
+<Tabs>
+    <TabItem value="new" label="v2.0" default>
+        | Task          | Description                                                                           | [Supported Conditions](/epicachievements/configuration/conditions) | Minimum Minecraft Version | Requires Paper |
+        |---------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------|----------------|
+        | `ADVANCEMENT` | Complete an advancement<br/>Requires [additional settings](tasks/advancement)            |                                                                    | 1.12                      |
+        | `BREAK`       | Break a block                                                                         | `blocks` `crop_age`                                                | 1.8                       |
+        | `BREED`       | Breed an entity                                                                       | `entities` `is_hostile`                                                        | 1.10                      |
+        | `BREW`        | Brew an item                                                                          | `items` `potion_types`                                       | 1.18                      |
+        | `CHAT`        | Send a chat message                                                                   |                                                                    | 1.8                       |
+        | `COMMAND`     | Execute a command<br/>Requires [additional settings](tasks/command)                      |                                                                    | 1.8                       |
+        | `CONSUME`     | Consume an item                                                                       | `items`                                                            | 1.8                       |
+        | `CRAFT`       | Craft an item                                                                         | `items`                                                            | 1.8                       |
+        | `DAMAGE`      | Damage an entity                                                                      | `entities` `is_hostile` `damage_causes`                                                        | 1.8                       |
+        | `DEATH`       | Die                                                                                   | `damage_causes`                                                                  | 1.8                       |
+        | `DISMOUNT`    | Dismount an entity                                                                    | `entities` `is_hostile`                                                                  | 1.8                       |
+        | `DROP`        | Drop an item                                                                          | `items`                                                            | 1.8                       |
+        | `ENCHANT`     | Enchant an item                                                                       | `items`                                                            | 1.8                       |
+        | `EXPERIENCE`  | Gain experience levels                                                                |                                                                    | 1.8                       |
+        | `FARM`        | Harvest a block                                                                       | `blocks` `crop_age`                                                | 1.16                      |
+        | `FISH`        | Catch an item while fishing                                                           | `items`                                                            | 1.8                       |
+        | `JUMP`        | Jump                                                                                |                                                                    | 1.12                       | **Yes** |
+        | `KILL`        | Kill an entity                                                                        | `entities` `is_hostile`                                                        | 1.8                       |
+        | `MILK`        | Milk an entity                                                                        |                                                                    | 1.8                       |
+        | `MOUNT`       | Mount an entity                                                                       | `entities` `is_hostile`                                                        | 1.8                       |
+        | `PICKUP`      | Pickup an item                                                                        | `items`                                                            | 1.8                       |
+        | `PLACE`       | Place a block                                                                         | `blocks` `crop_age`                                                | 1.8                       |
+        | `PLAYTIME`    | Play for a certain amount of time (in **seconds**)         |                                                                    | 1.8                       |
+        | `SHEAR`       | Shear an entity                                                                       | `entities` `is_hostile`                                                        | 1.8                       |
+        | `SMELT`       | Smelt an item                                                                         | `items`                                                            | 1.8                       |
+        | `TAME`        | Tame an entity                                                                        | `entities` `is_hostile`                                                        | 1.8                       |
+        | `TRADE`       | Trade with a villager                                                                 | `items`                                                            | 1.16  | **Yes** |
+        | `WALK`        | Travel for a certain amount of blocks                                                   |                                                                    | 1.8                       |
+
+        ## Plugin Hooks
+        | Plugin | Task | Description | Supported Conditions |
+        |---------------|---------------------------------------------------------------------------------------|----------------------------|---------------------------|
+        | [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) | `PLACEHOLDER` | Evaluates a placeholder. Requires [additional settings](tasks/placeholder) |
+        | [CustomFishing](https://polymart.org/resource/2723/) | `CUSTOM_FISHING` | Catch CustomFishing's loot | `custom_fishing_loot` |
+    </TabItem>
+    <TabItem value="old" label="v1.0">
+        | Task          | Description                                                                           | [Supported Conditions](/epicachievements/configuration/conditions) | Minimum Minecraft Version |
+        |---------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------|
+        | `ADVANCEMENT` | Complete an advancement<br/>Requires [additional setup](tasks/advancement)            |                                                                    | 1.12                      |
+        | `BREAK`       | Break a block                                                                         | `blocks` `crop-age`                                                | 1.8                       |
+        | `BREED`       | Breed an entity                                                                       | `entities`                                                         | 1.10                      |
+        | `BREW`        | Brew an item                                                                          | `items`<br/>`potion-effects`                                       | 1.18                      |
+        | `COMMAND`     | Execute a command<br/>Requires [additional setup](tasks/command)                      |                                                                    | 1.8                       |
+        | `CONSUME`     | Consume an item                                                                       | `items`                                                            | 1.8                       |
+        | `CRAFT`       | Craft an item                                                                         | `items`                                                            | 1.8                       |
+        | `DAMAGE`      | Damage an entity                                                                      | `entities`                                                         | 1.8                       |
+        | `DEATH`       | Die                                                                                   |                                                                    | 1.8                       |
+        | `DROP`        | Drop an item                                                                          | `items`                                                            | 1.8                       |
+        | `ENCHANT`     | Enchant an item                                                                       | `items`                                                            | 1.8                       |
+        | `EXPERIENCE`  | Gain experience points                                                                |                                                                    | 1.8                       |
+        | `FARM`        | Harvest a block                                                                       | `blocks` `crop-age`                                                | 1.16                      |
+        | `FISH`        | Catch an item while fishing                                                           | `items`                                                            | 1.8                       |
+        | `KILL`        | Kill an entity                                                                        | `entities`                                                         | 1.8                       |
+        | `MILK`        | Milk an entity                                                                        |                                                                    | 1.8                       |
+        | `PICKUP`      | Pickup an item                                                                        | `items`                                                            | 1.8                       |
+        | `PLACE`       | Place a block                                                                         | `blocks` `crop-age`                                                | 1.8                       |
+        | `PLACEHOLDER` | Check a PlaceholderAPI placeholder<br/>Requires [additional setup](tasks/placeholder) |                                                                    | 1.8                       |
+        | `PLAYTIME`    | Play for a certain amount of time<br/>The amount of time must be in `seconds`         |                                                                    | 1.8                       |
+        | `SHEAR`       | Shear an entity                                                                       | `entities`                                                         | 1.8                       |
+        | `SMELT`       | Smelt an item                                                                         | `items`                                                            | 1.8                       |
+        | `TAME`        | Tame an entity                                                                        | `entities`                                                         | 1.8                       |
+        | `TRADE`       | Trade with a villager                                                                 | `items`                                                            | 1.16 (**Requires Paper**) |
+        | `WALK`        | Walk for a certain amount of blocks                                                   |                                                                    | 1.8                       |
+    </TabItem>
+</Tabs>
+
+
+
+

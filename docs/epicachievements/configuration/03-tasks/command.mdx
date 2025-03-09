@@ -1,0 +1,52 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Command Task
+
+This task triggers when a player executes a command. <br/>
+
+:::warning
+These achievements are limited to only **1** tier.
+:::
+
+<Tabs>
+    <TabItem value="new" label="v2.0" default>
+        [RegEx](https://regex101.com/) is supported. Example configuration:
+
+        ```yaml title="achievements/survival/challenges.yml" showLineNumbers
+        mayor:
+          type: COMMAND
+          settings:
+            # Matches any town name
+            command: "^town create .+$"
+          name: "Mayor"
+          description:
+            - "&fCreate your own town!"
+          tiers:
+            1:
+              required-amount: 1
+              rewards:
+                - type: points
+                  amount: 10
+        ```
+    </TabItem>
+    <TabItem value="old" label="v1.0">
+        It's necessary to set the `command` property. [RegEx](https://regex101.com/) is supported.
+
+        Example configuration:
+
+        ```yaml title="achievements/survival/achievements.yml"
+        mayor:
+          type: COMMAND
+          # Matches any town name
+          command: "^town create .+$"
+          name: "Mayor"
+          description:
+            - "&fCreate your own town!"
+          tiers:
+            1:
+              required-amount: 1
+              points: 10
+        ```
+    </TabItem>
+</Tabs>

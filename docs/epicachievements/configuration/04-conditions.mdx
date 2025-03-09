@@ -1,0 +1,97 @@
+# Conditions
+
+Conditions are used to set requirements to be met in order to complete an achievement. <br/>
+Below is a list of the built-in conditions:
+
+:::info
+By default, all lists of entities, items, etc. are treated as **whitelists**. <br/>
+To make them **blacklists**, add `blacklist: true`.
+
+Blacklist example:
+```yaml
+conditions:
+  - type: items
+    items:
+      - "NETHERITE_INGOT"
+    blacklist: true
+```
+:::
+:::tip
+**Wildcards** are supported in most condition types:
+```yaml
+conditions:
+  - type: items
+    items:
+      - "*_PICKAXE" # Matches all types of pickaxes
+```
+:::
+
+<details>
+    <summary>Version 1.0</summary>
+    <p>
+        ### Global Conditions
+        Supported by all types of achievements.
+
+        | Condition            | Description                                                                                                       | Examples                 |
+        |----------------------|-------------------------------------------------------------------------------------------------------------------|--------------------------|
+        | `game-modes`         | Allowed game modes                                                                                                | `- SURVIVAL`             |
+        | `worlds`             | Allowed worlds                                                                                                    | `- "world"`              |
+        | `item-in-hand`       | Requires the player to have an item in hand                                                                       | `- <material>`           |
+        | `item-equipped`      | Requires the player to have an item equipped                                                                      | `- <material>`           |
+        | `riding-entity`      | Requires the player to ride an entity                                                                             | `- ALL`<br/>`- <entity>` |
+        | `regions`            | A list of [WorldGuard](https://dev.bukkit.org/projects/worldguard) regions                                        | `- <region-id>`          |
+        | `is-sneaking`        | Requires the player to be sneaking                                                                                | `true` `false`           |
+        | `is-sprinting`       | Requires the player to be sprinting                                                                               | `true` `false`           |
+        | `is-flying`          | Requires the player to be flying                                                                                  | `true` `false`           |
+        | `has-open-inventory` | Checks if the player has an inventory open.<br/>It isn't possible to check if the player's own inventory is open. | `true` `false`           |
+
+        ### Task-specific Conditions
+        Supported only by some types of achievements.
+
+        | Condition        | Description                                                                                          | Examples                                                    |
+        |------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+        | `entities`       | A list of entities                                                                                   | `- CHICKEN`<br/>`- mythicmobs:<mob-id>`<br/>`- mm:<mob-id>` |
+        | `items`          | A list of items                                                                                      | `- <material>`                                              |
+        | `blocks`         | A list of blocks                                                                                     | `- <material>`                                              |
+        | `potion-effects` | A list of [potion types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html) | `- SWIFTNESS`                                               |
+        | `crop-age`       | Specify crop growth stages                                                                           | `MAX` `<age>`                                               |
+    </p>
+</details>
+
+### Global conditions
+Supported by all types of achievements.
+
+| Condition            | Description                                                                                                       | Examples                 |
+|----------------------|-------------------------------------------------------------------------------------------------------------------|--------------------------|
+| `game_modes`         | Allowed game modes                                                                                                | `game-modes`             |
+| `worlds`             | Allowed worlds                                                                                                    | `worlds`                 |
+| `has_item`           | Requires the player to have an item in their inventory                                                            | `items`                  |
+| `has_held`       | Requires the player to have an item in hand                                                                           | `items`                  |
+| `has_equipped`      | Requires the player to have an item equipped                                                                       | `items`                  |
+| `riding_entity`      | Requires the player to ride an entity                                                                             | `entities`               |
+| `is_sneaking`        | Requires the player to be sneaking                                                                                | `value` (true/false)           |
+| `is_sprinting`       | Requires the player to be sprinting                                                                               | `value` (true/false)           |
+| `is_flying`          | Requires the player to be flying                                                                                  | `value` (true/false)           |
+| `has_inventory_open` | Checks if the player has an inventory open.<br/>It isn't possible to check if the player's own inventory is open. | `value` (true/false)           |
+
+### Plugin Hooks
+
+| Plugin   | Condition       | Description             | Required arguments |
+|----------|-----------------|-------------------------|--------------------|
+| [WorldGuard](https://dev.bukkit.org/projects/worldguard) | `regions` | Check if a player is within a region | `regions` |
+| [Vault](https://www.spigotmc.org/resources/34315/) | `vault` | Check if a player has a certain amount of money | `balance` |
+| [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) | `placeholder` | Evaluate a PAPI placeholder | [`placeholder` `value` `operator`](./tasks/placeholder#placeholders-that-output-text) |
+| [CustomFishing](https://polymart.org/resource/customfishing.2723) | `custom_fishing_loot` | A list of loot IDs | `loot` |
+
+### Other conditions
+Supported only by some types of achievements: refer to the [tasks](./tasks) documentation.
+
+| Condition        | Description                                                                                          | Required arguments                                                    |
+|------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| `entities`       | A list of entities                                                                                   | `entities` |
+| `is_hostile`     | Check if an entity is hostile                                                                        | `value` (true/false) |
+| `items`          | A list of items                                                                                      | `items`                                              |
+| `blocks`         | A list of blocks                                                                                     | `blocks`                                              |
+| `potion_types`   | A list of [potion types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html) | `types`                                               |
+| `crop_age`       | Specify crop growth stages                                                                           | `age` (growth stage/`MAX`)                            |
+| `damage_causes`  | A list of [damage causes](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)                 | `causes`                                              |

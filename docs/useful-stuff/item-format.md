@@ -5,8 +5,8 @@ slug: /item-format
 
 Follow the format below to configure an item in config files.<br/>
 
-:::warning 
-Don't follow this format if you are using **Guilds plugin**, follow instead the [Gui Item Configuration](/guilds/configuration/menu-config) format.
+:::warning
+**Guilds** uses a [different format](/guilds/configuration/menu-config) for items in the menu configuration!
 :::
 
 :::tip
@@ -44,9 +44,9 @@ example-item:
   custom-model-data: 123
   unbreakable: true
   flags:
-    - "HIDE_ENCHANTS"
+    - HIDE_ENCHANTS
   enchantments:
-    - "FIRE_ASPECT,2"
+    - FIRE_ASPECT:2
   modifiers:
-    - "GENERIC_MOVEMENT_SPEED,1"
+    - GENERIC_MOVEMENT_SPEED:1
 ```
