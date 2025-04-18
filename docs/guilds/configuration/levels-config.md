@@ -23,6 +23,10 @@ You can check the 5th level that by default has the `GRAY` TAG color.
 
 <br/>
 
+:::info
+To set default level rewards use the first level (level-1).
+:::
+
 :::note
 The example above can be followed for all the other reward types.
 :::
@@ -43,12 +47,14 @@ levels:
     #Double experience -> double-xp:amount
     #Guild TAG -> tag:tag_id  (see: config.yml -> guilds.settings.guild-tag.tag)
     #Guild name/tag chars -> chars:char1,char2, ...
+    #Guild max members  -> max-members:amount 
     rewards:
     - double-xp:1
     - double-coins:5
     - tag:GRAY
     - tag-length:7
     - chars:✧,✪,✖,✓
+    - max-members:20
     
   #Other levels above  
 ```
