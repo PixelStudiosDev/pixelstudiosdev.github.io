@@ -13,7 +13,7 @@ Buy the plugin now on [SpigotMC](https://www.spigotmc.org/resources/116800/), [P
 
 ## Requirements
 - **Java 17** or higher
-- A Minecraft 1.8.8 - 1.21.4 server
+- A Minecraft 1.8.8 - 1.21.5 server
 - **(Optional)** A MySQL or MongoDB database
 
 ## UI Addon
@@ -22,4 +22,4 @@ Enhance EpicAchievements with a sleek interface! **(Requires Nexo, Oraxen or Ite
 
 Buy it now on [Polymart](https://polymart.org/resource/epicachievements-ui.6523)!
 
-[![UI Addon](https://i.imgur.com/XhNP40p.png)](https://polymart.org/resource/epicachievements-ui.6523)
+[![UI Addon](https://imgur.com/J4KI16T.png)](https://polymart.org/resource/epicachievements-ui.6523)
