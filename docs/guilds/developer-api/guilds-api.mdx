@@ -1,0 +1,194 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Working with Guilds API
+
+- Once you have added `Guilds` as a dependency in your project, you can start using the Guilds API.
+
+
+<Tabs>
+    <TabItem value="new" label="v2.0" default>
+        The new API is designed to be more user-friendly and efficient.
+        The previous API was integrated into the jar file of the plugin, which was causing problems in some cases.
+
+        The new API is now a separate dependency, which allows for better modularity and flexibility in your projects.
+
+        It is based on the `GuildAPI` class, which has the **Provider** interfaces.
+
+        As you can see, on the [Github repository](https://github.com/PixelStudiosDev/GuildsAPI/blob/master/src/main/java/me/leoo/guilds/api/objects/GuildAPI.java)
+        of the GuildsAPI, the `GuildAPI` class is an interface that provides methods to interact with the guilds system.
+
+        We have got the following interfaces:
+        - `GuildProvider`: This interface provides methods to interact with the guilds system.
+        - `PlayerProvider`: This interface provides methods to interact with the players in the guilds system.
+        - `UtilsProvider`: This interface provides utility methods to interact with the guilds system.
+
+        `GuildProvider` is the one that you will use the most, as it provides methods to interact with the guilds system.
+
+        You can use methods such as `GuildAPI.getGuildProvider()` to get the `GuildProvider` instance (the same for the other interfaces).
+
+        We recomment to create a static variable for each provider you use in your project, so you can access it easily.
+
+        ```java title="Example.java"
+       import me.leoo.guilds.api.objects.GuildAPI;
+       import me.leoo.guilds.api.objects.guild.GuildProvider;
+
+       public class Example {
+           private static final GuildProvider GUILD_PROVIDER = GuildAPI.getGuildProvider();
+
+           private static final PlayerProvider PLAYER_PROVIDER = GuildAPI.getPlayerProvider();
+
+           private static final UtilsProvider UTILS_PROVIDER = GuildAPI.getUtilsProvider();
+       }
+        ```
+
+        Once you have the provider instances, you can use them to interact with the guilds system.
+
+        ## Examples
+
+        Here, you will see some example for each provider.
+        We will not explore many methods, you can do that by yourself in two ways:
+        - Checking the [Github repository](https://github.com/PixelStudiosDev/GuildsAPI/tree/master/src/main/java/me/leoo/guilds/api) of the GuildsAPI, where you can find the source code of the API.
+        - Checking the methods when writing your code, as the IDE will show you the methods available in the interfaces.
+
+        We will may publish the Javadocs of the API in the future, but for now, you can use the source code to understand how to use the API.
+
+        <Tabs>
+            <TabItem value="guild" label="GuildProvider" default>
+                The `GuildProvider` interface provides methods to interact with the guilds system.
+
+                ### Example methods
+
+                - `GuildView getByUuid(UUID uuid)`: Returns the guild with the given UUID.
+                - `GuildView getByName(String name)`: Returns the guild with the given name.
+                - `GuildView getByPlayer(Player player)`: Returns the guild of the player.
+                - `GuildView getByPlayer(UUID player)`: Returns the guild of the player with the given UUID.
+
+                - `List<GuildView> getGuilds()`: Returns a list of all guilds on the server.
+
+                ### Example usage
+
+                ```java title="ExampleGuild.java"
+                    public GuildView getGuildByPlayer(UUID playerUuid) {
+                        GuildView guild = GUILD_PROVIDER.getByPlayer(playerUuid);
+
+                        if (guild == null) {
+                            return null; // Player is not in a guild
+                        }
+
+                        return guild;
+                    }
+
+                    public GuildView getGuildByName(String name) {
+                        GuildView guild = GUILD_PROVIDER.getByName(name);
+
+                        if (guild == null) {
+                            return null; // Guild does not exist
+                        }
+
+                        return guild;
+                    }
+
+                    public List<GuildView> getAllGuilds() {
+                        return GUILD_PROVIDER.getGuilds();
+                    }
+
+                     // Get guilds with less than 10 members
+                    public List<GuildView> getUnderfilledGuilds() {
+                        return GUILD_PROVIDER.getGuilds().stream()
+                            .filter(guild -> guild.getMembersView().size() < 10)
+                            .collect(Collectors.toList());
+                    }
+                ```
+
+            </TabItem>
+
+            <TabItem value="player" label="PlayerProvider">
+                The `PlayerProvider` interface only provides a few methods to interact with the players in the guilds system.
+
+                ### Methods List
+
+                - `PlayerView getPlayer(UUID uuid)`: Returns the player with the given UUID.
+                - `PlayerView getPlayer(Player player)`: Returns the player with the given Player object.
+
+                ### Why using PlayerProvider?
+
+                It could be useful in some cases, but in most cases you will be able to use:
+                `GuildView.getPlayer(UUID uuid) or GuildView.getPlayer(String name)` methods to get the player in the guild.
+                Each of these methods returns a `PlayerView` object, which contains information about the player in the guild.
+
+                ### Example usage
+
+                ```java title="ExamplePlayer.java"
+                    public PlayerView getPlayerByUuid(UUID uuid) {
+                        return PLAYER_PROVIDER.getPlayer(uuid);
+                    }
+
+                    public PlayerView getPlayerByName(String name) {
+                        return GUILD_VIEW.getPlayer(name); // Using GuildView to get the player
+                    }
+                ```
+            </TabItem>
+
+            <TabItem value="utils" label="UtilsProvider">
+                The `UtilsProvider` interface provides utility methods to interact with the guilds system.
+
+                ### Methods List
+
+                - `void debug(String message)`: Sends a debug message to the console.
+
+                :::info
+                For debug method, you can use the `GuildAPI.debug(String message)` method instead, which is a static method that does the same thing.
+                :::
+
+                ### Example usage
+
+                ```java title="ExampleUtils.java"
+                    public void logDebugMessage(String message) {
+                        UTILS_PROVIDER.debug(message);
+                    }
+                ```
+            </TabItem>
+        </Tabs>
+    </TabItem>
+
+    <TabItem value="old" label="v1.0">
+        - The main class of the Guilds API is `GuildsAPI`. You can use this class to access the API methods.
+
+        # GuildsAPI class methods
+
+        ### Guilds
+
+        - `getGuilds()`: Returns a list of all guilds on the server.
+        - `getShownGuilds()`: Returns a list of all shown guilds.
+
+        ### Getting a guild
+
+        #### By guild's UUID
+        - `getGuildByUuid(UUID uuid)`: Returns the guild with the given UUID. Returns `null` if the guild does not exist.
+
+        #### By player's UUID
+        - `getGuildByPlayer(UUID playerUuid)`: Returns the guild of the player with the given UUID. Returns `null` if the player is not in a guild.
+
+        #### By guild's name
+        - `getGuildByName(String name)`: Returns the guild with the given name. Returns `null` if the guild does not exist.
+
+        # Example
+
+        ```java title="ExampleListener.java"
+        @EventHandler
+        public void onJoin(PlayerJoinEvent event) {
+            Player player = event.getPlayer();
+
+            Guild guild = GuildsAPI.getGuildByPlayer(player.getUniqueId());
+            if (guild == null) {
+                return;
+            }
+
+            player.sendMessage("You are in the guild " + guild.getName() + "!");
+        }
+        ```
+    </TabItem>
+
+</Tabs>
+

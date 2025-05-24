@@ -1,0 +1,100 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Getting Started
+
+- Add the Guilds dependency in your project:
+
+
+### Importing the Plugin
+
+<Tabs>
+    <TabItem value="new" label="v2.0" default>
+
+        :::warning
+        Since this is a new API there may be some issues or missing stuff, if you find any please report it on
+        the [GitHub Issues](https://github.com/PixelStudiosDev/GuildsAPI/issues) or
+        join our [Discord Server](https://pixelstudios.dev/discord).
+        :::
+
+        <Tabs>
+          <TabItem value="maven" label="Maven" default>
+
+            ```xml
+
+            <repositories>
+                <repository>
+                    <id>jitpack.io</id>
+                    <url>https://jitpack.io</url>
+                </repository>
+            </repositories>
+
+            <dependency>
+                <groupId>com.github.PixelStudiosDev</groupId>
+                <artifactId>GuildsAPI</artifactId>
+                <version>Tag</version>
+            </dependency>
+
+            ```
+
+          </TabItem>
+
+          <TabItem value="gradle" label="Gradle">
+            ```groovy
+
+            repositories {
+                maven { url 'https://jitpack.io' }
+            }
+
+            dependencies {
+                implementation 'com.github.PixelStudiosDev:GuildsAPI:Tag'
+            }
+
+            ```
+
+        </TabItem>
+        </Tabs>
+
+
+        Latest GuildsAPI
+        version: [![](https://jitpack.io/v/PixelStudiosDev/GuildsAPI.svg)](https://jitpack.io/#PixelStudiosDev/GuildsAPI)
+
+        Latest Utils version (could be
+        required): [![](https://jitpack.io/v/leo18bernese/Utils.svg)](https://jitpack.io/#leo18bernese/Utils)
+
+        :::note
+        Replace `Tag` with the version number. You can find the available versions in
+        the [Releases](https://github.com/PixelStudiosDev/GuildsAPI/releases) page.<br/>
+        :::
+
+    </TabItem>
+
+    <TabItem value="old" label="v1.x">
+        :::info
+        You need to use the plugin's jar as dependency.
+        :::
+
+        ### Maven
+        ```xml
+        <dependency>
+            <groupId>me.leoo.guilds</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>Tag</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/path/to/plugin.jar</systemPath>
+        </dependency>
+        ```
+
+        ### Gradle
+        ```groovy
+        dependencies {
+            implementation files("${project.projectDir}/path/to/plugin.jar")
+        }
+        ```
+
+        :::note
+        Replace `Tag` with the version number. You can find the version in the jar file name.<br/>
+        Replace path/to/plugin.jar with the path to the plugin's jar file.
+        :::
+    </TabItem>
+</Tabs>

@@ -1,23 +1,27 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
+title: Language Config
 ---
-
-# Language Config
 
 ## File location
 
 The language configuration file is located in `plugins/Guilds/language.yml`.
 
+You can edit the file messages to your liking. <br/>
+You only have to remember that you must not edit the type of the message,
+for example where you see a message between `''` you can set a list or a number.
+
 ## Editing the file
 
-Example of a guild command messages in the language file:
+We are going to see only the configuration of a command, but the same applies to all commands. <br/>
+Other things can be normally edited. <br/>
 
 ```yaml title="config.yml"
 #Command name (don't edit)
 accept:
   #Message in /guild help
   help: '&e/guild accept - &bAccepts a guild invitation'
-  
+
   #Hidden command in /guild help
   #Set to true to hide the command in /guild help
   hidden: false

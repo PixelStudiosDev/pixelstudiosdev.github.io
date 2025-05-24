@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: Main Config
 ---
-
-# Main Config
 
 ## File location
 
@@ -13,8 +12,8 @@ The main configuration file is located in `plugins/Guilds/config.yml`.
 Here you can find all the information regarding the configuration of the file:
 
 ```yaml title="config.yml"
-# Guilds v1.5.3 made by [itz_leoo].
-# Dependencies: [].
+# Guilds v2.0.0-BETA made by [itz_leoo].
+# Dependencies: [PixelLibs].
 # SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
 # Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
 # Join my discord for support: https://pixelstudios.dev/discord
@@ -32,6 +31,15 @@ mysql:
 
   # SQL driver class (leave empty for default)
   driver-class: ''
+
+  # MongoDB URI (leave empty for using credentials)
+  mongo-uri: mongodb://localhost:27017
+
+  # SQL table names
+  tables:
+    guilds: guilds
+    players: players
+    ranks: ranks
 
 #Redis settings
 #You can leave empty username/password if you don't have it
@@ -53,7 +61,7 @@ guilds:
       enabled: false
       #Refresh rate in seconds of data between servers
       refresh: 10
-      #Delay in milli seconds from the player's join in the server and the sending of the join message
+      #Delay in milliseconds from the player's join in the server and the sending of the join message
       join-delay: 50
 
     #True for printing in console of the plugin database actions and other things    
@@ -98,12 +106,16 @@ guilds:
 
       #Default max Guild Tag Length
       default-max-length: 6
+      
+      #Disable color system
+      disable-color-system: false
 
       #Tag colors of guild tag based on level
       #Format: color_id:color_display_name
       tag:
+        - NONE:None
         - GRAY:Gray
-        - DARK_AQUA:Dark Acqua
+        - DARK_AQUA:Dark Aqua
         - DARK_GREEN:Dark Green
         - YELLOW:Yellow
         # other colors...  
@@ -117,12 +129,16 @@ guilds:
       format: '{rankTagColor}[{rankTag}]'
 
     guild-level:
+
+      # Choose to enable or disable the guild level system
+      enabled: true
+
       #Command executed on these events
       #The events are based on the hook plugins
-      kill-reward: guild addxp {guild} 10
-      final-kill-reward: guild addxp {guild} 20
-      bed-destroy-reward: guild addxp {guild} 15
-      win-reward: guild addxp {guild} 200
+      kill-reward: guild addxp {guildName} 10
+      final-kill-reward: guild addxp {guildName} 20
+      bed-destroy-reward: guild addxp {guildName} 15
+      win-reward: guild addxp {guildName} 200
 
     guild-finder:
       sorting:
@@ -205,6 +221,8 @@ guilds:
         # Disable the sub command
         disabled: true
 
+        # Require confirmation
+        confirm: true
 
     # other commands...        
     

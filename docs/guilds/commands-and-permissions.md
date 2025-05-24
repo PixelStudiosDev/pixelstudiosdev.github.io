@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Commands and Permissions
@@ -117,11 +117,12 @@ Usage: `/guild <subCommandName>` <br/> <br/>
 
 ## Permissions
 
-- `string in config: guilds.permissions.create` <br/>
-  Create a Guild.
+Config permissions are defined in the `plugins/Guilds/config.yml` file. <br/>
 
-- `string in config: guilds.permissions.admin` <br/>
-  Admin features.
-
-- `guilds.mvp++` <br/>
-  Add the Orange Guild TAG Color
+| Path      | Description                                                                                       |
+|-----------|---------------------------------------------------------------------------------------------------|
+| `create`  | Allows players to create a guild.                                                                 |
+| `admin`   | Allows players to use admin features.                                                             |
+| `join`    | Allows players to join a guild without an invitation. (only if `settings SHOWN` is set to `true`) |
+| `tag`     | Allows players to set a guild tag.                                                                |
+| `discord` | Allows players to set a guild discord link.                                                       |

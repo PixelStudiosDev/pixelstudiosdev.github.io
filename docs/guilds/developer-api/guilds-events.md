@@ -5,13 +5,18 @@
 
 # Guilds Events List
 
+## V2 Changes
+Path change: `me.leoo.guilds.bukkit.api.events` to `me.leoo.guilds.api.events`.
+
+New event:
+- `GuildQuestCompleteEvent`: Called when a guild quest is completed.
+
 ### Guilds
 
 :::note
 GuildCreateEvent and GuildDeleteEvent events cannot be cancelled.
 :::
 
-- `GuildCreateEvent`: Called when a guild is created.
 - `GuildDeleteEvent`: Called when a guild is deleted.
 - `GuildRenameEvent`: Called when a guild is renamed.
 - `GuildTagEvent`: Called when a guild's tag is changed.

@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: Menu Config
 ---
-
-# Menu Config
 
 ## File location
 
