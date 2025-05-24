@@ -34,7 +34,7 @@ These are the main features of the plugin:
   - Guild visibility (public, private)
   - Guild online mode (on, off), used in some commands to show only online members.
 - Leveling system: each guild can level up, unlocking new features and rewards. Check [leveling documentation](/guilds/features/leveling).
-- Quest system: each guild can complete quests to receive experience. Check [quests documentation](/guilds/features/quests).
+- Quest system: each guild can complete quests to receive experience. Check [quests documentation](/guilds/features/quest).
 - Custom rewards: it is possible to create rewards that can be earned by respecting conditions. Check [rewards documentation](/guilds/features/rewards).
 - Achievements: it is possible to create achievements that can be earned by doing specific tasks. Check [achievements documentation](/guilds/features/achievements).
 
@@ -63,7 +63,7 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
 - Features
    - [Proxy Mode](/guilds/features/proxy-mode)
    - [Leveling System](/guilds/features/leveling)
-   - [Quest System](/guilds/features/quests)
+   - [Quest System](/guilds/features/quest)
    - [Custom Rewards](/guilds/features/rewards)
    - [Achievements](/guilds/features/achievements)
    - [Tag Colors](/guilds/features/tag-colors)
