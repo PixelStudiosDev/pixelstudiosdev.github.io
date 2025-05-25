@@ -60,7 +60,7 @@ public void onGuildTransfer(GuildTransferEvent event) {
         oldLeader.sendMessage("§cThe new leader is not online.");
 
         event.setCancelled(true);
-        return;
+        return;aq
     }
 }
 ```

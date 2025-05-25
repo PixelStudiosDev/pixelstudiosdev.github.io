@@ -1,0 +1,39 @@
+---
+title: Rewards
+sidebar_position: 5
+---
+
+## Structure
+
+```yaml title="tasks.yml"
+get_diamonds:
+  type: block_break
+
+  conditions:
+    - type: block
+      materials:
+        - DIAMOND_ORE
+        - GOLD_ORE
+
+  rewards:
+    - guild_xp:100
+    - guild_quest:2
+```
+
+We are going to focus on the `rewards` part of the task structure. <br/>
+
+`Rewards` is a list of rewards, written as a list of strings, **each element** follows the format: `{reward_type}:{value}` <br/>
+
+where `{reward_type}` is the type of reward and `{value}` is the value for that reward. <br/>
+Value is **usually** a number, but it can also be another type of value, depending on the reward type. <br/>
+
+### General Conditions
+
+These conditions will be structured using a string to value format. <br/>
+
+| Type          | Values Type | Description                         | Example         |
+|---------------|-------------|-------------------------------------|-----------------|
+| `xp`          | Numeric     | Give the player experience points.  | `xp:100`        |
+| `guild_xp`    | Numeric     | Add experience points to the guild. | `guild_xp:100`  |
+| `guild_quest` | Numeric     | Add progress to the guild quest.    | `guild_quest:2` |
+

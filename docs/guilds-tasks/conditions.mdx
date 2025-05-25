@@ -1,0 +1,243 @@
+---
+title: Conditions
+sidebar_position: 4
+---
+
+## Structure
+
+```yaml title="tasks.yml"
+get_diamonds:
+  type: block_break
+
+  conditions:
+    - type: block
+      materials:
+        - DIAMOND_ORE
+        - GOLD_ORE
+
+  rewards:
+    - guild_xp:100
+```
+
+We are going to focus on the `conditions` part of the task structure. <br/>
+
+`Condtions` is a list of conditions written in this format:
+
+```yaml
+- type: <condition_type>
+    <condition_parameters>
+```
+
+where `<condition_type>` is the type of condition and `<condition_parameters>` are the parameters for that
+condition. <br/>
+
+## Parameters
+
+Before looking at the available condition types, let's look at the parameters formats that can be used in
+conditions. <br/>
+
+- String to value: `<parameter_name>:<value>` <br/>
+Example: `min-food:10` <br/>
+
+- String to list of values as YAML array. <br/>
+Example:
+```yaml
+materials:
+  - DIAMOND_ORE
+  - GOLD_ORE
+  ```
+
+### How do parameters work effectively?
+
+You will be able to find both formats depending on the condition type. <br/>
+
+In the complete documentation you will be able to find:
+
+- The accepted conditions for each task
+- The parameter name of each condition
+- The accepted values and formats for each parameter (
+
+:::note
+Keep in mind that **you can't** use a different format from the one specified in the documentation for that condition
+type. <br/>
+You can get into trouble if you try to use a different format, so please follow the documentation carefully. <br/>
+:::
+
+## Types
+
+Condition types are string values which define the type of condition. <br/>
+
+:::warning
+The plugin actually supports ONLY the 1.8 achievements and tasks, so as of now, you can not use later achievements or
+tasks. <br/>
+We will implement features of newer versions in the future. <br/>
+:::
+
+### General Conditions
+
+These conditions will be structured using a list. <br/>
+In the table below, you can find the type id, the path and allowed values for each condition.
+
+| Type        | Path           | Allowed Values                                                                          | Example Values              |
+|-------------|----------------|-----------------------------------------------------------------------------------------|-----------------------------|
+| achievement | `achievements` | [Achievement IDs](https://helpch.at/docs/1.8/index.html?org/bukkit/Achievement.html)    | `BREW_POTION`, `KILL_ENEMY` |
+| biome       | `biomes`       | [Biome IDs](https://helpch.at/docs/1.8/index.html?org/bukkit/block/Biome.html)          | `DESERT`, `FOREST`, `TAIGA` |
+| block       | `materials`    | [Material IDs](https://helpch.at/docs/1.8/index.html?org/bukkit/Material.html)          | `DIAMOND_ORE`, `GOLD_ORE`   |
+| entity      | `entities`     | [Entity IDs](https://helpch.at/docs/1.8/index.html?org/bukkit/entity/EntityType.html)   | `CREEPER`, `ZOMBIE`         |
+| item        | `materials`    | [Material IDs](https://helpch.at/docs/1.8/index.html?org/bukkit/Material.html)          | `DIAMOND_ORE`, `GOLD_ORE`   |
+| potion      | `potion_types` | [Potion Types](https://helpch.at/docs/1.8/index.html?org/bukkit/potion/PotionType.html) | `SPEED`, `SLOWNESS`         |
+
+### Player Conditions
+
+For player conditions, we usually have different parameters for each condition type. <br/>
+
+<details>
+    <summary>Player Experience</summary>
+
+    Condition based on the player's experience level and points.<br/>
+    If `check-level` is true, the player's level must be within the specified range.<br/>
+    If `check-exp` is true, the player's experience points must be within the specified range.<br/>
+
+    ```yaml
+    type: player_experience
+    min-level: 10
+    max-level: 20
+    check-level: true
+
+    min-exp: 1000
+    max-exp: 5000
+    check-exp: true
+    ```
+
+</details>
+
+<details>
+    <summary>Player Flight</summary>
+
+    Condition based on the player's ability to fly or flying state.<br/>
+    If `is-flying` is true, the player must be flying.<br/>
+    If `check-allow-flight` is true, the player must be allowed to fly.<br/>
+
+    ```yaml
+    type: player_flight
+    is-flying: true
+    check-allow-flight: true
+    ```
+
+</details>
+
+<details>
+    <summary>Player Food</summary>
+
+    Condition based on the player's food level.<br/>
+    `min-food` and `max-food` define the accepted food level range.<br/>
+
+    ```yaml
+    type: player_food
+    min-food: 10
+    max-food: 20
+    ```
+
+</details>
+
+<details>
+    <summary>Player Game Mode</summary>
+
+    Condition based on the player's game mode.<br/>
+    `gamemodes` is a list of accepted game modes: `SURVIVAL`, `CREATIVE`, `ADVENTURE`, `SPECTATOR`.<br/>
+
+    ```yaml
+    type: player_gamemode
+    gamemodes:
+    - SURVIVAL
+    - CREATIVE
+    ```
+
+</details>
+
+<details>
+    <summary>Player Health</summary>
+
+    Condition based on the player's health.<br/>
+    `min-health` and `max-health` define the accepted health range.<br/>
+
+    ```yaml
+    type: player_health
+    min-health: 10
+    max-health: 20
+    ```
+
+</details>
+
+<details>
+    <summary>Player Location</summary>
+
+    Condition based on the player's location.<br/>
+    `worlds` is a list of accepted worlds.<br/>
+    If `check-coordinates` is true, the player's coordinates must be within the specified min and max for x, y, z.<br/>
+
+    ```yaml
+    type: player_location
+    worlds:
+    - world1
+    - world2
+
+    check-coordinates: true
+    min-x: 100
+    max-x: 200
+    min-y: 50
+    max-y: 100
+    min-z: 100
+    max-z: 200
+    ```
+
+</details>
+
+<details>
+    <summary>Player Permission</summary>
+
+    Condition based on the player's permissions.<br/>
+    `permissions` is a list of required permissions.<br/>
+    If `require-all` is true, the player must have all listed permissions.<br/>
+
+    ```yaml
+    type: player_permission
+    permissions:
+    - guilds.tasks.test
+    - guilds.tasks.another-test
+    require-all: true
+    ```
+
+</details>
+
+<details>
+    <summary>Player Potion Effect</summary>
+
+    Condition based on the player's active potion effects.<br/>
+    `potion-effects` is a list of required effects.<br/>
+    If `require-all` is true, the player must have all listed effects.<br/>
+
+    ```yaml
+    type: player_potion
+    potion-effects:
+    - SPEED
+    - SLOWNESS
+    require-all: true
+    ```
+
+</details>
+
+<details>
+    <summary>Player Sneak</summary>
+
+    Condition based on the player's sneak state.<br/>
+    If `is-sneaking` is true, the player must be sneaking.<br/>
+    If `check-sneak` is true, the sneak state will be checked.<br/>
+
+    ```yaml
+    type: player_sneak
+    is-sneaking: true
+    check-sneak: true
+    ```
+
+</details>
