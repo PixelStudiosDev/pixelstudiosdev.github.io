@@ -38,11 +38,6 @@ These are the main features of the plugin:
 - Custom rewards: it is possible to create rewards that can be earned by respecting conditions. Check [rewards documentation](/guilds/features/rewards).
 - Achievements: it is possible to create achievements that can be earned by doing specific tasks. Check [achievements documentation](/guilds/features/achievements).
 
-Guilds is an advanced and fully customizable guild system that will enhance your Minecraft journey.
-Create your own guild or join an existing one to unlock a world of possibilities.
-Earn amazing rewards by spending time on the server, leveling up, and gaining experience.
-Within your guild, members are assigned ranks with selectable permissions determined by the guild owner.
-
 ## Where can I buy the plugin?
 
 You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/)
@@ -67,6 +62,7 @@ or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.co
    - [Custom Rewards](/guilds/features/rewards)
    - [Achievements](/guilds/features/achievements)
    - [Tag Colors](/guilds/features/tag-colors)
+   - [Games](/guilds/features/games)
 - [Commands and Permissions](/guilds/commands-and-permissions)
 - Placeholders
     - [Internal Placeholders](/guilds/placeholders/internal-placeholders)

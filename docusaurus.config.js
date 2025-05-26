@@ -10,8 +10,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'PixelStudiosDev', 
-  projectName: 'pixelstudiosdev.github.io', 
+  organizationName: 'PixelStudiosDev',
+  projectName: 'pixelstudiosdev.github.io',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
   i18n: {
@@ -61,11 +61,23 @@ const config = {
                 docId: 'wool-wars/index',
                 label: 'Wool Wars',
               },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Guilds',
+            position: 'left',
+            items: [
               {
                 type: 'doc',
                 docId: 'guilds/index',
                 label: 'Guilds',
               },
+              {
+                type: 'doc',
+                docId: 'guilds-tasks/index',
+                label: 'Guilds Tasks',
+                },
             ],
           },
           {
@@ -136,8 +148,8 @@ const config = {
           },
         ],
       },
-  
-    
+
+
       algolia: {
         // The application ID provided by Algolia
         appId: 'RU37CM01FF',
@@ -165,7 +177,7 @@ const config = {
         // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: 'search'
     }})
-    
+
 };
 
 module.exports = config;
