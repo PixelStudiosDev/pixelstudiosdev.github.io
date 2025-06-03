@@ -1,87 +1,8 @@
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
-
 # Achievements
 
-:::info
-There are two types of achievements:
-- `CHALLENGE` - Single tier
-- `TIERED` - Multiple tiers
-
-The type is automatically determined by the number of tiers.
-:::
-
-<Tabs>
-    <TabItem value="new" label="v2.0" default>
-        :::note
-        Achievements are located in the `plugins/EpicAchievements/achievements/<category>` folder. <br/>
-        You can have as many achievement files as you want in a category.
-        :::
-
-        Below is an example of an achievement configuration:
-
-        ```yaml title="achievements/survival/challenges.yml" showLineNumbers=true"
-        # Unique identifier. Don't modify it or players will lose their progress!
-        lucky-catch:
-          # The type of task
-          # See https://wiki.pixelstudios.dev/epicachievements/configuration/tasks
-          type: FISH
-          # The achievement's name
-          name: "Lucky Catch"
-          # The achievement's description
-          description:
-            - "&fCatch an enchanted book"
-            - "&fwhile fishing."
-          # (Optional) The achievement's weight
-          # This determines the default sorting order in the menu
-          # The default weight is 1
-          # weight: 10
-
-          # (Optional) Permission required to access the achievement
-          # permission: achievements.lucky-catch
-
-          # (Optional) Hide the achievement from the menu
-          # hidden: true
-
-          # (Optional) Required achievements to access this achievement
-          # requirements:
-          #   - "miner" # Requires all tiers to be completed
-          #   - "farmer:1" # Requires the first tier to be completed
-
-          # (Optional) Additional settings
-          # settings:
-          #   toast-message:
-          #     icon: ENCHANTED_BOOK
-          #     message: "Custom toast message!"
-          #     type: CHALLENGE
-
-          # A list of conditions
-          # See https://wiki.pixelstudios.dev/epicachievements/configuration/conditions
-          conditions:
-            - type: game_modes
-              game-modes:
-                - SURVIVAL
-            - type: items
-              items:
-                - ENCHANTED_BOOK
-          # A list of tiers (at least one tier is required)
-          tiers:
-            1:
-              # Progress required to complete the tier
-              required-amount: 1
-              # A list of rewards. See https://wiki.pixelstudios.dev/epicachievements/configuration/rewards
-              rewards:
-                - type: points
-                  amount: 5
-            # More tiers can be added below:
-            # 2:
-            #   required-amount: 3
-            #   rewards:
-            #     - type: points
-            #       amount: 10
-        ```
-    </TabItem>
-    <TabItem value="old" label="v1.0">
+<details>
+    <summary>Version 1.0</summary>
+    <p>
         ### Interactive setup
 
         The easiest way to create and edit achievements is by using the in-game editor. <br/>
@@ -102,42 +23,190 @@ The type is automatically determined by the number of tiers.
         ```yaml title="achievements/survival/achievements.yml"
         # Unique identifier. Don't modify it or players will lose their progress!
         builder:
-          # The type of task: See https://wiki.pixelstudios.dev/epicachievements/configuration/tasks
-          type: PLACE
-          # The name used in messages and menus
-          name: "Builder"
-          # The description of the achievement
-          description:
-            - "&fPlace blocks."
-          # (Optional) Permission required to progress in the achievement
-          permission: achievements.builder
-          # Required achievements to progress in this achievement
-          required-achievements:
-            - miner
-            - farmer
-          # Conditions: See https://wiki.pixelstudios.dev/epicachievements/configuration/conditions
-          blocks:
-            - STONE_BRICKS
-            - BRICKS
-          worlds:
-            - world
-            - resource_world
-          game-modes:
-            - SURVIVAL
-          # A list of tiers. There must be at least one tier
-          tiers:
-            1:
-              # Progress required to complete the tier
-              required-amount: 10
-              # Points awarded when completing the tier
-              points: 25
-              # A list of rewards. See https://wiki.pixelstudios.dev/epicachievements/configuration/rewards
-              # Format: REWARD_TYPE:VALUE
-              rewards:
-                - "VAULT:100"
-                - "COMMAND:say {player} has completed the Builder achievement!"
-              # Other tiers can be added below
+        # The type of task: See https://wiki.pixelstudios.dev/epicachievements/configuration/tasks
+        type: PLACE
+        # The name used in messages and menus
+        name: "Builder"
+        # The description of the achievement
+        description:
+        - "&fPlace blocks."
+        # (Optional) Permission required to progress in the achievement
+        permission: achievements.builder
+        # Required achievements to progress in this achievement
+        required-achievements:
+        - miner
+        - farmer
+        # Conditions: See https://wiki.pixelstudios.dev/epicachievements/configuration/conditions
+        blocks:
+        - STONE_BRICKS
+        - BRICKS
+        worlds:
+        - world
+        - resource_world
+        game-modes:
+        - SURVIVAL
+        # A list of tiers. There must be at least one tier
+        tiers:
+        1:
+        # Progress required to complete the tier
+        required-amount: 10
+        # Points awarded when completing the tier
+        points: 25
+        # A list of rewards. See https://wiki.pixelstudios.dev/epicachievements/configuration/rewards
+        # Format: REWARD_TYPE:VALUE
+        rewards:
+        - "VAULT:100"
+        - "COMMAND:say {player} has completed the Builder achievement!"
+        # Other tiers can be added below
         ```
-    </TabItem>
-</Tabs>
+    </p>
+</details>
 
+:::info
+There are two types of achievements:
+- `CHALLENGE`: Single tier
+- `TIERED`: Multiple tiers
+
+The type is automatically determined by the number of tiers.
+:::
+
+:::note
+Achievements are located in the `plugins/EpicAchievements/achievements/<category>` folder. <br/>
+You can have as many achievement files as you want in a category.
+:::
+
+## Required Fields
+
+### `type`
+You can find all available task types [here](./tasks).
+```yaml
+type: FISH
+```
+
+### `name`
+The achievements's name, displayed in messages and menus.
+```yaml
+name: "Lucky Catch"
+```
+
+### `description`
+The achievement's description, displayed in messages and menus.
+```yaml
+description:
+  - "&fCatch an enchanted book"
+  - "&fwhile fishing."
+```
+
+### `tiers`
+A list of tiers, where each tier is identified by a unique number. <br/>
+**At least one tier is required.**
+
+- `required-amount`: The amount of progress required to complete the tier.
+- `rewards`: A list of rewards for completing the tier. [Click here](./rewards) for more information.
+```yaml
+tiers:
+  1:
+    required-amount: 1
+    rewards:
+      - type: points
+        amount: 5
+  2:
+    required-amount: 5
+    rewards:
+      - type: points
+        amount: 10
+```
+
+## Optional Fields
+
+### `weight`
+The achievement's weight. Used to determine the default sorting order in menus. <br/>
+**Default:** `1`
+```yaml
+weight: 5
+```
+
+### `permission`
+A permission required to access the achievement. <br/>
+**Default:** `None`
+```yaml
+permission: "achievements.lucky-catch"
+```
+
+### `hidden`
+If set to true, the achievement will be hidden from menus and kept *secret*. <br/>
+**Default:** `false`
+```yaml
+hidden: true
+```
+
+### `requirements`
+Players must complete these achievements before they can access this achievement. <br/>
+**Default:** `None` <br/>
+
+Valid formats:
+- `<id>` - Requires **all tiers** of the achievement to be completed.
+- `<id>:<tier>` - Requires the specified tier of the achievement to be completed.
+```yaml
+requirements:
+  - "miner"
+  - "farmer:3"
+```
+
+### `conditions`
+A list of conditions that must be met in order to complete the achievement. <br/>
+[Click here](./conditions) for more information.
+```yaml
+conditions:
+  - type: game_modes
+    game-modes:
+      - SURVIVAL
+  - type: items
+    items:
+      - ENCHANTED_BOOK
+```
+
+### `settings`
+Additional settings for the achievement.
+
+`toast-message`: Overrides the default toast message set in `config.yml`
+  - `icon`: The icon displayed in the toast.
+  - `message`: The message displayed in the toast.
+  - `type`: You can choose between `CHALLENGE`, `TASK` or `GOAL`.
+```yaml
+settings:
+  toast-message:
+    icon: ENCHANTED_BOOK
+    message: "Custom toast message!"
+    type: CHALLENGE
+```
+
+## Example Configuration
+
+```yaml title="achievements/survival/challenges.yml" showLineNumbers=true"
+# Unique identifier. Don't modify it or players will lose their progress!
+lucky-catch:
+  type: FISH
+  name: "Lucky Catch"
+  description:
+    - "&fCatch an enchanted book"
+    - "&fwhile fishing."
+  settings:
+    toast-message:
+      icon: ENCHANTED_BOOK
+      message: "Custom toast message!"
+      type: CHALLENGE
+  conditions:
+    - type: game_modes
+      game-modes:
+        - SURVIVAL
+    - type: items
+      items:
+        - ENCHANTED_BOOK
+  tiers:
+    1:
+      required-amount: 1
+      rewards:
+        - type: points
+          amount: 5
+```
