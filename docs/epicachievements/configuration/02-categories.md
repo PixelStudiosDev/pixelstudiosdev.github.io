@@ -1,7 +1,8 @@
 
 # Categories
 
-Achievements are organized into categories. For each category, you can specify the servers where the achievements can be completed.
+Achievements are organized into categories. <br/>
+Categories are especially helpful for grouping achievements that belong to the same server/game mode.
 
 :::info
 The server id is defined in the `config.yml` file:
@@ -10,24 +11,58 @@ The server id is defined in the `config.yml` file:
 server: survival
 :::
   
-Below is an example configuration:
+## Required Fields 
+### `name`
+The name of the category.
+```yaml
+name: "Global"
+```
 
-```yaml title="categories.yml"
+### `description`
+The description of the category.
+```yaml
+description:
+  - "&7Achievements that can be completed"
+  - "&7across all servers."
+```
+
+### `servers`
+A list of servers where the category is enabled. <br/>
+**Use `ALL` to enable it on all servers.**
+```yaml
+servers:
+  - ALL
+```
+
+### `item`
+The item displayed in the main menu for the category.
+- `material`: The item's material.
+- `slot`: The slot in the menu where the item will be displayed.
+```yaml
+item:
+  material: COMPASS
+  slot: 12
+```
+
+## Optional Fields
+### `permission`
+A permission required to access the category. <br/>
+**Default:** `None`
+```yaml
+permission: "achievements.global"
+```
+  
+## Example Configuration
+
+```yaml title="categories.yml" showLineNumbers=true
 # Unique category identifier
-global:
-  # Category name
-  name: "Global"
-  # Category description
+survival:
+  name: "Survival"
   description:
-    - "&7Achievements that can be completed"
-    - "&7across all servers."
-  # Servers where the category is enabled
+    - "&7Mine, craft and explore!"
   servers:
-    - ALL
-  # Item displayed in the main menu
+    - survival
   item:
-    material: COMPASS
+    material: DIAMOND_PICKAXE
     slot: 12
-  # (Optional) Permission required to access the category
-  # permission: achievements.global
 ```
