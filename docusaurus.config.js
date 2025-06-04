@@ -58,6 +58,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'guilds/index',
+                label: 'Guilds',
+              },
+              {
+                type: 'doc',
                 docId: 'wool-wars/index',
                 label: 'Wool Wars',
               },
@@ -65,19 +70,14 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'Guilds',
+            label: 'Add-ons',
             position: 'left',
             items: [
               {
                 type: 'doc',
-                docId: 'guilds/index',
-                label: 'Guilds',
-              },
-              {
-                type: 'doc',
                 docId: 'guilds-tasks/index',
-                label: 'Guilds Tasks',
-                },
+                label: 'Guilds Tasks'
+              }
             ],
           },
           {
