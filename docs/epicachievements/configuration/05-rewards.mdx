@@ -109,17 +109,36 @@ You can use the `{player}` and `{uuid}` placeholders in all rewards.
 | [Vault](https://www.spigotmc.org/resources/34315/)        | `vault`         | Give money to a player  | `amount`           |
 | [PlayerPoints](https://www.spigotmc.org/resources/80745/) | `player_points` | Give points to a player | `amount`           |
 
-## Customizing reward descriptions
+---
 
-Reward descriptions displayed in menus can be customized to override the default description defined in `rewards.yml`:
-```yaml showLineNumbers
+## Optional Fields
+
+### `description`
+Used to customize the reward description, overriding the default one defined in `rewards.yml`. <br/>
+The `{amount}` placeholder is available.
+
+```yaml
+description: "&8+ &7{amount} &eCoins"
+```
+
+### `permission`
+A permission required to claim the reward. Players without this permission won't see the reward in the list. <br/>
+**Default:** `None`
+```yaml
+permission: "group.vip"
+```
+
+## Example Configuration
+
+```yaml
 rewards:
   - type: points
     amount: 10
-    # Override the default description
-    # The {amount} placeholder is available
     description: "&8+ &7A nice gift!"
+    permission: "group.vip"
 ```
+
+---
 
 ## The reward leveling system
 
