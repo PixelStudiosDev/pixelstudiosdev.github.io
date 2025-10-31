@@ -17,72 +17,69 @@ Here you can find an explained version of an arena configuration file:
 ```yaml title="example.yml"
 # The displayed name of the arena
 displayname: Urban
-
 # The group of the arena. This is used for the /woolwars join <group> command and for some placeholders.
 group: 4v4
-
 # The location of the waiting lobby. (Format: world:x:y:z:yaw:pitch)
-lobby-location: urban:-10.246799445222704:35.0:7.537029879923992:90.62368:-1.4038824
-
+lobby-location: urban:-10.25:35.0:7.54:90.62:-1.40
+# The location of the spectator spawn point. (Format: world:x:y:z:yaw:pitch)
+spectator-spawn: urban:-9.83:81.41:0.38:269.13:2.89
 # The maximum amount of players allowed in a team.
 max-players-per-team: 4
-
 # The minimum amount of players required to start a match.
 min-players: 8
-
 # The amount of points required to win the match.
 win-points: 3
-
 # The two opposite corners of the arena. (Format: world:x:y:z:yaw:pitch)
 arena:
-  pos1: urban:45.18659910545357:75.26937512731548:-23.637419056945376:61.245728:13.4217415
-  pos2: urban:-68.06385957460992:17.16326849838637:34.48349152753095:244.38086:3.927539
-
+  pos1: urban:45.19:75.27:-23.64:61.25:13.42
+  pos2: urban:-68.06:17.16:34.48:244.38:3.93
 # The two opposite corners of the center area: where the wool is placed. (Format: world:x:y:z:yaw:pitch)
 center:
   pos1: urban:-16.0:34.0:6.0
   pos2: urban:-14.0:34.0:8.0
-
-
+  
 teams:
-
-  # The team color. (Available colors: RED-BLUE-GREEN-YELLOW-AQUA-WHITE-PINK-GRAY-DARK_GREEN-PURPLE-ORANGE-DARK_GRAY-DARK_AQUA)
+  # The team ID defined in teams.yml
   RED:
-
-    # The team name.
-    name: Red
-
     # The spawn location of the team. (Format: world:x:y:z:yaw:pitch)
-    spawn-location: urban:19.726533254889375:35.0:7.535394896518646:90.1001:-0.19494508
-
+    spawn-location: urban:19.73:35.0:7.54:90.10:-0.19
+    # The location of the kit selector NPC. (Format: world:x:y:z:yaw:pitch)
+    npc-location: urban:0.16:77.0:27.04:357.11:10.91
     # The two opposite corners of the team's barrier. (Format: world:x:y:z:yaw:pitch)
     barrier:
       pos1: urban:15.0:35.0:0.0
       pos2: urban:15.0:50.0:14.0
-
     # The two opposite corners of the team's base. (Format: world:x:y:z:yaw:pitch)
     base:
-      pos1: urban:15.699999988079082:33.0:-1.537473589165458:270.99573:49.02512
-      pos2: urban:36.78390094835717:63.64437466524372:20.455237034269178:120.58618:26.289003
-
+      pos1: urban:15.70:33.0:-1.54:271.00:49.03
+      pos2: urban:36.78:63.64:20.46:120.59:26.29
   BLUE:
-    name: Blue
-    spawn-location: urban:-50.28451168147723:35.0:7.540310771710887:269.84784:-1.3192612
+    spawn-location: urban:-50.28:35.0:7.54:269.85:-1.32
+    npc-location: urban:0.16:77.0:27.04:357.11:10.91    
     barrier:
       pos1: urban:-45.0:51.0:14.0
       pos2: urban:-45.0:35.0:0.0
     base:
-      pos1: urban:-69.60219328899193:63.64437466524372:-9.262688721402766:307.1952:10.79843
-      pos2: urban:-44.69999998807907:33.0:16.410240841139277:89.48328:58.644215
+      pos1: urban:-69.60:63.64:-9.26:307.20:10.80
+      pos2: urban:-44.70:33.0:16.41:89.48:58.64
+  # You aren't limited to 2 teams. You can add as many teams as you want.  
 
-  # You aren't limited to 2 teams. You can add as many teams as you want.		  
-
-# The locations of the powerups. (Format: world:x:y:z:yaw:pitch)	  
+# The locations of the powerups. (Format: world:x:y:z:yaw:pitch)  
 powerups:
-  - urban:-14.69482314273969:32.0:-2.676415134016782:187.81433:90.0
-  - urban:-14.591850157292582:32.0:17.59402242090085:6.083618:86.37721
-  - urban:-41.425202197928876:33.0:25.26048742644185:276.04462:90.0
-  - urban:-41.620314881907355:33.0:-10.559345699435298:187.34906:90.0
-  - urban:12.426240282389438:33.0:-10.539807015025715:277.92224:90.0
-  - urban:12.565456659400164:33.0:25.477387273628626:2.7470703:90.0
+  - urban:-14.69:32.0:-2.68:187.81:90.0
+  - urban:-14.59:32.0:17.59:6.08:86.38
+  - urban:-41.43:33.0:25.26:276.04:90.0
+  - urban:-41.62:33.0:-10.56:187.35:90.0
+  - urban:12.43:33.0:-10.54:277.92:90.0
+  - urban:12.57:33.0:25.48:2.75:90.0
+# Portals
+portals:
+  '1':
+    pos1: urban:22.0:73.0:-4.0
+    pos2: urban:22.0:79.0:4.0
+    destination: urban:-18.46:73.0:0.54:-90.33:3.26
+  '2':
+    pos1: urban:-22.0:73.0:4.0
+    pos2: urban:-22.0:79.0:-4.0
+    destination: urban:20.54:73.0:0.49:-269.88:0.03
 ```
