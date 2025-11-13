@@ -8,47 +8,47 @@ You need to have [PlaceholderAPI](https://www.spigotmc.org/resources/placeholder
 
 | Placeholder                     | Description                                              |
 |---------------------------------|----------------------------------------------------------|
-| `%woolwars_wins%`               | Get the player wins                                      |
-| `%woolwars_losses%`             | Get the player losses                                    |
-| `%woolwars_games_played%`       | Get the number of games played                           |
-| `%woolwars_kills%`              | Get the player kills                                     |
-| `%woolwars_deaths%`             | Get the player deaths                                    |
-| `%woolwars_wool_placed%`        | Get the amount of wool placed                            |
-| `%woolwars_blocks_broken%`      | Get the amount of blocks broken                          |
-| `%woolwars_powerups_collected%` | Get the amount of powerups collected                     |
-| `%woolwars_selected_kit%`       | Get the name of the selected kit                         |
-| `%woolwars_win_streak%`         | Get the player win streak                                |
-| `%woolwars_kdr%`                | Get the player KDR                                       |
-| `%woolwars_count_total%`        | Get the total amount of players playing                  |
-| `%woolwars_count_<group>%`      | Get the amount of players playing in the specified group |
+| `%woolwars_wins%`               | The player's total wins.                                     |
+| `%woolwars_losses%`             | The player's total losses.                                    |
+| `%woolwars_games_played%`       | The total number of games the player has played.                           |
+| `%woolwars_kills%`              | The player's total kills.                                     |
+| `%woolwars_deaths%`             | The player's total deaths.                                    |
+| `%woolwars_wool_placed%`        | The total amount of wool the player has placed.                            |
+| `%woolwars_blocks_broken%`      | The total number of blocks the player has broken.                          |
+| `%woolwars_powerups_collected%` | The total number of power-ups the player has collected.                     |
+| `%woolwars_selected_kit%`       | The name of the player's selected kit.                         |
+| `%woolwars_win_streak%`         | The player's current win streak.                                |
+| `%woolwars_kdr%`                | The player's kill-death ratio.                                       |
+| `%woolwars_count_total%`        | The total number of players currently playing.                  |
+| `%woolwars_count_<group>%`      | The number of players in a specific group. |
 
 ### In-Game Placeholders
 
 | Placeholder                            | Description                                    |
 |----------------------------------------|------------------------------------------------|
-| `%woolwars_arena_id%`                  | Get the current arena ID                       |
-| `%woolwars_arena_displayname%`         | Get the current arena display name             |
-| `%woolwars_arena_group%`               | Get the current arena group                    |
-| `%woolwars_arena_state%`               | Get the current arena state                    |
-| `%woolwars_arena_time%`                | Get the current arena time in seconds          |
-| `%woolwars_arena_time_formatted%`      | Get the current arena time formatted as mm:ss  |
-| `%woolwars_arena_win_points%`          | Get the current arena win points               |
-| `%woolwars_arena_players%`             | Get the current number of players in the arena |
-| `%woolwars_arena_max_players%`         | Get the current arena max players              |
-| `%woolwars_arena_kills%`               | Get the current kills                          |
-| `%woolwars_arena_deaths%`              | Get the current deaths                         |
-| `%woolwars_arena_wool_placed%`         | Get the current amount of wool placed          |
-| `%woolwars_arena_blocks_broken%`       | Get the current amount of blocks broken        |
-| `%woolwars_arena_round_kills%`         | Get the current round kills                    |
-| `%woolwars_arena_round_wool_placed%`   | Get the current round wool placed              |
-| `%woolwars_arena_round_blocks_broken%` | Get the current round blocks broken            |
+| `%woolwars_arena_id%`                  | The ID of the current arena.                       |
+| `%woolwars_arena_displayname%`         | The display name of the current arena.             |
+| `%woolwars_arena_group%`               | The group of the current arena.                    |
+| `%woolwars_arena_state%`               | The current state of the arena.                    |
+| `%woolwars_arena_time%`                | The elapsed time of the current arena in seconds.          |
+| `%woolwars_arena_time_formatted%`      | The elapsed time of the current arena, formatted as mm:ss.  |
+| `%woolwars_arena_win_points%`          | The win points of the current arena.               |
+| `%woolwars_arena_players%`             | The number of players in the current arena. |
+| `%woolwars_arena_max_players%`         | The maximum number of players for the current arena.              |
+| `%woolwars_arena_kills%`               | The player's kills in the current arena.                          |
+| `%woolwars_arena_deaths%`              | The player's deaths in the current arena.                         |
+| `%woolwars_arena_wool_placed%`         | The amount of wool the player has placed in the current arena.          |
+| `%woolwars_arena_blocks_broken%`       | The number of blocks the player has broken in the current arena.        |
+| `%woolwars_arena_round_kills%`         | The player's kills in the current round.                    |
+| `%woolwars_arena_round_wool_placed%`   | The amount of wool the player has placed in the current round.              |
+| `%woolwars_arena_round_blocks_broken%` | The number of blocks the player has broken in the current round.            |
 
 <br/>
 
 | Placeholder              | Description                         |
 |--------------------------|-------------------------------------|
-| `%woolwars_team_name%`   | Get the name of the player's team   |
-| `%woolwars_team_color%`  | Get the color of the player's team  |
-| `%woolwars_team_letter%` | Get the letter of the player's team |
-| `%woolwars_team_points%` | Get the current team's points       |
-| `%woolwars_team_alive%`  | Get the amount of alive members     |
+| `%woolwars_team_name%`   | The name of the player's team.   |
+| `%woolwars_team_color%`  | The color of the player's team.  |
+| `%woolwars_team_letter%` | The letter of the player's team. |
+| `%woolwars_team_points%` | The current team's points.       |
+| `%woolwars_team_alive%`  | The number of alive members in the team.     |

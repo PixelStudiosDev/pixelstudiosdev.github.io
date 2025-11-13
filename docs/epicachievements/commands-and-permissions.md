@@ -4,10 +4,18 @@ sidebar_position: 3
 
 # Commands and Permissions
 
+:::note
+- `<required>` - Required argument<br/>
+- `[optional]` - Optional argument
+  :::
+
 ### Player Commands
 
-- `/achievements menu` <br/>
-  Opens the main achievements GUI.
+- `/achievements` <br/>
+  Opens the main achievements menu.
+
+- `/achievements menu [category] [type]` <br/>
+  Opens the specified achievements menu. <br/>
 
 - `/achievements rewards` <br/>
   Opens the rewards GUI.
@@ -18,7 +26,13 @@ sidebar_position: 3
 - `/achievements search [query]` <br/>
   Searches for achievements matching the query.
 
+- `/achievements help` <br/>
+  Displays the help message.
+
 ### Admin Commands
+
+- `/achievements open <player> [category] [type]` <br/>
+  Opens the specified achievements menu for a player.
 
 - `/achievements progress <player> <achievement> <set/add/remove> <amount>` <br/>
   Sets the progress of an achievement for a player.
@@ -30,7 +44,7 @@ sidebar_position: 3
   Resets the progress of an achievement for a player.
 
 - `/achievements reload` <br/>
-  Reloads the plugin.
+  Reloads the plugin's configuration files.
 
 ### Permissions
 

@@ -11,26 +11,26 @@ To have a Colored TAG use `%guilds_tag_color%` or `%guilds_tag_formatted%` place
 the config file.
 :::
 
-| Placeholder                                      | Description                                | Example                              |
-|--------------------------------------------------|--------------------------------------------|--------------------------------------|
-| `%guilds_name%`                                  | Get the player's guild name                | LeoGuild                             |
-| `%guilds_uuid%`                                  | Get the player's guild uuid                | d8b46fa7-137e-4819-afca-58c5af49c01e |
-| `%guilds_level%`                                 | Get the player's guild level               | 1                                    |
-| `%guilds_xp%`                                    | Get the player's guild experience          | 1000                                 |
-| `%guilds_tag%`                                   | Get the player's guild TAG                 | LeoTag                               |
-| `%guilds_tag_color%` or `%guilds_tag_formatted%` | Tag from config `guild-tag.format` string  | [LeoTag]    <br/>                    |
-| `%guilds_members%`                               | Get the player's guild members SIZE        | 5                                    |
-| `%guilds_online%`                                | Get the player's guild online members SIZE | 3                                    |
+| Placeholder                                      | Description                                       | Example                              |
+|--------------------------------------------------|---------------------------------------------------|--------------------------------------|
+| `%guilds_name%`                                  | The player's guild name                           | LeoGuild                             |
+| `%guilds_uuid%`                                  | The player's guild UUID                           | d8b46fa7-137e-4819-afca-58c5af49c01e |
+| `%guilds_level%`                                 | The player's guild level                          | 1                                    |
+| `%guilds_xp%`                                    | The player's guild experience                     | 1000                                 |
+| `%guilds_tag%`                                   | The player's guild tag                            | LeoTag                               |
+| `%guilds_tag_color%` or `%guilds_tag_formatted%` | The player's guild tag, formatted                 | [LeoTag]    <br/>                    |
+| `%guilds_members%`                               | Number of members in the player's guild           | 5                                    |
+| `%guilds_online%`                                | Number of online members in the player's guild    | 3                                    |
 
 ### Player Placeholders
 
-| Placeholder                    | Description                                        | Example                   |
-|--------------------------------|----------------------------------------------------|---------------------------|
-| `%guilds_status%`              | Get the player's guild status (from config)        | Online                    |
-| `%guilds_rank%`                | Get the player's guild rank                        | guildmaster               |
-| `%guilds_rank_display_name%`   | Get the player's guild rank display name           | Guild Master              |
-| `%guilds_rank_tag%`            | Get the player's guild rank TAG                    | GM                        |
-| `%guilds_rank_priority%`       | Get the player's guild rank priority               | 1                         |
-| `%guilds_rank_members%`        | Get the player's guild rank members (configurable) | Player1, Player2, Player3 |
-| `%guilds_rank_members_online%` | Get the player's guild rank members online         | Player1, Player2          |
-| `%guilds_rank_formatted%`      | Tag from config `guild-rank-tag.format` string     | [Guild Master]            |
+| Placeholder                    | Description                               | Example                   |
+|--------------------------------|-------------------------------------------|---------------------------|
+| `%guilds_status%`              | The player's guild status                 | Online                    |
+| `%guilds_rank%`                | The player's rank in their guild          | guildmaster               |
+| `%guilds_rank_display_name%`   | The display name of the player's rank     | Guild Master              |
+| `%guilds_rank_tag%`            | The tag of the player's rank              | GM                        |
+| `%guilds_rank_priority%`       | The priority of the player's rank         | 1                         |
+| `%guilds_rank_members%`        | Members with the same rank as the player  | Player1, Player2, Player3 |
+| `%guilds_rank_members_online%` | Online members with the same rank         | Player1, Player2          |
+| `%guilds_rank_formatted%`      | The player's rank, formatted              | [Guild Master]            |

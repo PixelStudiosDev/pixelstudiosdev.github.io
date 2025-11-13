@@ -5,12 +5,14 @@
 - `[optional]` - Optional argument
 :::
 
-| Placeholder                                                                                    | Description                                                                          |
-|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| `%achievements_points_[category]_[challenge/tiered]%`                                          | Returns the points that a players has                                                |
-| `%achievements_points_percentage_[category]_[challenge/tiered]%`                               | Returns the percentage of points that a player has                                   |
-| `%achievements_unlocked_[category]_[challenge/tiered]%`                                        | Returns the number of achievements unlocked by a player                              |
-| `%achievements_unlocked_percentage_[category]_[challenge/tiered]%`                             | Returns the percentage of achievements unlocked by a player                          |
-| `%achievements_achievement_<id>_<points/requirement/progress/percentage/bar/unlocked>_[tier]%` | Returns information about an achievement.<br/>Tier defaults to `1` when unspecified. |
-| `%achievements_tracked%`                                                                       | Returns the number of achievements being tracked by a player                         |
-| `%achievements_unclaimed%`                                                                     | Returns the number of unclaimed rewards                                              |                                 
+| Placeholder                                                                                           | Description                                                                          |
+|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| `%achievements_points_[category]_[challenge/tiered]%`                                                 | The player's points in a category.                                                   |
+| `%achievements_points_percentage_[category]_[challenge/tiered]%`                                      | The player's points percentage in a category.                                        |
+| `%achievements_points_total_[category]_[challenge/tiered]%`                                           | Total points available in a category.                                                |
+| `%achievements_unlocked_[category]_[challenge/tiered]%`                                               | Number of achievements unlocked by the player.                                       |
+| `%achievements_unlocked_percentage_[category]_[challenge/tiered]%`                                    | Percentage of achievements unlocked by the player.                                   |
+| `%achievements_total_[category]_[challenge/tiered]%`                                                  | Total number of achievements in a category.                                          |
+| `%achievements_achievement_<id>_`<br/>`<points/requirement/progress/percentage/bar/unlocked>_[tier]%` | Information about a specific achievement.<br/>Tier defaults to `1` when unspecified. |
+| `%achievements_tracked%`                                                                              | Number of achievements the player is tracking.                                       |
+| `%achievements_unclaimed%`                                                                            | Number of unclaimed rewards.                                                         |
