@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## Requirements
 - Java 8 or higher
-- Minecraft 1.8.8 - 1.21.10
+- Minecraft 1.8.8 - 1.21.11
 - [Citizens](https://ci.citizensnpcs.co/job/citizens2/), [ZNPCsPlus](https://www.spigotmc.org/resources/znpcsplus.109380/) or [FancyNpcs](https://modrinth.com/plugin/fancynpcs) for kit selector NPCs
 - **(Optional)** A MySQL server
 

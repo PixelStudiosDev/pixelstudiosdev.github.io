@@ -13,7 +13,7 @@ Buy the plugin now on [SpigotMC](https://www.spigotmc.org/resources/116800/), [P
 
 ## Requirements
 - **Java 17** or higher
-- A Minecraft 1.8.8 - 1.21.5 server
+- A Minecraft 1.8.8 - 1.21.11 server
 - **(Optional)** A MySQL or MongoDB database
 
 ## UI Addon
