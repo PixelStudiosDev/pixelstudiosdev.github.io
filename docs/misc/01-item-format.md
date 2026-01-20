@@ -1,12 +1,14 @@
 ---
 title: Item Format
 slug: /item-format
+id: item-format
 ---
 
 Follow the format below to configure an item in config files.<br/>
 
 :::warning
-**Guilds** uses a [different format](/guilds/configuration/menu-config) for items in the menu configuration!
+This format applies **only** to [**EpicAchievements**](/epicachievements) and [**Wool Wars**](/wool-wars).  
+If you are using [**Guilds**](/guilds), please follow the [specific format guide here](/guilds/configuration/menu-config).
 :::
 
 :::tip

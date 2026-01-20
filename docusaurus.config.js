@@ -81,16 +81,10 @@ const config = {
             ],
           },
           {
-            type: 'dropdown',
-            label: 'Useful stuff',
+            type: 'doc',
+            label: 'Misc',
             position: 'left',
-            items: [
-              {
-                type: 'doc',
-                docId: 'useful-stuff/item-format',
-                label: 'Item Format',
-              },
-            ],
+            docId: 'misc/item-format'
           },
           {
             href: 'https://pixelstudios.dev/github',
