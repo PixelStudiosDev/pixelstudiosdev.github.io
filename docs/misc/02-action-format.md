@@ -49,6 +49,8 @@ my-item:
 | `console:<command>` | Executes a console command.         |
 | `command:<command>` | Executes a command as the player.   |
 | `sound:<sound>`     | Plays a sound to the player.        |
+| `previous-page`     | Goes to the previous menu page.     |
+| `next-page`         | Goes to the next menu page.         |
 | `close`             | Closes the menu.                    |
 
 :::tip
