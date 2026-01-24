@@ -26,7 +26,7 @@ The following placeholders only work in the scoreboard and in some GUIs and mess
 | `{time_formatted}` | The formatted game time                    |
 | `{time}`           | The game time in seconds                   |
 | `{id}`             | The arena's ID                             |
-| `{displayname}`    | The arena's display name                   |
+| `{name}`           | The arena's display name                   |
 | `{round}`          | The current round                          |
 | `{group}`          | The arena's group                          |
 | `{state}`          | The arena's state                          |
