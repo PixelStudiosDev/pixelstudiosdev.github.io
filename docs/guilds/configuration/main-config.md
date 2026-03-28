@@ -141,6 +141,11 @@ guilds:
       win-reward: guild addxp {guildName} 200
 
     guild-finder:
+      
+      show:
+        #Hide guilds in the guild finder menu that have the SHOWN setting set to false
+        hide-not-shown-guilds: false
+        
       sorting:
 
         #Symbols shown in guild finder menu
@@ -191,6 +196,10 @@ guilds:
       admin-spy:
         #Enable admin spy
         enabled: true
+
+    friendly-fire:
+      #Enable friendly fire in the guild (enabled by default)
+      enabled: true
 
     guild-kick:
 
