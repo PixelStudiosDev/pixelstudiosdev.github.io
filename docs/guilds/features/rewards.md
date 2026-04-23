@@ -20,10 +20,16 @@ tags:
     conditions:
       - RANK:MASTER
       - MC_PERMISSION:guilds.mvp++
+
+max-members:
+  example:
+    amount: 5022
+    conditions:
+      - MC_PERMISSION:guilds.max-members.50
 ```
 
-In this example, we can see how to create a custom TAG color reward. <br/>
-We have set the color, display name and the conditions to use it. <br/>
+In this example, we can see how to create custom rewards like a TAG color and a max members upgrade. <br/>
+We have set the reward options and the conditions to use them. <br/>
 The `RANK:MASTER` is set to allow only the guild leader to be checked for the condition. <br/>
 
 :::info
@@ -34,9 +40,10 @@ Check the [Supported types](#supported-types) section to check all the supported
 
 The conditions are available for all the rewards. <br/>
 
-| Section | Type      | Options             | Description                            |
-|---------|-----------|---------------------|----------------------------------------|
-| tags    | Guild TAG | color, display-name | The color and display name of the TAG. |
+| Section     | Type        | Options             | Description                                   |
+|-------------|-------------|---------------------|-----------------------------------------------|
+| tags        | Guild TAG   | color, display-name | The color and display name of the TAG.        |
+| max-members | Max members | amount              | The maximum number of members for the guild.  |
 
 ## Condition types
 
