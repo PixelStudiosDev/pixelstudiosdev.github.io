@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.0">
 <title data-rh="true">Commands and Permissions | Pixel Studios</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://wiki.pixelstudios.dev/guilds/commands-and-permissions"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Commands and Permissions | Pixel Studios"><meta data-rh="true" name="description" content="To disable commands or edit their aliases, you can do so in the plugins/Guilds/config.yml file."><meta data-rh="true" property="og:description" content="To disable commands or edit their aliases, you can do so in the plugins/Guilds/config.yml file."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wiki.pixelstudios.dev/guilds/commands-and-permissions"><link data-rh="true" rel="alternate" href="https://wiki.pixelstudios.dev/guilds/commands-and-permissions" hreflang="en"><link data-rh="true" rel="alternate" href="https://wiki.pixelstudios.dev/guilds/commands-and-permissions" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://RU37CM01FF-dsn.algolia.net" crossorigin="anonymous"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Commands and Permissions","item":"https://wiki.pixelstudios.dev/guilds/commands-and-permissions"}]}</script><link rel="search" type="application/opensearchdescription+xml" title="Pixel Studios" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.baefd347.css">
-<script src="/assets/js/runtime~main.0ebf3108.js" defer="defer"></script>
-<script src="/assets/js/main.413b2eec.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.70878803.js" defer="defer"></script>
+<script src="/assets/js/main.a390502c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -19,7 +19,7 @@
 Send a guid message <br>
 Aliases: <code>gchat</code></li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="sub-commands">Sub Commands<a href="#sub-commands" class="hash-link" aria-label="Direct link to Sub Commands" title="Direct link to Sub Commands">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="player-sub-commands">Player Sub Commands<a href="#player-sub-commands" class="hash-link" aria-label="Direct link to Player Sub Commands" title="Direct link to Player Sub Commands">​</a></h2>
 <p>Usage: <code>/guild &lt;subCommandName&gt;</code> <br> <br></p>
 <ul>
 <li>
@@ -84,7 +84,7 @@ Show the current online members of your guild <br></p>
 </li>
 <li>
 <p><code>onlinemode</code> <br>
-Toggle if offline players are diplayed in the guild list <br></p>
+Toggle if offline players are displayed in the guild list <br></p>
 </li>
 <li>
 <p><code>party</code> <br>
@@ -100,7 +100,7 @@ Renames the guild <br></p>
 </li>
 <li>
 <p><code>settings SHOWN &lt;true/false&gt;</code> <br>
-Lets players join without being invited and vice - versa <br></p>
+Lets players join without being invited and vice versa <br></p>
 </li>
 <li>
 <p><code>settings DESCRIPTION &lt;text&gt;</code> <br>
@@ -112,7 +112,7 @@ Toggle slow chat, requiring guild members to wait 10 seconds between messages <b
 </li>
 <li>
 <p><code>tag &lt;tag&gt;/reset</code> <br>
-Sets the guild [TAG] or reset it <br></p>
+Sets the guild [TAG] or resets it <br></p>
 </li>
 <li>
 <p><code>tagcolor &lt;tagcolor&gt;</code> <br>
@@ -132,27 +132,88 @@ Unmute a player or the whole guild <br></p>
 </li>
 </ul>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="administration-commands">Administration Commands<a href="#administration-commands" class="hash-link" aria-label="Direct link to Administration Commands" title="Direct link to Administration Commands">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="these-commands-can-be-performed-only-by-operators">These commands can be performed only by operators<a href="#these-commands-can-be-performed-only-by-operators" class="hash-link" aria-label="Direct link to These commands can be performed only by operators" title="Direct link to These commands can be performed only by operators">​</a></h3>
+<p>Usage: <code>/guildadmin &lt;subCommandName&gt;</code> <br> <br></p>
 <ul>
 <li>
-<p><code>setlevel &lt;guildName&gt;/&lt;playerName&gt; &lt;amount&gt;</code> <br>
-Set guild&#x27;s level by giving its name or the name of player<br></p>
+<p><code>/guildadmin info &lt;guild&gt;</code> <br>
+Get information about a guild <br></p>
 </li>
 <li>
-<p><code>setxp &lt;guildName&gt;/&lt;playerName&gt; &lt;amount&gt;</code> <br>
-Set guild&#x27;s xp by giving its name or the name of player<br></p>
+<p><code>/guildadmin members &lt;guild&gt;</code> <br>
+List the members of a guild <br></p>
 </li>
 <li>
-<p><code>addlevel &lt;guildName&gt;/&lt;playerName&gt; &lt;amount&gt;</code> <br>
-Give a certain levels amount to a guild by giving its name or the name of player<br></p>
+<p><code>/guildadmin menu</code> <br>
+Open the admin menu <br></p>
 </li>
 <li>
-<p><code>addxp &lt;guildName&gt;/&lt;playerName&gt; &lt;amount&gt;</code> <br>
-Give a certain xp amount to a guild by giving its name or the name of player<br></p>
+<p><code>/guildadmin create &lt;name&gt; &lt;player&gt;</code> <br>
+Create a guild for a player <br></p>
+</li>
+<li>
+<p><code>/guildadmin disband &lt;guild&gt;/&lt;player&gt;</code> <br>
+Disband a guild by guild name or player name <br></p>
+</li>
+<li>
+<p><code>/guildadmin kick &lt;player&gt;</code> <br>
+Kick a player from their guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin motd &lt;guild&gt; list/clear</code> <br>
+List or clear the MOTD of a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin mute &lt;guild&gt; &lt;player&gt; &lt;time&gt;</code> <br>
+Mute a player from their guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin unmute &lt;guild&gt; &lt;player&gt;</code> <br>
+Unmute a player from their guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin setlevel &lt;guild&gt; &lt;level&gt;</code> <br>
+Set the level of a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin setxp &lt;guild&gt; &lt;xp&gt;</code> <br>
+Set the xp of a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin addlevel &lt;guild&gt; &lt;level&gt;</code> <br>
+Add levels to a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin addxp &lt;guild&gt; &lt;xp&gt;</code> <br>
+Add xp to a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin settag &lt;guild&gt; &lt;tag&gt;</code> <br>
+Set the tag of a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin settagcolor &lt;guild&gt; &lt;color&gt;</code> <br>
+Set the tag color of a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin transfer &lt;guild&gt; &lt;player&gt;</code> <br>
+Transfer the ownership of a guild <br></p>
+</li>
+<li>
+<p><code>/guildadmin addleader &lt;guild&gt; &lt;player&gt;</code> <br>
+Add a player to a guild and make them leader <br></p>
+</li>
+<li>
+<p><code>/guildadmin achievement &lt;guild&gt; &lt;achievement&gt; &lt;action&gt; [value]</code> <br>
+Manage guild achievements. Actions: add, set, reset <br></p>
+</li>
+<li>
+<p><code>/guildadmin spy &lt;true/false&gt;</code> <br>
+Enable or disable guild chat spy <br></p>
 </li>
 </ul>
+<p>These commands require the <code>admin</code> permission. The command root can also be aliased through <code>gadmin</code> or <code>guildsadmin</code> in <code>plugins/Guilds/config.yml</code>.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="permissions">Permissions<a href="#permissions" class="hash-link" aria-label="Direct link to Permissions" title="Direct link to Permissions">​</a></h2>
 <p>Config permissions are defined in the <code>plugins/Guilds/config.yml</code> file. <br></p>
-<table><thead><tr><th>Path</th><th>Description</th></tr></thead><tbody><tr><td><code>create</code></td><td>Allows players to create a guild.</td></tr><tr><td><code>admin</code></td><td>Allows players to use admin features.</td></tr><tr><td><code>join</code></td><td>Allows players to join a guild without an invitation. (only if <code>settings SHOWN</code> is set to <code>true</code>)</td></tr><tr><td><code>tag</code></td><td>Allows players to set a guild tag.</td></tr><tr><td><code>discord</code></td><td>Allows players to set a guild discord link.</td></tr></tbody></table></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/PixelStudiosDev/pixelstudiosdev.github.io/edit/master/docs/guilds/commands-and-permissions.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-04-07T20:11:38.000Z" itemprop="dateModified">Apr 7, 2026</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/guilds/features/games"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Guild Games</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/guilds/placeholders/internal-placeholders"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Internal Placeholders</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#player-commands" class="table-of-contents__link toc-highlight">Player Commands</a></li><li><a href="#sub-commands" class="table-of-contents__link toc-highlight">Sub Commands</a></li><li><a href="#administration-commands" class="table-of-contents__link toc-highlight">Administration Commands</a><ul><li><a href="#these-commands-can-be-performed-only-by-operators" class="table-of-contents__link toc-highlight">These commands can be performed only by operators</a></li></ul></li><li><a href="#permissions" class="table-of-contents__link toc-highlight">Permissions</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><a href="https://pixelstudios.dev/discord" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://www.spigotmc.org/resources/authors/1173446/" target="_blank" rel="noopener noreferrer" class="footer__link-item">SpigotMC<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://polymart.org/u/8600" target="_blank" rel="noopener noreferrer" class="footer__link-item">Polymart<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://builtbybit.com/creators/314827" target="_blank" rel="noopener noreferrer" class="footer__link-item">BuiltByBit<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://pixelstudios.dev/github" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://pixelstudios.dev/donate" target="_blank" rel="noopener noreferrer" class="footer__link-item">Donate<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 <a href="https://pixelstudios.dev/github">Pixel Studios</a></div></div></div></footer></div>
+<table><thead><tr><th>Path</th><th>Description</th></tr></thead><tbody><tr><td><code>create</code></td><td>Allows players to create a guild.</td></tr><tr><td><code>admin</code></td><td>Allows players to use <code>/guildadmin</code> commands.</td></tr><tr><td><code>join</code></td><td>Allows players to join a guild without an invitation. (only if <code>settings SHOWN</code> is set to <code>true</code>)</td></tr><tr><td><code>tag</code></td><td>Allows players to set a guild tag.</td></tr><tr><td><code>discord</code></td><td>Allows players to set a guild discord link.</td></tr></tbody></table></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/PixelStudiosDev/pixelstudiosdev.github.io/edit/master/docs/guilds/commands-and-permissions.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-04-23T18:39:55.000Z" itemprop="dateModified">Apr 23, 2026</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/guilds/features/games"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Guild Games</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/guilds/placeholders/internal-placeholders"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Internal Placeholders</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#player-commands" class="table-of-contents__link toc-highlight">Player Commands</a></li><li><a href="#player-sub-commands" class="table-of-contents__link toc-highlight">Player Sub Commands</a></li><li><a href="#administration-commands" class="table-of-contents__link toc-highlight">Administration Commands</a></li><li><a href="#permissions" class="table-of-contents__link toc-highlight">Permissions</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><a href="https://pixelstudios.dev/discord" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://www.spigotmc.org/resources/authors/1173446/" target="_blank" rel="noopener noreferrer" class="footer__link-item">SpigotMC<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://polymart.org/u/8600" target="_blank" rel="noopener noreferrer" class="footer__link-item">Polymart<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://builtbybit.com/creators/314827" target="_blank" rel="noopener noreferrer" class="footer__link-item">BuiltByBit<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://pixelstudios.dev/github" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://pixelstudios.dev/donate" target="_blank" rel="noopener noreferrer" class="footer__link-item">Donate<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 <a href="https://pixelstudios.dev/github">Pixel Studios</a></div></div></div></footer></div>
 </body>
 </html>
