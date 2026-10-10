@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Placeholder Task
 
 This task allows EpicAchievements to integrate with basically any other plugin that has some [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) placeholders. <br/>
@@ -11,56 +8,32 @@ The configuration is essentially the same as the other task types:
 
 Example configuration:
 
-<Tabs>
-    <TabItem value="new" label="v2.0" default>
-        ```yaml title="achievements/survival/tiered.yml" showLineNumbers
-        lumberjack:
-          type: PLACEHOLDER
-          settings:
-            # Placeholder to be tested:
-            placeholder: "%auraskills_foraging%"
-          name: "Professional Lumberjack"
-          description:
-            - "&fCut down trees!"
-          tiers:
-            1:
-              required-amount: 1
-              rewards:
-                - type: points
-                  amount: 10
-            2:
-              required-amount: 2
-              rewards:
-                - type: points
-                  amount: 15
-            3:
-              required-amount: 3
-              rewards:
-                - type: points
-                  amount: 20
-        ```
-    </TabItem>
-    <TabItem value="old" label="v1.0">
-        ```yaml title="achievements/survival/achievements.yml"
-        lumberjack:
-          type: PLACEHOLDER
-          placeholder: "%auraskills_foraging%"
-          name: "Professional Lumberjack"
-          description:
-            - "&fCut down trees!"
-          tiers:
-            1:
-              required-amount: 1
-              points: 10
-            2:
-              required-amount: 2
-              points: 15
-            3:
-              required-amount: 3
-              points: 20
-        ```
-    </TabItem>
-</Tabs>
+```yaml title="achievements/survival/tiered.yml" showLineNumbers
+lumberjack:
+  type: PLACEHOLDER
+  settings:
+    # Placeholder to be tested:
+    placeholder: "%auraskills_foraging%"
+  name: "Professional Lumberjack"
+  description:
+    - "&fCut down trees!"
+  tiers:
+    1:
+      required-amount: 1
+      rewards:
+        - type: points
+          amount: 10
+    2:
+      required-amount: 2
+      rewards:
+        - type: points
+          amount: 15
+    3:
+      required-amount: 3
+      rewards:
+        - type: points
+          amount: 20
+```
 
 ## Placeholders that output text
 
@@ -83,41 +56,20 @@ You can use one of the operators below to test the placeholder:
 
 Example configuration:
 
-<Tabs>
-    <TabItem value="new" label="v2.0" default>
-        ```yaml title="achievements/survival/challenges.yml" showLineNumbers
-        first-nap:
-          type: PLACEHOLDER
-          settings:
-            placeholder: "%player_is_sleeping%"
-            operator: EQUALS
-            value: "yes"
-          name: "First Nap"
-          description:
-            - '&fSleep for the first time!'
-          tiers:
-            1:
-              required-amount: 1
-              rewards:
-                - type: points
-                  amount: 10
-        ```
-    </TabItem>
-    <TabItem value="old" label="v1.0">
-        ```yaml title="achievements/survival/achievements.yml"
-        first-nap:
-          type: PLACEHOLDER
-          placeholder: '%player_is_sleeping%'
-          name: "First Nap"
-          description:
-            - '&fSleep for the first time!'
-          tiers:
-            1:
-              placeholder:
-                operator: EQUALS
-                value: "yes"
-              points: 10
-              rewards: []
-        ```
-    </TabItem>
-</Tabs>
+```yaml title="achievements/survival/challenges.yml" showLineNumbers
+first-nap:
+  type: PLACEHOLDER
+  settings:
+    placeholder: "%player_is_sleeping%"
+    operator: EQUALS
+    value: "yes"
+  name: "First Nap"
+  description:
+    - '&fSleep for the first time!'
+  tiers:
+    1:
+      required-amount: 1
+      rewards:
+        - type: points
+          amount: 10
+```

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 11
 ---
 
-# Frequently Asked Questions
+# FAQ
 
 Here you can find some frequently asked questions about the plugin.
 

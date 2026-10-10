@@ -20,12 +20,6 @@
   --ifm-color-primary-lightest: #f7df90;
 }
 
-.menu__link--active:not(.menu__link--sublist) {
-  border-left-style: solid;
-  border-left-width: 3px;
-  padding-left: 0.6rem;
-}
-
 .table-of-contents__link--active {
   border-left-style: solid;
   border-left-width: 3px;

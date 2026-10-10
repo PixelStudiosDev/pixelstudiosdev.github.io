@@ -12,9 +12,13 @@ It features challenge and tiered achievements, with customizable conditions and 
 Buy the plugin now on [SpigotMC](https://www.spigotmc.org/resources/116800/), [Polymart](https://polymart.org/r/5931) or [BuiltByBit](https://builtbybit.com/resources/44823)!
 
 ## Requirements
-- **Java 17** or higher
-- A Minecraft 1.8.8 - 26.2 server
+- **Java 21** or higher
+- A Minecraft 1.8.8 - 26.3 server
 - **(Optional)** A MySQL or MongoDB database
+:::info
+EpicAchievements **2.12.0 and later require Java 21 or higher**. <br/>
+Earlier versions require Java 17 or higher.
+:::
 
 ## UI Addon
 
