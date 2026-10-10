@@ -40,8 +40,8 @@ These are the main features of the plugin:
 
 ## Where can I buy the plugin?
 
-You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/)
-or [Polymart](https://polymart.org/r/2915) or [BuiltByBit](https://builtbybit.com/resources/27980/).
+You can buy the plugin on [SpigotMC](https://www.spigotmc.org/resources/110931/),
+[BuiltByBit](https://builtbybit.com/resources/27980/) or [voxel.shop](https://voxel.shop/r/2915).
 
 ## Quick Links
 

@@ -121,24 +121,20 @@ const config = {
             href: 'https://pixelstudios.dev/discord',
           },
           {
-            label: 'SpigotMC',
-            href: 'https://www.spigotmc.org/resources/authors/1173446/',
+            label: 'GitHub',
+            href: 'https://pixelstudios.dev/github',
           },
           {
-            label: 'Polymart',
-            href: 'https://polymart.org/u/8600',
+            label: 'SpigotMC',
+            href: 'https://www.spigotmc.org/resources/authors/1173446/',
           },
           {
             label: 'BuiltByBit',
             href: 'https://builtbybit.com/creators/314827',
           },
           {
-            label: 'GitHub',
-            href: 'https://pixelstudios.dev/github',
-          },
-          {
-            label: 'Donate',
-            href: 'https://pixelstudios.dev/donate',
+            label: 'voxel.shop',
+            href: 'https://voxel.shop/u/8600',
           },
         ],
       },

@@ -26,5 +26,5 @@ Guilds doesn't require any other plugins to work, but it can hook into some exte
 features.
 
 - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) - Required for placeholders
-- [Bedwars1058](https://polymart.org/resource/bedwars1058.1152) - Required for giving guild experience or other kind of rewards on
+- [Bedwars1058](https://voxel.shop/resource/bedwars1058.1152) - Required for giving guild experience or other kind of rewards on
   certain events

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Wool Wars is a round-based minigame in which two or more teams fight to fill the central area of the arena with wool. The team with the most points wins the match. Players can obtain special effects and perks from power-ups that spawn in the arena. Before each round, players can choose a kit with a special ability they can use once.
 
-Buy the plugin now on [SpigotMC](https://www.spigotmc.org/resources/105548/), [Polymart](https://polymart.org/r/2551) or [BuiltByBit](https://builtbybit.com/resources/wool-wars.25971/)!
+Buy the plugin now on [SpigotMC](https://www.spigotmc.org/resources/105548/), [BuiltByBit](https://builtbybit.com/resources/wool-wars.25971/) or [voxel.shop](https://voxel.shop/r/2551)!
 
 ## Requirements
 
